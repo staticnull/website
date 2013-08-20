@@ -10,6 +10,10 @@
     "jade": "*"
   },
   "subdomain": "midwestjs",
+  "domains": [
+    "midwestjs.com",
+    "www.midwestjs.com"
+  ],
   "engines": {
     "node": "0.10.x"
   }
