@@ -1,8 +1,10 @@
 extends layout
 
 block content
-    #header
+    #header        
         ul
+            li
+                a(href='/') Info
             li
                 a(href='/speakers') Speakers
             li
@@ -14,13 +16,20 @@ block content
             li
                 a(href='/contacts') Contacts
     #wrap
+        img(src='images/midwestjs-logo-400.png')
+        h1 August 14th & 15th, 2014
+        h1 Minneapolis, Minnesota
         #content
-            img(src='images/midwestjs-logo-400.png')
-            h1 August 14th & 15th, 2014
-            h1 Minneapolis, Minnesota
-            p
-            p Please contact bobbywarner [at] gmail [dot] com for information about MidwestJS.
+            .left
+                p Midwest JS is a premier technology conference focused on the JavaScript ecosystem. The conference will be held for the first time in downtown Minneapolis at the University of St Thomas.
+                p There will be a variety of talks from well­known speakers in the community in a typical presentation format. Talks will be categorized and structured based on four tracks:
+                ol
+                    li Beginner Track (JavaScript fundamentals, jQuery, jQuery UI, etc.)
+                    li Advanced Track (Angular.js, Knockout.js, Ember.js, Backbone.js, etc.)
+                    li Server­Side Track (anything based on Node.js)
+                    li Catch­All (PhoneGap, Appcelerator, anything that doesn’t fit into one of the other three)
+            .right
+                p right
 
-        #footer
-            p &copy; 2013 MidwestJS. Website by 
-                a(href='http://agileorbit.com', class='white') Agile Orbit
+    #footer
+        p &copy; 2013 MidwestJS.
