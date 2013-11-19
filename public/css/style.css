@@ -39,19 +39,22 @@ a:hover, a:active {
 }
 
 #wrap {
-    width: 900px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    text-align: center;
+    line-height: 150%   ;
 }
 
+#homeLogo {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
 
 #content {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    min-height: 800px;
-    text-align: left;
+    padding-bottom: 40px;
 }
 
 #footer {
@@ -61,12 +64,7 @@ a:hover, a:active {
     height : 30px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    position: absolute;
     text-align: center;
-}
-
-#footer a {
-    color: #FFFFFF; 
 }
 
 h1 {
@@ -80,12 +78,12 @@ p {
     margin: 0 0 15px 0;
 }
 
-.left {
-    float: left;
-    width: 400px
+img.map {
+    border: 1px solid #cccccc;
+    padding: 5px;
 }
 
-.right {
-    float: right;
-    width: 400px;
+ol {
+    list-style-type: decimal;
+    margin: 0 0 15px 25px;
 }
