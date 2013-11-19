@@ -1,14 +1,26 @@
 extends layout
 
 block content
+    #header
+        ul
+            li
+                a(href='/speakers') Speakers
+            li
+                a(href='/schedule') Schedule
+            li
+                a(href='/sponsors') Sponsors
+            li
+                a(href='/ticekts') Tickets
+            li
+                a(href='/contacts') Contacts
     #wrap
         #content
             img(src='images/midwestjs-logo-400.png')
-            p
-            p MidwestJS is a technology conference focusing on anything and everything related to the JavaScript ecosystem.
-            p
-            p August 14th & 15th, 2014 at the University of St Thomas in downtown Minneapolis, Minnesota.
+            h1 August 14th & 15th, 2014
+            h1 Minneapolis, Minnesota
             p
             p Please contact bobbywarner [at] gmail [dot] com for information about MidwestJS.
+
         #footer
-            p Copyright &copy; 2013 MidwestJS
+            p &copy; 2013 MidwestJS. Website by 
+                a(href='http://agileorbit.com', class='white') Agile Orbit
