@@ -1,40 +1,28 @@
 extends layout
 
 block content
-    #header        
-        ul
-            li
-                a(href='/') Info
-            li
-                a(href='#/speakers') Speakers
-            li
-                a(href='#/schedule') Schedule
-            li
-                a(href='#/sponsors') Sponsors
-            li
-                a(href='#/ticekts') Tickets
-            li
-                a(href='#/contacts') Contacts
-    #wrap
-        #homeLogo
-            img(src='images/midwestjs-logo-400.png')
-            h1 August 14th & 15th, 2014
-            h1 Minneapolis, Minnesota
-        #content
 
-            p Midwest JS is a premier technology conference focused on the JavaScript ecosystem. The conference will be held for the first time in downtown Minneapolis at the University of St Thomas.
-            
-            p There will be a variety of talks from well­known speakers in the community in a typical presentation format. Talks will be categorized and structured based on four tracks:
-            
-            ol
-                li Beginner Track (JavaScript fundamentals, jQuery, jQuery UI, etc.)
-                li Advanced Track (Angular.js, Knockout.js, Ember.js, Backbone.js, etc.)
-                li Server­Side Track (anything based on Node.js)
-                li Catch­All (PhoneGap, Appcelerator, anything that doesn’t fit into one of the other three)
+  .page-header
+    h1 Welcome
 
-            div(align='center')
-                a(href='https://maps.google.com/maps?q=University+of+St.Thomas+%E2%80%93+Minneapolis+Campus,+Lasalle+Avenue,+Minneapolis,+MN')
-                    img(src='images/map-small.png', class='map')
+  #logo
+    img(src='images/midwestjs-logo-400.png')
 
-    #footer
-        p &copy; 2013 MidwestJS.
+  p.lead August 14th & 15th in Minneapolis, Minnesota!
+
+  p Midwest JS is a premier technology conference focused on the JavaScript ecosystem. The conference will be held for the first time in downtown Minneapolis at the University of St. Thomas.
+
+  p There will be a variety of talks from well­known speakers in the community in a typical presentation format. Talks will be categorized and structured based on four tracks:
+
+  ol
+    li Beginner Track (JavaScript fundamentals, jQuery, jQuery UI, etc.)
+    li Advanced Track (Angular.js, Knockout.js, Ember.js, Backbone.js, etc.)
+    li Server­Side Track (anything based on Node.js)
+    li Catch­All (PhoneGap, Appcelerator, anything that doesn’t fit into one of the other three)
+
+  p There will be a big social activity planned for all conference attendees and sponsors on the night of August 14th after the talks are done for the day and a small social activity planned for attendees on August 15th after the conference is done. The big social activity is currently planned to be "hacker olympics" where each sponsor (all levels) would have the opportunity to create their own "olympic event" and interact with attendees. Events could involve using a sponsor’s API or product in some interesting way with JavaScript or something completely different. The only requirement is that JavaScript is involved in the event in some way.
+
+  div(align='center')
+    a(href='https://maps.google.com/maps?q=University+of+St.Thomas+%E2%80%93+Minneapolis+Campus,+Lasalle+Avenue,+Minneapolis,+MN')
+      img(src='images/map-small.png', class='map')
+  p &nbsp;
