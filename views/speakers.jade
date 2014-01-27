@@ -18,33 +18,33 @@ block content
       .control-group
         label.control-label(for='name') Full Name
         .controls
-          input#name.input-xlarge(name='fullName', type='text', placeholder='John Doe', required='')
+          input#name.input-xlarge.form-control(name='fullName', type='text', placeholder='John Doe', required='')
       // Text input
       .control-group
         label.control-label(for='email') Email
         .controls
-          input#email.input-xlarge(name='email', type='text', placeholder='john.doe@gmail.com', required='')
+          input#email.input-xlarge.form-control(name='email', type='text', placeholder='john.doe@gmail.com', required='')
       // Text input
       .control-group
         label.control-label(for='twitter') Twitter
         .controls
-          input#twitter.input-xlarge(name='twitter', type='text', placeholder='@john_doe')
+          input#twitter.input-xlarge.form-control(name='twitter', type='text', placeholder='@john_doe')
       // Text input
       .control-group
         label.control-label(for='github') GitHub
         .controls
-          input#github.input-xlarge(name='github', type='text', placeholder='johndoe')
+          input#github.input-xlarge.form-control(name='github', type='text', placeholder='johndoe')
       p &nbsp;
       // Text input
       .control-group
         label.control-label(for='talkTitle') Title of your talk
         .controls
-          input#talkTitle.input-xlarge(name='talkTitle', type='text', placeholder='My Talk', required='')
+          input#talkTitle.input-xlarge.form-control(name='talkTitle', type='text', placeholder='My Talk', required='')
       // Textarea
       .control-group
         label.control-label(for='talkAbstract') Abstract of your talk
         .controls
-          textarea#talkAbstract(name='talkAbstract', rows='4', cols='50')
+          textarea#talkAbstract.form-control(name='talkAbstract', rows='4', cols='50')
       p &nbsp;
       // Multiple Radios
       .control-group
@@ -61,13 +61,13 @@ block content
             | Server­-Side Track (anything based on Node.js)
           label.radio(for='track-3')
             input#track-3(type='radio', name='track', value='4')
-            | Catch­All (PhoneGap, Appcelerator, anything that doesn't fit into one of the other three)
+            | Catch­ All (PhoneGap, Appcelerator, anything that doesn't fit into one of the other three)
       p &nbsp;
       // Textarea
       .control-group
         label.control-label(for='other') Anything else you'd like to tell us?
         .controls
-          textarea#other(name='other', rows='4', cols='50')
+          textarea#other.form-control(name='other', rows='4', cols='50')
       // Button
       .control-group
         label.control-label(for='submit')
