@@ -3,7 +3,7 @@ var Talk = require(APP_ROOT.join('models/talk'));
 module.exports = {
 
   index: function(req, res){
-    res.render('speakers', { title: 'MidwestJS | Speakers', speakersActive: 'active' });
+    res.render('speakers', { title: 'Midwest JS | Speakers', speakersActive: 'active' });
   },
 
   create: function(req, res) {
@@ -31,6 +31,6 @@ module.exports = {
 //  },
 
   confirmation: function(req, res){
-    res.render('confirmation', { title: 'MidwestJS | Confirmation', speakersActive: 'active' });
+    res.render('confirmation', { title: 'Midwest JS | Confirmation', speakersActive: 'active' });
   }
 };
