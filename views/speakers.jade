@@ -34,6 +34,11 @@ block content
         label.control-label(for='github') GitHub
         .controls
           input#github.input-xlarge.form-control(name='github', type='text', placeholder='johndoe')
+      // Textarea
+      .control-group
+        label.control-label(for='bio') Biography
+        .controls
+          textarea#bio.form-control(name='bio', rows='4', cols='50')          
       p &nbsp;
       // Text input
       .control-group
@@ -45,7 +50,6 @@ block content
         label.control-label(for='talkAbstract') Abstract of your talk
         .controls
           textarea#talkAbstract.form-control(name='talkAbstract', rows='4', cols='50')
-      p &nbsp;
       // Multiple Radios
       .control-group
         label.control-label(for='track') Which track does your talk match best?
