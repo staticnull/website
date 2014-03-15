@@ -14,5 +14,9 @@ module.exports = {
 
   contact: function(req, res){
     res.render('contact', { title: 'Midwest JS | Contact', contactActive: 'active' });
+  },
+
+  codeOfConduct: function(req, res){
+    res.render('codeOfConduct', { title: 'Midwest JS | Code of Conduct' });
   }
 };
