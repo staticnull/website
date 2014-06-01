@@ -4,7 +4,7 @@ html
     title= title
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/css/bootstrap.min.css')
-    link(rel='stylesheet', media='screen', href='/css/main.css') 
+    link(rel='stylesheet', media='screen', href='/css/main.css')
   body
     #wrap
       .navbar.navbar-default.navbar-fixed-top(role='navigation')
@@ -26,16 +26,18 @@ html
                 a(href='/sponsors') Sponsors
               li(class= ticketsActive)
                 a(href='/tickets') Tickets
+              li(class= hotelActive)
+                a(href='/hotel') Hotel
               li(class= contactActive)
                 a(href='/contact') Contact
       .container
         block content
     #footer
       .container
-        p.text-muted 
+        p.text-muted
           &copy; 2014 Midwest JS -- Website by&nbsp;
           a(href='http://agileorbit.com') Agile Orbit
-          &nbsp;--&nbsp;Hosted at 
+          &nbsp;--&nbsp;Hosted at
           a(href='https://www.nodejitsu.com') Nodejitsu
           &nbsp;--&nbsp;
           a(href='/code-of-conduct') Code of Conduct

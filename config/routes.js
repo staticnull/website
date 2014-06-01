@@ -15,6 +15,7 @@ module.exports = function(app) {
 //  app.get('/speakers/delete', controllers['speakers'].delete);
   app.get('/sponsors', controllers['main'].sponsors);
   app.get('/tickets', controllers['main'].tickets);
+  app.get('/hotel', controllers['main'].hotel);
   app.get('/contact', controllers['main'].contact);
   app.get('/code-of-conduct', controllers['main'].codeOfConduct);
 
