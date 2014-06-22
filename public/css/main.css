@@ -141,6 +141,17 @@ img.map {
     text-align: center;
 }
 
+.speaker-img-container {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.speaker-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 .center {
     text-align: center;
 }
