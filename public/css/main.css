@@ -138,7 +138,33 @@ img.map {
 }
 
 .speaker {
-    text-align: center;
+  margin-bottom: 20px;
+}
+
+.speaker h3 {
+  margin-top: 0;
+}
+
+.speaker img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.media {
+  margin:10px;
+}
+.media,
+.media-body {
+  overflow:hidden;
+  zoom:1;
+}
+.media .media-img {
+  float:left;
+  margin-right: 10px;
+}
+.media .media-img img{
+  display:block;
 }
 
 .center {
