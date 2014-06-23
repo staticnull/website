@@ -151,6 +151,42 @@ img.map {
   border-radius: 50%;
 }
 
+.speaker .social:hover {
+  opacity: 1;
+}
+
+.speaker .social {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  font-size: 1.9em;
+  background-color: rgba(240,240,240,.7);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  padding-top: 20px;
+
+  opacity: 0;
+  /*transition*/
+  -webkit-transition:opacity 0.3s;
+  -moz-transition:opacity 0.3s;
+  -o-transition:opacity 0.3s;
+  transition:opacity 0.3s;
+}
+
+.speaker .social a {
+  color: #474747;
+}
+
+.speaker .social a:first-child {
+  padding-right: 6px;
+}
+
+.speaker .social a:hover {
+  color: #666;
+}
+
 .media {
   margin:10px;
 }

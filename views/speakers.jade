@@ -5,273 +5,81 @@ block content
   .page-header
     h1 Keynotes
 
-  div.row
-    div.col-md-6.speaker
-      .media
-        .media-img
-          img(src='/images/midwestjs-logo-200.png')
-        .media-body
-          h3 Jeff Haynie
-          p Appcelerator
-    div.col-md-6.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/ritchie-martori.jpg')
-        .media-body
-          h3 Ritchie Martori
-          p StrongLoop
+  each group in talks.keynotes
+    div.row
+      each keynote, index in group
+        div.col-md-6.speaker
+          .media
+            .media-img
+              img(src= keynote.speaker.image)
+            .media-body
+              h3 #{keynote.speaker.name}
+              each talk in keynote.talks
+                if talk.abstractHtml
+                  p
+                    a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title}
+                  div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+                    div(class="modal-dialog")
+                      div(class="modal-content")
+                        div(class="modal-header")
+                          button(type="button",class="close",data-dismiss="modal") &times;
+                          h4(class="modal-title") #{talk.title}&nbsp;
+                            small by #{keynote.speaker.name}
+
+                        div(class="modal-body")
+                          !{talk.abstractHtml}
+                        div(class="modal-footer")
+                          button(type="button",class="btn btn-default",data-dismiss="modal") Close
+                else
+                  p !{talk.title}
+                if (keynote.speaker.twitter || keynote.speaker.github)
+                  div.social
+                    if keynote.speaker.twitter
+                      a(href="http://twitter.com/#{keynote.speaker.twitter}",title="@#{keynote.speaker.twitter}")
+                        i(class="fa fa-twitter")
+                    if keynote.speaker.github
+                      a(href="http://github.com/#{keynote.speaker.github}",title= keynote.speaker.github)
+                        i(class="fa fa-github")
+
 
   .page-header
     h1 Speakers
 
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/aeischeid.jpg')
-        .media-body
-          h3 Aaron Eischeid
-          p Testing JavaScript with Jasmine
-          p JavaScript Promises in Depth
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/adamdbradley.jpg')
-        .media-body
-          h3 Adam Bradley
-          p Building Hybrid Apps with AngularJS and Ionic
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/agrocholski.jpg')
-        .media-body
-          h3 Adam Grocholski
-          p Deploying Node.js to Azure
+  each group, gIndex in talks.other
+    div.row
+      each otherTalk, tIndex in group
+        div.col-md-4.speaker
+          .media
+            .media-img
+              img(src= otherTalk.speaker.image)
+            .media-body
+              h3 #{otherTalk.speaker.name}
+              each talk in otherTalk.talks
+                if talk.abstractHtml
+                  p
+                    a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title}
+                  div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+                    div(class="modal-dialog")
+                      div(class="modal-content")
+                        div(class="modal-header")
+                          button(type="button",class="close",data-dismiss="modal") &times;
+                          h4(class="modal-title") #{talk.title}&nbsp;
+                            small by #{otherTalk.speaker.name}
 
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/zzolo.jpg')
-        .media-body
-        zzolo
-          h3 Alan Palazzolo
-          p The MinnPost Stack
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/twokul.jpg')
-        .media-body
-          h3 Alex Navasardyan
-          p And benchmarks for all!
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/midwestjs-logo-200.png')
-        .media-body
-          h3 Brad Marsh
-          p Liger - Truly Hybrid App Development
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/ryanj.png')
-        .media-body
-          h3 Ryan Jarvinen
-          p Getting RESTless with MeteorJS
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/cbartling.jpg')
-        .media-body
-          h3 Chris Bartling
-          p JavaScript Test-driven Development using Jasmine and Karma
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/danveloper.jpg')
-        .media-body
-          h3 Daniel Woods
-          p Server-Side JavaScript with Nashorn
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/dmikeyanderson.jpg')
-        .media-body
-          h3 Derek Anderson
-          p EnyoJS: A Scalable Code Base
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/james-greene.jpg')
-        .media-body
-          h3 James Greene
-          p The Art of Node: An Introduction to Node.js
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/johnculviner.jpg')
-        .media-body
-          h3 John Culviner
-          p Intro to Angular.js
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/johnkpaul.jpg')
-        .media-body
-          h3 John Paul
-          p Ember Components Transclude My Directives
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/jondejong.jpg')
-        .media-body
-          h3 Jon DeJong
-          p Combining D3 with AngularJS
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/jsundquist.jpg')
-        .media-body
-          h3 Jonathan Sundquist
-          p Let Knockout Knock Your Socks Off
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/kassandra_perch.jpg')
-        .media-body
-          h3 Kassandra Perch
-          p Why You Should Be Using The Flight framework
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/gelicia.jpg')
-        .media-body
-          h3 Kristina Durivage
-          p An Intro to Data Visualization with D3.js
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/kwiersma.jpg')
-        .media-body
-          h3 Kurt Wiersma
-          p Using TypeScript To Build Better JavaScript Apps
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/1marc.jpg')
-        .media-body
-          h3 Marc Grabanski
-          p Whirlwind Tour of Scalable Vector Graphics
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/mark_stuart.jpg')
-        .media-body
-          h3 Mark Stuart
-          p Web Security in Single Page Apps and Node.js
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/mikefrey.png')
-        .media-body
-          h3 Mike Frey
-          p Promises, Generators and Callbacks! Oh my!
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/monsika.jpg')
-        .media-body
-          h3 Monika Piotrowicz
-          p Accessibility is a Feature You Can Build - A Guided Tour to Demystify a11y Basics
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/pamasaur.jpg')
-        .media-body
-          h3 Pam Selle
-          p Zero to Testing in JavaScript
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/raytiley.jpg')
-        .media-body
-          h3 Ray Tiley
-          p Building Apps With Ember.js
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/sonyseng.jpg')
-        .media-body
-          h3 Sony Seng
-          p Introduction to Chrome Developer Tools
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/stefanpenner.jpg')
-        .media-body
-          h3 Stefan Penner
-          p The Conventions Ember.js Provides To Make You Happy and Productive
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/toddhgardner.jpg')
-        .media-body
-          h3 Todd Gardner
-          p Traces of Errors: Getting Better JavaScript Stacktraces
-
-  div.row
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/trek.jpg')
-        .media-body
-          h3 Trek Glowacki
-          p Single Page Applications: the Web's Horseless Carriage
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/vbullinger.jpg')
-        .media-body
-          h3 Vince Bullinger
-          p Cross-Platform Mobile Development with the Appcelerator Framework
-          p Cross-Platform Mobile Development with PhoneGap
-    div.col-md-4.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/wbucksoft.png')
-        .media-body
-          h3 Will Buck & Zach Legein
-          p Large Angular Projects - A Postmortem
-
-  div.row
-    div.col-md-6.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/zachlendon.jpg')
-        .media-body
-          h3 Zach Lendon
-          p Reconciling React as a View Layer Replacement
-    div.col-md-6.speaker
-      .media
-        .media-img
-          img(src='/images/speakers/zanthrash.jpg')
-        .media-body
-          h3 Zan Thrash
-          p Angular Testing with Jasmine and Karma
+                        div(class="modal-body")
+                          !{talk.abstractHtml}
+                        div(class="modal-footer")
+                          button(type="button",class="btn btn-default",data-dismiss="modal") Close
+                else
+                  p !{talk.title}
+                if (otherTalk.speaker.twitter || otherTalk.speaker.github)
+                  div.social
+                    if otherTalk.speaker.twitter
+                      a(href="http://twitter.com/#{otherTalk.speaker.twitter}",title="@#{otherTalk.speaker.twitter}")
+                        i(class="fa fa-twitter")
+                    if otherTalk.speaker.github
+                      a(href="http://github.com/#{otherTalk.speaker.github}",title= otherTalk.speaker.github)
+                        i(class="fa fa-github")
 
   p &nbsp;
   p &nbsp;

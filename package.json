@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.4.8",
     "jade": "*",
+    "marked": "~0.3.2",
     "mongoose": "~3.8.0"
   },
   "subdomain": "midwestjs",
