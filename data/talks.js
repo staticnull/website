@@ -11,7 +11,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
-addKeynote(new Speaker('Jeff Heynie'), new Talk('Appcelerator'));
+addKeynote(new Speaker('Jeff Haynie'), new Talk('Appcelerator'));
 addKeynote(new Speaker('Ritchie Martori'), new Talk('StrongLoop'));
 
 // Add talks
@@ -24,7 +24,9 @@ addOtherTalk(new Speaker('Adam Grocholski'), new Talk('Deploying Node.js to Azur
 addOtherTalk(new Speaker('Alan Palazzolo'), new Talk('The MinnPost Stack'));
 addOtherTalk(new Speaker('Alex Navasardyan'), new Talk('And benchmarks for all!'));
 addOtherTalk(new Speaker('Brad Marsh'), new Talk('Liger - Truly Hybrid App Development'));
-addOtherTalk(new Speaker('Ryan Jarvinen'), new Talk('Getting RESTless with MeteorJS'));
+addOtherTalk(new Speaker('Ryan Jarvinen'), [
+  new Talk('Getting RESTless with MeteorJS'), new Talk('Full Stack Mobile with StrongLoop'), new Talk('Building with Javascript - featuring npm, grunt, bower, and yeoman')
+]);
 addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Improving Application UX with Genie.js'));
 addOtherTalk(new Speaker('Chris Bartling'), new Talk('JavaScript Test-driven Development using Jasmine and Karma'));
 addOtherTalk(new Speaker('Daniel Woods'), new Talk('Server-Side JavaScript with Nashorn'));
@@ -43,6 +45,7 @@ addOtherTalk(new Speaker('Mike Frey'), new Talk('Promises, Generators and Callba
 addOtherTalk(new Speaker('Monika Piotrowicz'), new Talk('Accessibility is a Feature You Can Build - A Guided Tour to Demystify a11y Basics'));
 addOtherTalk(new Speaker('Pam Selle'), new Talk('Zero to Testing in JavaScript'));
 addOtherTalk(new Speaker('Ray Tiley'), new Talk('Building Apps With Ember.js'));
+addOtherTalk(new Speaker('Shane Stillwell'), new Talk('Browserify: All The Things'));
 addOtherTalk(new Speaker('Sony Seng'), new Talk('Introduction to Chrome Developer Tools'));
 addOtherTalk(new Speaker('Stefan Penner'), new Talk('The Conventions Ember.js Provides To Make You Happy and Productive'));
 addOtherTalk(new Speaker('Vince Bullinger'), [
