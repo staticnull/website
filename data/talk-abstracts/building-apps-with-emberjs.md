@@ -1,0 +1,1 @@
+In this session, we'll go over the building blocks of an Ember application and how they work together to maximize developer happiness when building ambitious web applications. Along the way we will cover what Ember.js is good at and where its weak. We'll wrap up with some tools that make bootstrapping your first Ember app easier.

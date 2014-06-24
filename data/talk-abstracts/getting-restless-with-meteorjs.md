@@ -1,0 +1,1 @@
+Meteor allows you to quickly build interactive, multi-user, realtime applications. In this session, we'll take a look at the data APIs and security controls that Meteor provides, allowing for client-side access to MongoDB in the browser - "Look Ma, no REST API!"

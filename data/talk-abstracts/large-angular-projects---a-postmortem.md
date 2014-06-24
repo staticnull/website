@@ -1,0 +1,1 @@
+Our team at Virtuwell is nearing completion on a re-write of a large application using AngularJS to make it a much more reactive Single-Page App. Along the way, we went through an Angular version update and many revisions of our app structure and Angular coding practices, as we learned how best to use the framework. I'd love to share the things we learned to everyone's benefit!

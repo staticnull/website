@@ -22,7 +22,7 @@ addOtherTalk(new Speaker('Aaron Eischeild', 'aeischeid', 'aeischeid'), [
 addOtherTalk(new Speaker('Adam Bradley', 'adamdbradley', 'adamdbradley'), new Talk('Building Hybrid Apps with AngularJS and Ionic'));
 addOtherTalk(new Speaker('Adam Grocholski', 'agrocholski', 'codel8r'), new Talk('Deploying Node.js to Azure'));
 addOtherTalk(new Speaker('Alan Palazzolo', 'zzolo', 'zzolo'), new Talk('The MinnPost Stack'));
-addOtherTalk(new Speaker('Alex Navasardyan', 'twokul', 'twokul'), new Talk('And benchmarks for all!'));
+addOtherTalk(new Speaker('Alex Navasardyan', 'twokul', 'twokul'), new Talk('And Benchmarks For All!'));
 addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('Liger - Truly Hybrid App Development'));
 addOtherTalk(new Speaker('Ryan Jarvinen', 'ryanjarvinen', 'ryanj'), [
   new Talk('Getting RESTless with MeteorJS'), new Talk('Full Stack Mobile with StrongLoop'), new Talk('Building with Javascript - featuring npm, grunt, bower, and yeoman')
@@ -31,8 +31,8 @@ addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk(
 addOtherTalk(new Speaker('Chris Bartling', 'cebartling', 'cbartling'), new Talk('JavaScript Test-driven Development using Jasmine and Karma'));
 addOtherTalk(new Speaker('Daniel Woods', 'danveloper', 'danveloper'), new Talk('Server-Side JavaScript with Nashorn'));
 // Looks like the GitHub handle that was submitted does not work
-addOtherTalk(new Speaker('Derek Anderson', 'toxigenicpoem', 'dmikeyanderson'), new Talk('EnyoJS: A Scalable Code Base'));
-addOtherTalk(new Speaker('James Greene', 'JamesMGreene', '_JamesMGreene'), new Talk('The Art of Node: An Introduction to Node.js'));
+addOtherTalk(new Speaker('Derek Anderson', 'toxigenicpoem', 'dmikeyanderson'), new Talk('EnyoJS - A Scalable Code Base'));
+addOtherTalk(new Speaker('James Greene', 'JamesMGreene', '_JamesMGreene'), new Talk('The Art of Node - An Introduction to Node.js'));
 addOtherTalk(new Speaker('John Culviner', 'johnculviner', 'johnculviner'), new Talk('Intro to Angular.js'));
 addOtherTalk(new Speaker('John Paul', 'johnkpaul', 'johnkpaul'), new Talk('Ember Components Transclude My Directives'));
 addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Combining D3 with AngularJS'));
@@ -46,14 +46,14 @@ addOtherTalk(new Speaker('Mike Frey', 'mikefrey', 'mikefrey'), new Talk('Promise
 addOtherTalk(new Speaker('Monika Piotrowicz', 'mpiotrowicz', 'monsika'), new Talk('Accessibility is a Feature You Can Build - A Guided Tour to Demystify a11y Basics'));
 addOtherTalk(new Speaker('Pam Selle', 'pselle', 'pamasaur'), new Talk('Zero to Testing in JavaScript'));
 addOtherTalk(new Speaker('Ray Tiley', 'raytiley', 'raytiley'), new Talk('Building Apps With Ember.js'));
-addOtherTalk(new Speaker('Shane Stillwell', 'shanestillwell', 'shanestillwell'), new Talk('Browserify: All The Things'));
+addOtherTalk(new Speaker('Shane Stillwell', 'shanestillwell', 'shanestillwell'), new Talk('Browserify - All The Things'));
 addOtherTalk(new Speaker('Sony Seng', 'sonyseng', 'sonyseng'), new Talk('Introduction to Chrome Developer Tools'));
 addOtherTalk(new Speaker('Stefan Penner', 'stefanpenner', 'stefanpenner'), new Talk('The Conventions Ember.js Provides To Make You Happy and Productive'));
 addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), [
   new Talk('Cross-Platform Mobile Development with the Appcelerator Framework'), new Talk('Cross-Platform Mobile Development with PhoneGap')
 ]);
-addOtherTalk(new Speaker('Todd Gardner', 'toddhgardner', 'toddhgardner'), new Talk('Traces of Errors: Getting Better JavaScript Stacktraces'));
-addOtherTalk(new Speaker('Trek Glowacki', 'trek', 'trek'), new Talk('Single Page Applications: the Web\'s Horseless Carriage'));
+addOtherTalk(new Speaker('Todd Gardner', 'toddhgardner', 'toddhgardner'), new Talk('Traces of Errors - Getting Better JavaScript Stacktraces'));
+addOtherTalk(new Speaker('Trek Glowacki', 'trek', 'trek'), new Talk('Single Page Applications - the Web\'s Horseless Carriage'));
 addOtherTalk(new Speaker('Will Buck & Zach Legein', 'willbuck', 'wbucksoft'), new Talk('Large Angular Projects - A Postmortem'));
 addOtherTalk(new Speaker('Zach Lendon', 'zachlendon', 'zachlendon'), new Talk('Reconciling React as a View Layer Replacement'));
 addOtherTalk(new Speaker('Zan Thrash', 'zanthash', 'zanthash'), new Talk('Angular Testing with Jasmine and Karma'));
@@ -133,7 +133,7 @@ function arrayify(item) {
 }
 
 function filenamify(string) {
-  return removeFileUnsafeChars(string.replace(/ /g, '-').replace(/\./g, '')).toLowerCase();
+  return removeFileUnsafeChars(string.replace(/ /g, '-').replace(/\./g, '').replace(/\,/g, '').replace(/\!/g, '').replace(/\'/g, '')).toLowerCase();
 }
 
 function removeFileUnsafeChars(string) {

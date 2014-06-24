@@ -1,0 +1,1 @@
+This talk will cover the basics, to planning a data visualization, to some live coding with D3.js and resources on how to learn more going forward.
