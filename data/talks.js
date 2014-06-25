@@ -38,6 +38,7 @@ addOtherTalk(new Speaker('John Paul', 'johnkpaul', 'johnkpaul'), new Talk('Ember
 addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Combining D3 with AngularJS'));
 addOtherTalk(new Speaker('Jonathan Sundquist', 'jsundquist', 'jsundquist'), new Talk('Let Knockout Knock Your Socks Off'));
 addOtherTalk(new Speaker('Kassandra Perch', 'kperch', 'kassandra_perch'), new Talk('Why You Should Be Using The Flight framework'));
+addOtherTalk(new Speaker('Kevin Whinnery', 'kwhinnery', 'kevinwhinnery'), new Talk('Flying Robots with the HTML 5 Gamepad API'));
 addOtherTalk(new Speaker('Kristina Durivage', 'gelicia', 'gelicia'), new Talk('An Intro to Data Visualization with D3.js'));
 addOtherTalk(new Speaker('Kurt Wiersma', 'kwiersma', 'kwiersma'), new Talk('Using TypeScript To Build Better JavaScript Apps'));
 addOtherTalk(new Speaker('Marc Grabanski', '1Marc', '1Marc'), new Talk('Whirlwind Tour of Scalable Vector Graphics'));
