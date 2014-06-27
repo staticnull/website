@@ -11,8 +11,8 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
-addKeynote(new Speaker('Jeff Haynie'), new Talk('Appcelerator'));
-addKeynote(new Speaker('Ritchie Martori', 'ritch', 'ritchiemartori'), new Talk('StrongLoop'));
+addKeynote(new Speaker('Jeff Haynie'), new Talk('Titanium'));
+addKeynote(new Speaker('Ritchie Martori', 'ritch', 'ritchiemartori'), new Talk('LoopBack'));
 
 // Add talks
 
