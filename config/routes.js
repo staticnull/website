@@ -18,6 +18,7 @@ module.exports = function(app) {
   app.get('/hotel', controllers['main'].hotel);
   app.get('/contact', controllers['main'].contact);
   app.get('/code-of-conduct', controllers['main'].codeOfConduct);
+  app.get('/schedule', controllers['schedule'].index);  
 
   app.use(function(req, res, next){
     res.status(404).render('404', {title: "Midwest JS | Page Not Found"});
