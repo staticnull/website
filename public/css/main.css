@@ -206,3 +206,20 @@ img.map {
 .center {
     text-align: center;
 }
+
+.row-header {
+  background-color: #603813;
+  color: #ffffff;
+}
+
+.row-even {
+  background-color: #E5E4E2;
+}
+
+.track1 {
+  background-color: #FFF8F9;
+}
+
+.row {
+  padding: 10px;
+}
