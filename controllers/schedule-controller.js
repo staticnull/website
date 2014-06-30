@@ -1,3 +1,6 @@
+var Talk = require(APP_ROOT.join('models/talk'));
+var talks = require(APP_ROOT.join('data/talks'));
+
 module.exports = {
 
   index: function(req, res){
