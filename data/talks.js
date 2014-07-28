@@ -36,6 +36,7 @@ addOtherTalk(new Speaker('James Greene', 'JamesMGreene', '_JamesMGreene'), new T
 addOtherTalk(new Speaker('John Culviner', 'johnculviner', 'johnculviner'), new Talk('Intro to Angular.js'));
 addOtherTalk(new Speaker('John Paul', 'johnkpaul', 'johnkpaul'), new Talk('Ember Components Transclude My Directives'));
 addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Combining D3 with AngularJS'));
+addOtherTalk(new Speaker('Joshua Jensen', '', ''), new Talk('Running JavaScript Tasks with Grunt'));
 addOtherTalk(new Speaker('Jonathan Sundquist', 'jsundquist', 'jsundquist'), new Talk('Let Knockout Knock Your Socks Off'));
 addOtherTalk(new Speaker('Kassandra Perch', 'kperch', 'kassandra_perch'), new Talk('Why You Should Be Using The Flight framework'));
 addOtherTalk(new Speaker('Kevin Whinnery', 'kwhinnery', 'kevinwhinnery'), new Talk('Flying Robots with the HTML 5 Gamepad API'));
