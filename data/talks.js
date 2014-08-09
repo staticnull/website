@@ -12,7 +12,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 // Add keynotes
 
 addKeynote(new Speaker('Jeff Haynie'), new Talk('Titanium'));
-addKeynote(new Speaker('Ritchie Martori', 'ritch', 'ritchiemartori'), new Talk('LoopBack'));
+addKeynote(new Speaker('Shubhra Kar', 'ShubhraKar', 'ShubhraKar'), new Talk('LoopBack'));
 
 // Add talks
 
