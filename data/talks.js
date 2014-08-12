@@ -56,7 +56,7 @@ addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), [
 ]);
 addOtherTalk(new Speaker('Todd Gardner', 'toddhgardner', 'toddhgardner'), new Talk('Traces of Errors - Getting Better JavaScript Stacktraces'));
 addOtherTalk(new Speaker('Trek Glowacki', 'trek', 'trek'), new Talk('Single Page Applications - the Web\'s Horseless Carriage'));
-addOtherTalk(new Speaker('Will Buck & Zach Legein', 'willbuck', 'wbucksoft'), new Talk('Large Angular Projects - A Postmortem'));
+addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Large Angular Projects - A Postmortem'));
 addOtherTalk(new Speaker('Zach Lendon', 'zachlendon', 'zachlendon'), new Talk('Reconciling React as a View Layer Replacement'));
 addOtherTalk(new Speaker('Zan Thrash', 'zanthash', 'zanthash'), new Talk('Angular Testing with Jasmine and Karma'));
 addOtherTalk(new Speaker('Toran Billups', 'toranb', 'toranb'), new Talk('React-Routing-Lazy Loading and ES6'));
