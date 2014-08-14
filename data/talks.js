@@ -29,7 +29,7 @@ addOtherTalk(new Speaker('Ryan Jarvinen', 'ryanjarvinen', 'ryanj'), [
 ]);
 addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Improving Application UX with Genie.js', 8, 4));
 addOtherTalk(new Speaker('Chris Bartling', 'cebartling', 'cbartling'), new Talk('JavaScript Test-driven Development using Jasmine and Karma', 7, 2));
-addOtherTalk(new Speaker('Daniel Woods', 'danveloper', 'danveloper'), new Talk('Server-Side JavaScript with Nashorn', 2, 4));
+addOtherTalk(new Speaker('Daniel Woods', 'danveloper', 'danveloper'), new Talk('Server-Side JavaScript with Nashorn', 2, 3));
 // Looks like the GitHub handle that was submitted does not work
 addOtherTalk(new Speaker('Derek Anderson', 'toxigenicpoem', 'dmikeyanderson'), new Talk('EnyoJS - A Scalable Code Base', 10, 3));
 addOtherTalk(new Speaker('James Greene', 'JamesMGreene', '_JamesMGreene'), new Talk('The Art of Node - An Introduction to Node.js', 1, 1));
@@ -49,7 +49,7 @@ addOtherTalk(new Speaker('Monika Piotrowicz', 'mpiotrowicz', 'monsika'), new Tal
 addOtherTalk(new Speaker('Pam Selle', 'pselle', 'pamasaur'), new Talk('Zero to Testing in JavaScript', 6, 2));
 addOtherTalk(new Speaker('Ray Tiley', 'raytiley', 'raytiley'), new Talk('Building Apps With Ember.js', 4, 2));
 addOtherTalk(new Speaker('Shane Stillwell', 'shanestillwell', 'shanestillwell'), new Talk('Browserify - All The Things', 3, 4));
-addOtherTalk(new Speaker('Sony Seng', 'sonyseng', 'sonyseng'), new Talk('Introduction to Chrome Developer Tools', 2, 3));
+addOtherTalk(new Speaker('Sony Seng', 'sonyseng', 'sonyseng'), new Talk('Introduction to Chrome Developer Tools', 2, 4));
 addOtherTalk(new Speaker('Stefan Penner', 'stefanpenner', 'stefanpenner'), new Talk('The Conventions Ember.js Provides To Make You Happy and Productive', 2, 2));
 addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), [
   new Talk('Cross-Platform Mobile Development with the Appcelerator Framework', 8, 3), new Talk('Cross-Platform Mobile Development with PhoneGap', 6, 3)
