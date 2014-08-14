@@ -49,42 +49,105 @@ block content
   div.row.row-even
     div.col-md-2 10:00 am
     div.col-md-8 Coffee & Snacks Break
+  
   div.row
     div.col-md-2 10:30 am  
-    div.col-md-2 The Art of Node - An Introduction to Node.js (James Greene)    
-    div.col-md-2 Intro to Angular.js (John Culviner)    
-    div.col-md-2 Building with Javascript - featuring npm, grunt, bower, and yeoman (Ryan Jarvinen)
-    div.col-md-2 JavaScript Promises in Depth (Aaron Eischeid)
+    each talk in talks.dayOne[1]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row.row-even
     div.col-md-2 11:30 am
-    div.col-md-2 Promises, Generators and Callbacks! Oh my! (Mike Frey)     
-    div.col-md-2 The Conventions Ember.js Provides To Make You Happy and Productive (Stefan Penner)   
-    div.col-md-2 Introduction to Chrome Developer Tools (Sony Seng)
-    div.col-md-2 Server-Side JavaScript with Nashorn (Dan Woods)
+    each talk in talks.dayOne[2]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row
     div.col-md-2 12:30 pm
     div.col-md-8 Lunch
+
   div.row.row-even
     div.col-md-2 1:30 pm
-    div.col-md-2 Web Security in Single Page Apps and Node.js (Mark Stuart)    
-    div.col-md-2 Angular Testing with Jasmine and Karma (Zan Thrash)
-    div.col-md-2 The MinnPost Stack (Alan Palazzolo)
-    div.col-md-2 Browserify: All The Things (Shane Stillwell)
+    each talk in talks.dayOne[3]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row
     div.col-md-2 2:30 pm
-    div.col-md-2 Flying Robots with the HTML 5 Gamepad API (Kevin Whinnery)
-    div.col-md-2 Building Apps With Ember.js (Ray Tiley)
-    div.col-md-2 Accessibility is a Feature You Can Build - A Guided Tour to Demystify a11y Basics (Monika Piotrowicz)   
-    div.col-md-2 An Intro to Data Visualization with D3.js (Kristina Durivage)
+    each talk in talks.dayOne[4]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row.row-even
     div.col-md-2 3:30 pm
     div.col-md-8 Coffee & Snacks Break
+
   div.row
     div.col-md-2 4:00 pm
-    div.col-md-2 Deploying Node.js to Azure (Adam Grocholski)
-    div.col-md-2 Why You Should Be Using The Flight framework (Kassandra Perch)    
-    div.col-md-2 Running JavaScript Tasks with Grunt (Joshua Jensen)
-    div.col-md-2 Whirlwind Tour of Scalable Vector Graphics (Marc Grabanski)
+    each talk in talks.dayOne[5]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close        
+
   div.row.row-even
     div.col-md-2 5:00 pm
     div.col-md-8 Happy Hour
@@ -103,40 +166,102 @@ block content
     div.col-md-10 Breakfast (Coffee & Pastries)
   div.row.row-even
     div.col-md-2 9:00 am  
-    div.col-md-2 Reconciling React as a View Layer Replacement (Zach Lendon)
-    div.col-md-2 Zero to Testing in JavaScript (Pam Selle)    
-    div.col-md-2 Cross-Platform Mobile Development with PhoneGap (Vince Bullinger)
-    div.col-md-2 Single Page Applications - the Web's Horseless Carriage (Trek Glowacki)
+    each talk in talks.dayTwo[1]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row
     div.col-md-2 10:00 am
     div.col-md-8 Coffee & Snacks Break
+
   div.row.row-even
     div.col-md-2 10:30 am  
-    div.col-md-2 Let Knockout Knock Your Socks Off (Jonathan Sundquist)
-    div.col-md-2 JavaScript Test-driven Development using Jasmine and Karma (Chris Bartling)    
-    div.col-md-2 Liger - Truly Hybrid App Development (Brad Marsh)
-    div.col-md-2 Using TypeScript To Build Better JavaScript Apps (Kurt Wiersma)
+    each talk in talks.dayTwo[2]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row
     div.col-md-2 11:30 am
-    div.col-md-2 Large Angular Projects - A Postmortem (Will Buck)
-    div.col-md-2 Testing JavaScript with Jasmine (Aaron Eischeid)    
-    div.col-md-2 Cross-Platform Mobile Development with the Appcelerator Framework (Vince Bullinger)
-    div.col-md-2 Improving Application UX with Genie.js (Kent Dodds)
+    each talk in talks.dayTwo[3]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row.row-even
     div.col-md-2 12:30 pm
     div.col-md-8 Lunch
+
   div.row
     div.col-md-2 1:30 pm
-    div.col-md-2 Ember Components Transclude My Directives (John Paul)
-    div.col-md-2 Traces of Errors - Getting Better JavaScript Stacktraces (Todd Gardner)    
-    div.col-md-2 Building Hybrid Apps with AngularJS and Ionic (Adam Bradley)
-    div.col-md-2 Combining D3 with AngularJS (Jon DeJong)
+    each talk in talks.dayTwo[4]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row.row-even
     div.col-md-2 2:30 pm
-    div.col-md-2 Getting RESTless with MeteorJS (Ryan Jarvinen)
-    div.col-md-2 And benchmarks for all! (Alex Navasardyan)    
-    div.col-md-2 EnyoJS: A Scalable Code Base (Derek Anderson)
-    div.col-md-2 React-Routing-Lazy Loading and ES6 (Toran Billups)
+    each talk in talks.dayTwo[5]
+      div.col-md-2         
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
   div.row
     div.col-md-2 3:30 pm
     div.col-md-8 Coffee & Snacks Break
@@ -149,3 +274,5 @@ block content
 
   p &nbsp;
   p &nbsp;
+
+  
