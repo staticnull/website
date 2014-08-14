@@ -45,7 +45,7 @@ addOtherTalk(new Speaker('Kurt Wiersma', 'kwiersma', 'kwiersma'), new Talk('Usin
 addOtherTalk(new Speaker('Marc Grabanski', '1Marc', '1Marc'), new Talk('Whirlwind Tour of Scalable Vector Graphics', 5, 4));
 addOtherTalk(new Speaker('Mark Stuart', 'mstuart', 'mark_stuart'), new Talk('Web Security in Single Page Apps and Node.js', 3, 1));
 addOtherTalk(new Speaker('Mike Frey', 'mikefrey', 'mikefrey'), new Talk('Promises, Generators and Callbacks! Oh my!', 2, 1));
-addOtherTalk(new Speaker('Monika Piotrowicz', 'mpiotrowicz', 'monsika'), new Talk('Accessibility is a Feature You Can Build - A Guided Tour to Demystify a11y Basics', 4, 4));
+addOtherTalk(new Speaker('Monika Piotrowicz', 'mpiotrowicz', 'monsika'), new Talk('Accessibility is a Feature You Can Build - A Guided Tour to Demystify a11y Basics', 4, 3));
 addOtherTalk(new Speaker('Pam Selle', 'pselle', 'pamasaur'), new Talk('Zero to Testing in JavaScript', 6, 2));
 addOtherTalk(new Speaker('Ray Tiley', 'raytiley', 'raytiley'), new Talk('Building Apps With Ember.js', 4, 2));
 addOtherTalk(new Speaker('Shane Stillwell', 'shanestillwell', 'shanestillwell'), new Talk('Browserify - All The Things', 3, 4));
