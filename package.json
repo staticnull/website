@@ -6,10 +6,10 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.4.8",
-    "jade": "*",
-    "marked": "~0.3.2",
-    "mongoose": "~3.8.0"
+    "express": "3.18.3",
+    "jade": "1.7.0",
+    "marked": "0.3.2",
+    "mongoose": "3.8.19"
   },
   "subdomain": "midwestjs",
   "domains": [
