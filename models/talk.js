@@ -3,16 +3,20 @@ var Schema   = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 var TalkSchema = new Schema({
-  fullName     : String,
-  email        : String,
-  twitter      : String,
-  github       : String,
-  bio          : String,
-  talkTitle    : String,
-  talkAbstract : String,
-  track        : String,
-  other        : String,
-  created      : Date
+  fullName       : String,
+  email          : String,
+  twitter        : String,
+  github         : String,
+  employer       : String,
+  bio            : String,
+  tshirt         : String,
+  reimbursement  : String,
+  location       : String,
+  talkTitle      : String,
+  talkAbstract   : String,
+  track          : String,
+  other          : String,
+  created        : Date
 });
 
 module.exports = mongoose.model('Talk', TalkSchema);
