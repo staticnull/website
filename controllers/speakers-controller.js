@@ -4,10 +4,10 @@ var _jade = require('jade');
 var fs = require('fs');
 
 var smtpTransport = nodemailer.createTransport({
-    service: "Gmail",
+    service: "SendGrid",
     auth: {
-        user: "****@gmail.com",
-        pass: "****"
+        user: process.env.SENDGRID_USERNAME,
+        pass: process.env.SENDGRID_PASSWORD
     }
 });
 
