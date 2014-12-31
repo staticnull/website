@@ -38,6 +38,17 @@ block content
         .controls
           input#github.input-xlarge.form-control(name='github', type='text', placeholder='johndoe', required='')
       p &nbsp;
+      // Multiple Radios
+      .control-group
+        label.control-label(for='tshirt') Which photo would you like to use for the website?
+        .radio
+          label.radio(for='photo-github')
+            input#photo-github(type='radio', name='photo', value='github', required)
+            | Use my GitHub photo
+          label.radio(for='photo-twitter')
+            input#photo-twitter(type='radio', name='photo', value='twitter', required)
+            | Use my Twitter photo
+      p &nbsp;
       // Text input
       .control-group
         label.control-label(for='employer') Employer

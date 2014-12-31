@@ -7,6 +7,7 @@ var TalkSchema = new Schema({
   email          : String,
   twitter        : String,
   github         : String,
+  photo          : String,
   employer       : String,
   bio            : String,
   tshirt         : String,
