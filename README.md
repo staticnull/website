@@ -9,10 +9,15 @@ The application requires MongoDB and you can set the connection string in `model
 
 Run
 ---
-
 ```
 npm install
 node app
+```
+
+The application uses SendGrid to send emails and you will need to specify a username and password as environment variables if you want to test email functionality. This is not required to run the app though as it will simply display an error when attempting to send email.
+
+```
+SENDGRID_USERNAME=<user id> SENDGRID_PASSWORD=<password> node app
 ```
 
 Notes
