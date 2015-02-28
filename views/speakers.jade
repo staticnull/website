@@ -7,160 +7,19 @@ block content
 
   #logo
     img(src='images/midwestjs-logo-400.png')
+    br
+    br
+    div(align='center')
+      a(href='https://twitter.com/midwest_js')
+        img(src='images/twitter.png', width='50px')
+      &nbsp;&nbsp;
+      a(href='https://github.com/midwestjs')
+        img(src='images/github.jpg', width='50px')
 
-  p.lead Call for papers is now open!
+  p.lead Stay Tuned!
 
-  p We are accepting talk proposals until Saturday, February 28th at 5pm CST.
-
-  form(action='/speakers', method='post', class='form-horizontal')
-    fieldset
-      // Text input
-      .control-group
-        label.control-label(for='name') Full Name
-        .controls
-          input#name.input-xlarge.form-control(name='fullName', type='text', placeholder='John Doe', required='')
-      p &nbsp;
-      // Text input
-      .control-group
-        label.control-label(for='email') Email
-        .controls
-          input#email.input-xlarge.form-control(name='email', type='text', placeholder='john.doe@gmail.com', required='')
-      p &nbsp;
-      // Text input
-      .control-group
-        label.control-label(for='twitter') Twitter
-        .controls
-          input#twitter.input-xlarge.form-control(name='twitter', type='text', placeholder='@john_doe', required='')
-      p &nbsp;
-      // Text input
-      .control-group
-        label.control-label(for='github') GitHub
-        .controls
-          input#github.input-xlarge.form-control(name='github', type='text', placeholder='johndoe', required='')
-      p &nbsp;
-      // Multiple Radios
-      .control-group
-        label.control-label(for='tshirt') Which photo would you like to use for the website?
-        .radio
-          label.radio(for='photo-github')
-            input#photo-github(type='radio', name='photo', value='github', required)
-            | Use my GitHub photo
-          label.radio(for='photo-twitter')
-            input#photo-twitter(type='radio', name='photo', value='twitter', required)
-            | Use my Twitter photo
-      p &nbsp;
-      // Text input
-      .control-group
-        label.control-label(for='employer') Employer
-        .controls
-          input#employer.input-xlarge.form-control(name='employer', type='text', placeholder='Company Name', required='')
-      p &nbsp;
-      // Textarea
-      .control-group
-        label.control-label(for='bio') Biography
-        .controls
-          textarea#bio.form-control(name='bio', rows='4', cols='50')
-      p &nbsp;
-      // Multiple Radios
-      .control-group
-        label.control-label(for='tshirt') What is your t-shirt size?
-        .radio
-          label.radio(for='tshirt-ms')
-            input#tshirt-ms(type='radio', name='tshirt', value='ms', required)
-            | Men's Small
-          label.radio(for='tshirt-mm')
-            input#tshirt-mm(type='radio', name='tshirt', value='mm', required)
-            | Mem's Medium
-          label.radio(for='tshirt-ml')
-            input#tshirt-ml(type='radio', name='tshirt', value='ml', required)
-            | Men's Large
-          label.radio(for='tshirt-mxl')
-            input#tshirt-mxl(type='radio', name='tshirt', value='mxl', required)
-            | Men's X-Large
-          label.radio(for='tshirt-mxxl')
-            input#tshirt-mxxl(type='radio', name='tshirt', value='mxxl', required)
-            | Men's XX-Large
-          label.radio(for='tshirt-ws')
-            input#tshirt-ws(type='radio', name='tshirt', value='ws', required)
-            | Women's Small
-          label.radio(for='tshirt-wm')
-            input#tshirt-wm(type='radio', name='tshirt', value='wm', required)
-            | Women's Medium
-          label.radio(for='tshirt-wl')
-            input#tshirt-wl(type='radio', name='tshirt', value='wl', required)
-            | Women's Large
-          label.radio(for='tshirt-wxl')
-            input#tshirt-wxl(type='radio', name='tshirt', value='wxl', required)
-            | Women's X-Large
-      p &nbsp;
-      // Multiple Radios
-      .control-group
-        label.control-label(for='reimbursement') Will you require travel reimbursement?
-        .radio
-          label.radio(for='reimbursement-none')
-            input#reimbursement-none(type='radio', name='reimbursement', value='none', required)
-            | No reimbursement needed
-          label.radio(for='reimbursement-both')
-            input#reimbursement-both(type='radio', name='reimbursement', value='both', required)
-            | Flight and hotel reimbursement
-          label.radio(for='reimbursement-flight')
-            input#reimbursement-flight(type='radio', name='reimbursement', value='flight', required)
-            | Flight reimbursement only
-          label.radio(for='reimbursement-hotel')
-            input#reimbursement-hotel(type='radio', name='reimbursement', value='hotel', required)
-            | Hotel reimbursement only
-      p &nbsp;
-      // Text input
-      .control-group
-        label.control-label(for='location') Where will you be traveling from (city or airport)?
-        .controls
-          input#location.input-xlarge.form-control(name='location', type='text', placeholder='Minneapolis, MN')
-      p &nbsp;
-      // Text input
-      .control-group
-        label.control-label(for='talkTitle') Title of your talk
-        .controls
-          input#talkTitle.input-xlarge.form-control(name='talkTitle', type='text', placeholder='My Talk', required='')
-      p &nbsp;
-      // Textarea
-      .control-group
-        label.control-label(for='talkAbstract') Abstract of your talk
-        .controls
-          textarea#talkAbstract.form-control(name='talkAbstract', rows='4', cols='50')
-      p &nbsp;
-      // Multiple Radios
-      .control-group
-        label.control-label(for='track') Which track does your talk match best?
-        .radio
-          label.radio(for='track-1')
-            input#track-1(type='radio', name='track', value='beginner', required)
-            | Beginner Track (JavaScript fundamentals, jQuery, jQuery UI, etc.)
-          label.radio(for='track-2')
-            input#track-2(type='radio', name='track', value='frameworks', required)
-            | Frameworks Track (Angular.js, Knockout.js, Ember.js, Backbone.js, etc.)
-          label.radio(for='track-3')
-            input#track-3(type='radio', name='track', value='node', required)
-            | Node Track (anything based on Node.js)
-          label.radio(for='track-4')
-            input#track-4(type='radio', name='track', value='mobile', required)
-            | Mobile­ Track (PhoneGap, Appcelerator, etc.)
-          label.radio(for='track-5')
-            input#track-5(type='radio', name='track', value='testing', required)
-            | Testing Track (TDD, Jasmine, etc.)
-          label.radio(for='track-6')
-            input#track-6(type='radio', name='track', value='miscellaneous', required)
-            | Miscellaneous Track (Anything that doesn't fit into the others)
-      p &nbsp;
-      // Textarea
-      .control-group
-        label.control-label(for='other') Anything else you'd like to tell us?
-        .controls
-          textarea#other.form-control(name='other', rows='4', cols='50')
-      // Button
-      .control-group
-        label.control-label(for='submit')
-        .controls
-          button#submit.btn.btn-primary(name='submit') Submit Your Talk
+  p The call for papers is closed and speakers will be announced soon!
 
   p &nbsp;
+
   p &nbsp;
