@@ -34,7 +34,7 @@ addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), [
 ]);
 addOtherTalk(new Speaker('Josh Longanecker', 'joshofthewest', 'joshlovesdesign'), new Talk('Better debugging in Chrome', 3, 3));
 addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Writing Better jQuery Infused JavaScript', 1, 3));
-addOtherTalk(new Speaker('Kent Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Angular-Formly: Abstracting Away Complexity', 2, 2));
+addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Angular-Formly: Abstracting Away Complexity', 2, 2));
 addOtherTalk(new Speaker('Kevin Moot', 'kcmoot', 'kcmoot'), new Talk('WebGL: A New Frontier for 3D Mobile Graphics', 10, 3));
 addOtherTalk(new Speaker('Kevin Whinnery', 'kwhinnery', 'kevinwhinnery'), new Talk('The Best of the Web For Native Apps', 6, 3));
 addOtherTalk(new Speaker('Kris Kowal', 'kriskowal', 'kriskowal'), new Talk('A General Theory of Reactivity', 2, 4));
