@@ -11,8 +11,8 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
-addKeynote(new Speaker('Jeff Haynie'), new Talk('Titanium'));
-addKeynote(new Speaker('Shubhra Kar', 'ShubhraKar', 'ShubhraKar'), new Talk('LoopBack'));
+// addKeynote(new Speaker('Jeff Haynie'), new Talk('Titanium'));
+// addKeynote(new Speaker('Shubhra Kar', 'ShubhraKar', 'ShubhraKar'), new Talk('LoopBack'));
 
 // Add talks
 // 2D-matrixing the schedule (1-indexed) hoping I can use it for schedule page
@@ -117,10 +117,10 @@ function Speaker(name, github, twitter, image) {
 }
 
 // HACKSAUCE 1-indexed 2D matrix for the timeslots and rooms
-// timeslots 
+// timeslots
 // day 1 - 8/14/14 - 1 == 10:30am, 2 == 11:30am, 3 == 01:30pm, 4 == 2:30pm, 5 == 4:00pm)
 // day 2 - 8/15/14 - 6 == 09:00am, 7 == 10:30am, 8 == 11:30am, 9 == 1:30pm, 10 == 2:30pm)
-// rooms 
+// rooms
 // 1 == auditorium, 2 == Rm127, 3 == Law235, 4 == Law238
 function Talk(title, timeslot, room) {
   var abstract = '';

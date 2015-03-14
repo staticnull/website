@@ -5,21 +5,41 @@ block content
   .page-header
     h1 Speakers
 
-  #logo
-    img(src='images/midwestjs-logo-400.png')
-    br
-    br
-    div(align='center')
-      a(href='https://twitter.com/midwest_js')
-        img(src='images/twitter.png', width='50px')
-      &nbsp;&nbsp;
-      a(href='https://github.com/midwestjs')
-        img(src='images/github.jpg', width='50px')
+  each group, gIndex in talks.other
+    div.row
+      each otherTalk, tIndex in group
+        div.col-md-4.speaker
+          .media
+            .media-img
+              img(src= otherTalk.speaker.image)
+            .media-body
+              h3 #{otherTalk.speaker.name}
+              each talk in otherTalk.talks
+                if talk.abstractHtml
+                  p
+                    a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title}
+                  div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+                    div(class="modal-dialog")
+                      div(class="modal-content")
+                        div(class="modal-header")
+                          button(type="button",class="close",data-dismiss="modal") &times;
+                          h4(class="modal-title") #{talk.title}&nbsp;
+                            small by #{otherTalk.speaker.name}
 
-  p.lead Stay Tuned!
-
-  p The call for papers is closed and speakers will be announced soon!
+                        div(class="modal-body")
+                          !{talk.abstractHtml}
+                        div(class="modal-footer")
+                          button(type="button",class="btn btn-default",data-dismiss="modal") Close
+                else
+                  p !{talk.title}
+                if (otherTalk.speaker.twitter || otherTalk.speaker.github)
+                  div.social
+                    if otherTalk.speaker.twitter
+                      a(href="http://twitter.com/#{otherTalk.speaker.twitter}",title="@#{otherTalk.speaker.twitter}")
+                        i(class="fa fa-twitter")
+                    if otherTalk.speaker.github
+                      a(href="http://github.com/#{otherTalk.speaker.github}",title= otherTalk.speaker.github)
+                        i(class="fa fa-github")
 
   p &nbsp;
-
   p &nbsp;
