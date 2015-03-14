@@ -1,1 +1,0 @@
-At JSConf US 2013, Facebook's Pete Hunt introduced React, an open source javascript library from Facebook and Instagram, promising a different way to build javascript applications. In this talk, we'll explore what React, at it's best, is and more importantly isn't, and we'll then walk through some example integrations of React with your favorite JavaScript MVC frameworks.

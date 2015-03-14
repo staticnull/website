@@ -1,5 +1,0 @@
-[Titanium](http://www.appcelerator.com/titanium) is an app development platform that allows you to build apps for iOS, Android, BlackBerry, Tizen and Windows using a single JavaScript codebase. No fluffy HTML, but actual native UIs delivering awesome UX.
-
-Being a developer himself, CEO Jeff Haynie is currently leading the development of the next major version: Ti.Next. Using a cross-platform port of iOS7's JavaScriptCore, Ti.Next will compile JavaScript, which means faster apps, but also paving the way for faster development of the Titanium platform itself. Imagine this: calling any native API right there in JavaScript, even if it is not exposed through the cross-platform Titanium API.
-
-This talk will demonstrate Titanium as the best choice for building native apps for multiple platforms and give you the latest on Ti.Next.

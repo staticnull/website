@@ -1,0 +1,1 @@
+Learn the fundamental core distinction of Node.JS that lead to its massive popularity and adoption. We will look at some practical examples on how Node is replacing other frameworks such as rails and how you can also build a desktop app with Node.

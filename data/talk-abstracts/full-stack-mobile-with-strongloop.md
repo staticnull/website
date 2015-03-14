@@ -1,1 +1,0 @@
-Build your own JavaScript-powered Mobile application in this interactive workshop featuring Loopback, by StrongLoop.

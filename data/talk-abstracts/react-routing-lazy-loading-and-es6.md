@@ -1,7 +1,0 @@
-On the surface web components seem like a great way to get started, but as your JavaScript application grows how do you compose them together in a maintainable way? How can you add client side routing to keep your application from breaking the web? What about lazy loading entire modules inside your application on the fly? Join me for a live coding session where I show all the above incrementally by building out a JavaScript application with react and the react-nested-router!
-
-If you are writing traditional web applications today but you want to provide a desktop like experience using html/css/javascript this presentation will not disappoint. I'll go beyond the hype of single page apps and deliver a working rich client app built with react, jspm and the react-nested-router!
-
-We will start with the basics of why/how/etc but 45 of the 60 minutes will be live coding so buckle up. The sample application will show off client side url routing/ react components/ back button support/ lazy loading react components and the entire thing will be built with ES6 modules!
-
-I'll also briefly discuss a few deployment strategies and how jspm tiered bundling support makes this the most productive platform for javascript developers today! The plan is to pass on everything I've learned in the last 3 months about building modern web apps with react and jspm (including the good / the bad / the challenging).

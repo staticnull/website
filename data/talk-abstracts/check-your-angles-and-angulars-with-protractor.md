@@ -1,0 +1,1 @@
+Front-end functional testing got you down? Protractor.js can help by providing simple APIs to navigate and assert properties of any running html, js and css. If you are using Angular, however, things get even easier! Visit this talk to see how you can get up and running with Protractor

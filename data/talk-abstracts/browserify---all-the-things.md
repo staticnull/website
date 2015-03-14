@@ -1,1 +1,0 @@
-Browserify brings the power of Node.js to the browser and makes life simple by assembling your JS code into a simple bundle. We'll walk through setting up an AngularJS app with Browserify and see how quick and easy it really is to put all those JS files into one ready made bundle.

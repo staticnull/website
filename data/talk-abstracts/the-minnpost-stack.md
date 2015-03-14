@@ -1,1 +1,0 @@
-At MinnPost, we use Javascript to power our interactive pieces and our workflow. We will take a practical look at how and why we use tools like Yeoman, Grunt, RequireJS, Backbone, Ractive, jQuery, Underscore, MomentJS, and more. Instead of a deep dive into each of these tools, we will look at a battle-tested JS stack that we use and refine to make projects weekly.
