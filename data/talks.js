@@ -63,7 +63,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 addOtherTalk(new Speaker('Adam Ranfelt', 'adamRenny', 'adamRenny'), new Talk('Applying JavaScript Promises: Asynchronous Honesty', 8, 4));
 addOtherTalk(new Speaker('Amos Kyler', 'amoskyler', 'aokyler'), new Talk('Optimizing Data Workflows in React', 5, 2));
-addOtherTalk(new Speaker('Aziz Ali', 'azizali', 'heyaziz'), new Talk('Getting Confident & Comfortable with Node.js', 1, 1));
+addOtherTalk(new Speaker('Aziz Ali', 'azizali', 'heyaziz'), new Talk('Getting Confident and Comfortable with Node.js', 1, 1));
 addOtherTalk(new Speaker('Bonnie Eisenman', 'bonniee', 'brindelle'), new Talk('Effective Tooling with React.js', 10, 1));
 addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('React.js - When, Where and How to Use It', 3, 2));
 addOtherTalk(new Speaker('Branden Byers', 'brndnb', 'brandenbyers'), new Talk('Test Them Puzzles: What Test-Driven Learning Can Teach About JS and TDD', 8, 2));
@@ -74,8 +74,9 @@ addOtherTalk(new Speaker('Ethan Jewett', 'esjewett', 'esjewett'), new Talk('Inte
 addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Adventures in Test-Driven Development', 10, 2));
 addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Building Custom Directives in AngularJS', 7, 1));
 addOtherTalk(new Speaker('Jonah Stiennon', 'jonahss', 'TinyTimZamboni'), new Talk('An Introduction to Appium, Test Automation for Mobile', 7, 2));
-addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), new Talk('That\'s so prototypical', 4, 3));
-addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), new Talk('Triage, Diagnose, and Scale Node.js', 3, 1));
+addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), [
+  new Talk('That\'s so prototypical', 5, 3), new Talk('Triage, Diagnose, and Scale Node.js', 2, 1)
+]);
 addOtherTalk(new Speaker('Josh Longanecker', 'joshofthewest', 'joshlovesdesign'), new Talk('Better debugging in Chrome', 3, 3));
 addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Writing Better jQuery Infused JavaScript', 1, 3));
 addOtherTalk(new Speaker('Kent Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Angular-Formly: Abstracting Away Complexity', 2, 2));
@@ -88,9 +89,9 @@ addOtherTalk(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk
 addOtherTalk(new Speaker('Nick Heiner', 'nickheiner', 'nickheiner'), new Talk('DIY Programming Language', 9, 4));
 addOtherTalk(new Speaker('Nick Tomlin', 'nicktomlin', 'itsnicktomlin'), new Talk('TDD: The Hard Parts', 6, 2));
 addOtherTalk(new Speaker('Pete Hodgson', 'moredip', 'ph1'), new Talk('Theory and Practice of Functional Reactive Javascript', 4, 4));
-addOtherTalk(new Speaker('Ryan Anklam', 'bittersweetryan', 'bittersweetryan'), new Talk('Modern UI Development With Node.js', 2, 1));
+addOtherTalk(new Speaker('Ryan Anklam', 'bittersweetryan', 'bittersweetryan'), new Talk('Modern UI Development With Node.js', 3, 1));
 addOtherTalk(new Speaker('Ryan Glover', 'themeteorchef', 'rglover'), new Talk('Meteor: Superpowers for JavaScript Developers', 1, 2));
-addOtherTalk(new Speaker('Scott Silvi', 'scottsilvi', 'scottsilvi'), new Talk('Introduction to Modular / Component Architecture', 5, 3));
+addOtherTalk(new Speaker('Scott Silvi', 'scottsilvi', 'scottsilvi'), new Talk('Introduction to Modular / Component Architecture', 4, 3));
 addOtherTalk(new Speaker('Stefan Penner', 'stefanpenner', 'stefanpenner'), new Talk('Ember.js: Always be ship\'n', 9, 1));
 addOtherTalk(new Speaker('Tessa Thornton', 'tessalt', 'tessthornton'), new Talk('Components are the future of the web: it\'s going to be okay.', 2, 3));
 addOtherTalk(new Speaker('TJ VanToll', 'tjvantoll', 'tjvantoll'), new Talk('Introducing NativeScript', 8, 3));
