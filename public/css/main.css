@@ -41,6 +41,12 @@ body {
   padding-right: 15px;
 }
 
+#footer a, 
+#footer a:hover,
+#footer a:active {
+  color: #ffd503;
+}
+
 code {
   font-size: 80%;
 }
