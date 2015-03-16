@@ -11,8 +11,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
-// addKeynote(new Speaker('John Doe'), new Talk('TBD'));
-// addKeynote(new Speaker('John Doer', 'johndoe', 'johndoe'), new Talk('TBD'));
+addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Opening Keynote'));
 
 // Add talks
 

@@ -3,6 +3,45 @@ extends layout
 block content
 
   .page-header
+    h1 Keynotes
+
+  each group in talks.keynotes
+    div.row
+      each keynote, index in group
+        div.col-md-6.speaker
+          .media
+            .media-img
+              img(src= keynote.speaker.image)
+            .media-body
+              h3 #{keynote.speaker.name}
+              each talk in keynote.talks
+                if talk.abstractHtml
+                  p
+                    a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title}
+                  div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+                    div(class="modal-dialog")
+                      div(class="modal-content")
+                        div(class="modal-header")
+                          button(type="button",class="close",data-dismiss="modal") &times;
+                          h4(class="modal-title") #{talk.title}&nbsp;
+                            small by #{keynote.speaker.name}
+
+                        div(class="modal-body")
+                          !{talk.abstractHtml}
+                        div(class="modal-footer")
+                          button(type="button",class="btn btn-default",data-dismiss="modal") Close
+                else
+                  p !{talk.title}
+                if (keynote.speaker.twitter || keynote.speaker.github)
+                  div.social
+                    if keynote.speaker.twitter
+                      a(href="http://twitter.com/#{keynote.speaker.twitter}",title="@#{keynote.speaker.twitter}")
+                        i(class="fa fa-twitter")
+                    if keynote.speaker.github
+                      a(href="http://github.com/#{keynote.speaker.github}",title= keynote.speaker.github)
+                        i(class="fa fa-github")
+
+  .page-header
     h1 Speakers
 
   each group, gIndex in talks.other
