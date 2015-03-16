@@ -28,7 +28,7 @@ addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Baco
 addOtherTalk(new Speaker('Ethan Jewett', 'esjewett', 'esjewett'), new Talk('Interactive, browser-based data visualization with Crossfilter', 3, 4));
 addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Adventures in Test-Driven Development', 10, 2));
 addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Building Custom Directives in AngularJS', 7, 1));
-addOtherTalk(new Speaker('Jonah Stiennon', 'jonahss', 'TinyTimZamboni'), new Talk('An Introduction to Appium, Test Automation for Mobile', 7, 2));
+addOtherTalk(new Speaker('Jonah Stiennon', 'jonahss', 'TinyTimZamboni'), new Talk('An Introduction to Appium, Test Automation for Mobile', 6, 3));
 addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), [
   new Talk('That\'s so prototypical', 5, 3), new Talk('Triage, Diagnose, and Scale Node.js', 2, 1)
 ]);
@@ -36,7 +36,6 @@ addOtherTalk(new Speaker('Josh Longanecker', 'joshofthewest', 'joshlovesdesign')
 addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Writing Better jQuery Infused JavaScript', 1, 3));
 addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Angular-Formly: Abstracting Away Complexity', 2, 2));
 addOtherTalk(new Speaker('Kevin Moot', 'kcmoot', 'kcmoot'), new Talk('WebGL: A New Frontier for 3D Mobile Graphics', 10, 3));
-addOtherTalk(new Speaker('Kevin Whinnery', 'kwhinnery', 'kevinwhinnery'), new Talk('The Best of the Web For Native Apps', 6, 3));
 addOtherTalk(new Speaker('Kris Kowal', 'kriskowal', 'kriskowal'), new Talk('A General Theory of Reactivity', 2, 4));
 addOtherTalk(new Speaker('Kristina Durivage', 'gelicia', 'gelicia'), new Talk('Hardware and Javascript', 5, 1));
 addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('ES6: Too Much Goodness to Wait!', 1, 4));
@@ -52,6 +51,7 @@ addOtherTalk(new Speaker('Tessa Thornton', 'tessalt', 'tessthornton'), new Talk(
 addOtherTalk(new Speaker('TJ VanToll', 'tjvantoll', 'tjvantoll'), new Talk('Introducing NativeScript', 8, 3));
 addOtherTalk(new Speaker('Toran Billups', 'toranb', 'toranb'), new Talk('Writing your own identity map for Ember.js', 4, 2));
 addOtherTalk(new Speaker('Tyler Gaw', 'tylergaw', 'thegaw'), new Talk('Building OS X Apps with JavaScript', 7, 4));
+addOtherTalk(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Automated testing tools and techniques for JavaScript', 7, 2));
 addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('Reapp - A React Framework for Building Hybrid Mobile Apps', 7, 3));
 addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Check Your Angles and Angulars with Protractor', 9, 2));
 addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 10, 4));
