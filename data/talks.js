@@ -47,11 +47,11 @@ addOtherTalk(new Speaker('Ryan Glover', 'themeteorchef', 'rglover'), new Talk('M
 addOtherTalk(new Speaker('Erik Onarheim', 'eonarheim', 'ErikOnarheim'), new Talk('HTML5: All Your Games Are Belong to Us', 4, 3));
 addOtherTalk(new Speaker('Stefan Penner', 'stefanpenner', 'stefanpenner'), new Talk('Ember.js: Always be ship\'n', 9, 1));
 addOtherTalk(new Speaker('Tessa Thornton', 'tessalt', 'tessthornton'), new Talk('Components are the future of the web: it\'s going to be okay.', 2, 3));
-addOtherTalk(new Speaker('TJ VanToll', 'tjvantoll', 'tjvantoll'), new Talk('Introducing NativeScript', 8, 3));
+addOtherTalk(new Speaker('TJ VanToll', 'tjvantoll', 'tjvantoll'), new Talk('Introducing NativeScript', 7, 3));
 addOtherTalk(new Speaker('Toran Billups', 'toranb', 'toranb'), new Talk('Writing your own identity map for Ember.js', 4, 2));
-addOtherTalk(new Speaker('Tyler Gaw', 'tylergaw', 'thegaw'), new Talk('Building OS X Apps with JavaScript', 7, 4));
+addOtherTalk(new Speaker('Todd Gardner', 'toddhgardner', 'toddhgardner'), new Talk('JavaScript Forensics', 7, 4));
+addOtherTalk(new Speaker('Tyler Gaw', 'tylergaw', 'thegaw'), new Talk('Building OS X Apps with JavaScript', 8, 3));
 addOtherTalk(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Automated testing tools and techniques for JavaScript', 7, 2));
-addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('Reapp - A React Framework for Building Hybrid Mobile Apps', 7, 3));
 addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Check Your Angles and Angulars with Protractor', 9, 2));
 addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 10, 4));
 addOtherTalk(new Speaker('Zan Thrash', 'zanthrash', 'zanthrash'), new Talk('Intro to RxJS', 6, 4));
