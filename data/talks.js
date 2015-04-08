@@ -12,11 +12,12 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 // Add keynotes
 
 addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Opening Keynote'));
+addKeynote(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('The current state of JavaScript'));
 
 // Add talks
 
 addOtherTalk(new Speaker('Adam Ranfelt', 'adamRenny', 'adamRenny'), new Talk('Applying JavaScript Promises: Asynchronous Honesty', 8, 4));
-addOtherTalk(new Speaker('Amos Kyler', 'amoskyler', 'aokyler'), new Talk('Optimizing Data Workflows in React', 5, 2));
+addOtherTalk(new Speaker('Amos Kyler', 'amoskyler', 'aokyler'), new Talk('Optimizing Data Workflows in React', 8, 1));
 addOtherTalk(new Speaker('Aziz Ali', 'azizali', 'heyaziz'), new Talk('Getting Confident and Comfortable with Node.js', 1, 1));
 addOtherTalk(new Speaker('Bonnie Eisenman', 'bonniee', 'brindelle'), new Talk('Effective Tooling with React.js', 10, 1));
 addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('React.js - When, Where and How to Use It', 3, 2));
@@ -26,7 +27,7 @@ addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), new Talk('Deve
 addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Bacon.js for Breakfast: An intro to functional reactive progamming', 5, 4));
 addOtherTalk(new Speaker('Ethan Jewett', 'esjewett', 'esjewett'), new Talk('Interactive, browser-based data visualization with Crossfilter', 3, 4));
 addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Adventures in Test-Driven Development', 10, 2));
-addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Building Custom Directives in AngularJS', 7, 1));
+addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Building Custom Directives in AngularJS', 5, 2));
 addOtherTalk(new Speaker('Jonah Stiennon', 'jonahss', 'TinyTimZamboni'), new Talk('An Introduction to Appium, Test Automation for Mobile', 6, 3));
 addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), [
   new Talk('That\'s so prototypical', 5, 3), new Talk('Triage, Diagnose, and Scale Node.js', 2, 1)
@@ -55,7 +56,7 @@ addOtherTalk(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk(
 addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Check Your Angles and Angulars with Protractor', 9, 2));
 addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 10, 4));
 addOtherTalk(new Speaker('Zan Thrash', 'zanthrash', 'zanthrash'), new Talk('Intro to RxJS', 6, 4));
-addOtherTalk(new Speaker('Zeno Rocha', 'zenorocha', 'zenorocha'), new Talk('Web Components: Is this the future of Web Development?', 8, 1));
+addOtherTalk(new Speaker('Zeno Rocha', 'zenorocha', 'zenorocha'), new Talk('Web Components: Is this the future of Web Development?', 7, 1));
 
 
 talks.other.sort(alphabatizeBySpeaker);
