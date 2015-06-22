@@ -23,7 +23,7 @@ addOtherTalk(new Speaker('Bonnie Eisenman', 'bonniee', 'brindelle'), new Talk('E
 addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('React.js - When, Where and How to Use It', 3, 2));
 addOtherTalk(new Speaker('Branden Byers', 'brndnb', 'brandenbyers'), new Talk('Test Them Puzzles: What Test-Driven Learning Can Teach About JS and TDD', 8, 2));
 addOtherTalk(new Speaker('Chuck Rolek', 'crolek', 'crolek'), new Talk('Sailsjs, making Nodejs backends a breeze', 4, 1));
-addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), new Talk('Developing for Firefox OS: It\'s just the web... or is it?', 9, 3));
+addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), new Talk('Developing for Firefox OS: It\'s just the web... or is it?', 4, 3));
 addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Bacon.js for Breakfast: An intro to functional reactive progamming', 5, 4));
 addOtherTalk(new Speaker('Ethan Jewett', 'esjewett', 'esjewett'), new Talk('Interactive, browser-based data visualization with Crossfilter', 3, 4));
 addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Adventures in Test-Driven Development', 10, 2));
@@ -45,7 +45,7 @@ addOtherTalk(new Speaker('Nick Tomlin', 'nicktomlin', 'itsnicktomlin'), new Talk
 addOtherTalk(new Speaker('Pete Hodgson', 'moredip', 'ph1'), new Talk('Theory and Practice of Functional Reactive Javascript', 4, 4));
 addOtherTalk(new Speaker('Ryan Anklam', 'bittersweetryan', 'bittersweetryan'), new Talk('Modern UI Development With Node.js', 3, 1));
 addOtherTalk(new Speaker('Ryan Glover', 'themeteorchef', 'rglover'), new Talk('Meteor: Superpowers for JavaScript Developers', 1, 2));
-addOtherTalk(new Speaker('Erik Onarheim', 'eonarheim', 'ErikOnarheim'), new Talk('HTML5: All Your Games Are Belong to Us', 4, 3));
+addOtherTalk(new Speaker('Erik Onarheim', 'eonarheim', 'ErikOnarheim'), new Talk('HTML5: All Your Games Are Belong to Us', 9, 3));
 addOtherTalk(new Speaker('Stefan Penner', 'stefanpenner', 'stefanpenner'), new Talk('Ember.js: Always be ship\'n', 9, 1));
 addOtherTalk(new Speaker('Tessa Thornton', 'tessalt', 'tessthornton'), new Talk('Components are the future of the web: it\'s going to be okay.', 2, 3));
 addOtherTalk(new Speaker('TJ VanToll', 'tjvantoll', 'tjvantoll'), new Talk('Introducing NativeScript', 7, 3));
