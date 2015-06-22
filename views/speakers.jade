@@ -82,3 +82,37 @@ block content
 
   p &nbsp;
   p &nbsp;
+
+  script(type='text/javascript').
+    window.onload = function() {
+      (function(window, $, undefined) {
+        // call the modal, provided the element exists
+        function openModalOnLoad(id) {
+          var el = $(id);
+          if (el.length && el.modal) {
+            el.modal();
+          }
+        }
+
+        // helper function to make sure the url conforms to /#/<sessionid>
+        function parseHash(hash) {
+          var hashParts = hash.split('/');
+          if (hashParts.length !== 2 && hashParts[0] !== '#') {
+            return;
+          }
+          return hashParts.join('');
+        }
+
+        $(function() {
+          // this could be safe checked as well
+          var hash = window.location.hash;
+          if (hash){
+            // will be undefined if the hash isn't in the right format
+            var id = parseHash(hash);
+            if (id) {
+              openModalOnLoad(id);
+            }
+          }
+        });
+      }(window, window.jQuery));
+    };
