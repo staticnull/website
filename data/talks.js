@@ -42,7 +42,7 @@ addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Tal
 addOtherTalk(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk('Intro to React', 6, 1));
 addOtherTalk(new Speaker('Nick Heiner', 'nickheiner', 'nickheiner'), new Talk('DIY Programming Language', 9, 4));
 addOtherTalk(new Speaker('Nick Tomlin', 'nicktomlin', 'itsnicktomlin'), new Talk('TDD: The Hard Parts', 6, 2));
-addOtherTalk(new Speaker('Pete Hodgson', 'moredip', 'ph1'), new Talk('Theory and Practice of Functional Reactive Javascript', 4, 4));
+addOtherTalk(new Speaker('Pete Hodgson', 'moredip', 'ph1'), new Talk('Theory and Practice of Functional Reactive Javascript', 10, 4));
 addOtherTalk(new Speaker('Ryan Anklam', 'bittersweetryan', 'bittersweetryan'), new Talk('Modern UI Development With Node.js', 3, 1));
 addOtherTalk(new Speaker('Ryan Glover', 'themeteorchef', 'rglover'), new Talk('Meteor: Superpowers for JavaScript Developers', 1, 2));
 addOtherTalk(new Speaker('Erik Onarheim', 'eonarheim', 'ErikOnarheim'), new Talk('HTML5: All Your Games Are Belong to Us', 9, 3));
@@ -54,7 +54,7 @@ addOtherTalk(new Speaker('Todd Gardner', 'toddhgardner', 'toddhgardner'), new Ta
 addOtherTalk(new Speaker('Tyler Gaw', 'tylergaw', 'thegaw'), new Talk('Building OS X Apps with JavaScript', 8, 3));
 addOtherTalk(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Automated testing tools and techniques for JavaScript', 7, 2));
 addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Check Your Angles and Angulars with Protractor', 9, 2));
-addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 10, 4));
+addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 4, 4));
 addOtherTalk(new Speaker('Zan Thrash', 'zanthrash', 'zanthrash'), new Talk('Intro to RxJS', 6, 4));
 addOtherTalk(new Speaker('Zeno Rocha', 'zenorocha', 'zenorocha'), new Talk('Web Components: Is this the future of Web Development?', 7, 1));
 
