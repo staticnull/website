@@ -21,7 +21,7 @@ addOtherTalk(new Speaker('Amos Kyler', 'amoskyler', 'aokyler'), new Talk('Optimi
 addOtherTalk(new Speaker('Aziz Ali', 'azizali', 'heyaziz'), new Talk('Getting Confident and Comfortable with Node.js', 1, 1));
 addOtherTalk(new Speaker('Bonnie Eisenman', 'bonniee', 'brindelle'), new Talk('Effective Tooling with React.js', 10, 1));
 addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('React.js - When, Where and How to Use It', 3, 2));
-addOtherTalk(new Speaker('Branden Byers', 'brndnb', 'brandenbyers'), new Talk('Test Them Puzzles: What Test-Driven Learning Can Teach About JS and TDD', 8, 2));
+addOtherTalk(new Speaker('Branden Byers', 'brandenbyers', 'brandenbyers'), new Talk('Test Them Puzzles: What Test-Driven Learning Can Teach About JS and TDD', 8, 2));
 addOtherTalk(new Speaker('Chuck Rolek', 'crolek', 'crolek'), new Talk('Sailsjs, making Nodejs backends a breeze', 4, 1));
 addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), new Talk('Developing for Firefox OS: It\'s just the web... or is it?', 4, 3));
 addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Bacon.js for Breakfast: An intro to functional reactive progamming', 5, 4));
