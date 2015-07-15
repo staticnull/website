@@ -24,7 +24,7 @@ addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('
 addOtherTalk(new Speaker('Branden Byers', 'brandenbyers', 'brandenbyers'), new Talk('Test Them Puzzles: What Test-Driven Learning Can Teach About JS and TDD', 8, 2));
 addOtherTalk(new Speaker('Chuck Rolek', 'crolek', 'crolek'), new Talk('Sailsjs, making Nodejs backends a breeze', 4, 1));
 addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), new Talk('Developing for Firefox OS: It\'s just the web... or is it?', 4, 3));
-addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Bacon.js for Breakfast: An intro to functional reactive progamming', 5, 4));
+addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Bacon.js for Breakfast: An intro to functional reactive programming', 5, 4));
 addOtherTalk(new Speaker('Ethan Jewett', 'esjewett', 'esjewett'), new Talk('Interactive, browser-based data visualization with Crossfilter', 3, 4));
 addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Adventures in Test-Driven Development', 10, 2));
 addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Building Custom Directives in AngularJS', 5, 2));
