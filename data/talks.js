@@ -55,8 +55,8 @@ addOtherTalk(new Speaker('Tyler Gaw', 'tylergaw', 'thegaw'), new Talk('Building 
 addOtherTalk(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Automated testing tools and techniques for JavaScript', 7, 2));
 addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Check Your Angles and Angulars with Protractor', 9, 2));
 addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 4, 4));
-addOtherTalk(new Speaker('Benjamin Malley', 'BenjaminMalley', 'BenjaminMalley'), new Talk('Interactive Data Visualization with D3 and React', 6, 4));
-addOtherTalk(new Speaker('Zeno Rocha', 'zenorocha', 'zenorocha'), new Talk('Web Components: Is this the future of Web Development?', 7, 1));
+addOtherTalk(new Speaker('Benjamin Malley', 'BenjaminMalley', 'BenjaminMalley'), new Talk('Interactive Data Visualization with D3 and React', 7, 1));
+addOtherTalk(new Speaker('Kurt Wiersma', 'kwiersma', 'kwiersma'), new Talk('Enterprise JavaScript apps with TypeScript', 6, 4));
 
 
 talks.other.sort(alphabatizeBySpeaker);
