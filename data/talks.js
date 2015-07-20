@@ -11,7 +11,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
-addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Opening Keynote'));
+addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('The Art of Simplicity'));
 addKeynote(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('The current state of JavaScript'));
 
 // Add talks
