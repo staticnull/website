@@ -13,6 +13,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('The Art of Simplicity'));
 addKeynote(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('The current state of JavaScript'));
+addKeynote(new Speaker('Bert Belder', 'piscisaureus', 'piscisaureus'), new Talk('TBD'));
 
 // Add talks
 
