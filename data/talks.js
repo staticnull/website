@@ -3,6 +3,7 @@ var marked = require('marked');
 
 var talks = {
   other: [],
+  workshop: [],
   keynotes: []
 };
 
@@ -14,6 +15,13 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('The Art of Simplicity'));
 addKeynote(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('The current state of JavaScript'));
 addKeynote(new Speaker('Bert Belder', 'piscisaureus', 'piscisaureus'), new Talk('TBD'));
+
+addWorkshop(new Speaker('Bruce Coddington', 'brucecoddington', 'brucecoddington'), new Talk('React.js'));
+addWorkshop(new Speaker('Kevin Bosak', 'kevinbosak', 'kevinbosak'), new Talk('Angular.js'));
+addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('ECMAScript 6'));
+addWorkshop(new Speaker('Michael Kelly', '', ''), new Talk('React.js'));
+addWorkshop(new Speaker('Travis Martensen', 'tmartensen', 'tmartensen'), new Talk('Angular.js'));
+addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', ''), new Talk('Node.js'));
 
 // Add talks
 
@@ -92,6 +100,10 @@ function addItem(type, speaker, theTalks) {
     speaker: speaker,
     talks: arrayify(theTalks)
   });
+}
+
+function addWorkshop(speakers, talks) {
+  addItem('workshop', speakers, talks);
 }
 
 function addOtherTalk(speakers, talks) {

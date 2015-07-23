@@ -3,6 +3,7 @@ var talks = require(APP_ROOT.join('data/talks'));
 
 var groupedTalks = {
   keynotes: splitIntoGroups(talks.keynotes, 3),
+  workshop: splitIntoGroups(talks.workshop, 3),
   other: splitIntoGroups(talks.other, 3)
 };
 
