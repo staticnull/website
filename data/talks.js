@@ -19,9 +19,9 @@ addKeynote(new Speaker('Bert Belder', 'piscisaureus', 'piscisaureus'), new Talk(
 addWorkshop(new Speaker('Bruce Coddington', 'brucecoddington', 'brucecoddington'), new Talk('React.js'));
 addWorkshop(new Speaker('Kevin Bosak', 'kevinbosak', 'kevinbosak'), new Talk('Angular.js'));
 addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('ECMAScript 6'));
-addWorkshop(new Speaker('Michael Kelly', '', ''), new Talk('React.js'));
+addWorkshop(new Speaker('Michael Kelly', 'mrkelly', 'mikerkelly'), new Talk('React.js'));
 addWorkshop(new Speaker('Travis Martensen', 'tmartensen', 'tmartensen'), new Talk('Angular.js'));
-addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', ''), new Talk('Node.js'));
+addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', '_sequoia'), new Talk('Node.js'));
 
 // Add talks
 
