@@ -2,7 +2,7 @@ var Talk = require(APP_ROOT.join('models/talk'));
 var talks = require(APP_ROOT.join('data/talks'));
 
 var groupedTalks = {
-  keynotes: splitIntoGroups(talks.keynotes, 3),
+  keynotes: splitIntoGroups(talks.keynotes, 2),
   workshop: splitIntoGroups(talks.workshop, 3),
   other: splitIntoGroups(talks.other, 3)
 };
