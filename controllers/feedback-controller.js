@@ -52,6 +52,7 @@ talks.push(new Talk('Will Buck', 'Check Your Angles and Angulars with Protractor
 talks.push(new Talk('Zach Legein', 'Thunderdome with Gulp, Grunt and NPM'));
 talks.push(new Talk('Benjamin Malley', 'Interactive Data Visualization with D3 and React'));
 talks.push(new Talk('Kurt Wiersma', 'Enterprise JavaScript apps with TypeScript'));
+talks.push(new Talk('David Giard', 'Edge of Tomorrow: Introducing Microsoft\'s new browser'));
 
 talks.sort(alphabatizeByTitle);
 
