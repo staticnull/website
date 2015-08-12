@@ -1,0 +1,70 @@
+extends layout
+
+block content
+
+  .page-header
+    h1 Feedback
+
+  #logo
+    img(src='images/midwestjs-logo-400.png')
+
+  p.lead Submit feedback for talks!
+
+  p Please use the form below to submit feedback on talks you attended.
+
+  form(action='/feedback', method='post', class='form-horizontal')
+    fieldset
+      // Text input
+      .control-group
+        label.control-label(for='name') Your Full Name
+        .controls
+          input#name.input-xlarge.form-control(name='fullName', type='text', placeholder='John Doe', required='')
+      p &nbsp;
+      .control-group
+        label.control-label(for='talk') Talk
+        .controls
+          select(name='talk')
+            option(value='')
+            each talk in talks
+              - var select=null; if (talk.title == talks.title) select='selected';
+              option(value=talk.title, selected=select)= talk.title + " by " + talk.speaker
+      p &nbsp;
+      // Textarea
+      .control-group
+        label.control-label(for='reviewTalk') Feedback on Talk Content
+        .controls
+          textarea#bio.form-control(name='reviewTalk', rows='4', cols='50')
+      p &nbsp;
+      // Textarea
+      .control-group
+        label.control-label(for='reviewSpeaker') Feedback for Speaker Delivery
+        .controls
+          textarea#bio.form-control(name='reviewSpeaker', rows='4', cols='50')
+      p &nbsp;
+      // Multiple Radios
+      .control-group
+        label.control-label(for='rating') How would you rate the talk?
+        .radio
+          label.radio(for='rating-1')
+            input#rating-1(type='radio', name='rating', value='1', required)
+            | Poor
+          label.radio(for='rating-2')
+            input#rating-2(type='radio', name='rating', value='2', required)
+            | Fair
+          label.radio(for='rating-3')
+            input#rating-3(type='radio', name='rating', value='3', required)
+            | Good
+          label.radio(for='rating-4')
+            input#rating-4(type='radio', name='rating', value='4', required)
+            | Very Good
+          label.radio(for='rating-5')
+            input#rating-5(type='radio', name='rating', value='5', required)
+            | Excellent
+      // Button
+      .control-group
+        label.control-label(for='submit')
+        .controls
+          button#submit.btn.btn-primary(name='submit') Submit Your Feedback
+
+  p &nbsp;
+  p &nbsp;
