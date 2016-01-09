@@ -12,12 +12,8 @@
     "marked": "0.3.2",
     "mongoose": "3.8.19"
   },
-  "subdomain": "midwestjs",
-  "domains": [
-    "midwestjs.com",
-    "www.midwestjs.com"
-  ],
   "engines": {
-    "node": "0.10.x"
+    "node": ">= 4.2.1 <= 5.4.0",
+    "npm": ">= 3"
   }
 }
