@@ -1,1 +1,0 @@
-In this talk I will explore a General Theory of Reactivity, which will train you how to choose the right asynchronous tool for the job, covering Streams, Promises, Tasks, Futures, Observables, and more.

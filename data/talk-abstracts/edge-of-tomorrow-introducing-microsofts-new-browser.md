@@ -1,1 +1,0 @@
-Edge is Microsoft's new browser and includes a complete rewritten rendering engine. In this session, I will show you the new features of Edge, designed to benefit both end users and developers. You will learn about the Hub, Cortana integration, Offline Viewing, and many other features of Edge.

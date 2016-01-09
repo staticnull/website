@@ -1,1 +1,0 @@
-Meteor is poised to be the "next big thing," on par with popular frameworks such as Ruby on Rails. This talk will focus on an introduction to Meteor, its API, and answer "why" (I believe) it is a major contender and something JavaScript developers should pay a lot of attention to.

@@ -1,1 +1,0 @@
-Programmers often complain that it is hard to automate unit and acceptance tests for JavaScript. Testability is a design issue and with some discipline and careful design we can realize good automated tests. In this presentation we will learn how to automate the testing of JavaScript using both TDD and BDD tools.

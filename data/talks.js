@@ -12,59 +12,9 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
-addKeynote(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('The Art of Simplicity'));
-addKeynote(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('The Current State of JavaScript'));
-
-addWorkshop(new Speaker('Bruce Coddington', 'brucecoddington', 'brucecoddington'), new Talk('React.js'));
-addWorkshop(new Speaker('Kevin Bosak', 'kevinbosak', 'kevinbosak'), new Talk('Angular.js'));
-addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('ECMAScript 6'));
-addWorkshop(new Speaker('Michael Kelly', 'mrkelly', 'mikerkelly'), new Talk('React.js'));
-addWorkshop(new Speaker('Travis Martensen', 'tmartensen', 'tmartensen'), new Talk('Angular.js'));
-addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', '_sequoia'), new Talk('Node.js'));
+// Add workshops
 
 // Add talks
-
-addOtherTalk(new Speaker('Adam Ranfelt', 'adamRenny', 'adamRenny'), new Talk('Applying JavaScript Promises: Asynchronous Honesty', 8, 4));
-addOtherTalk(new Speaker('Amos Kyler', 'amoskyler', 'aokyler'), new Talk('Optimizing Data Workflows in React', 8, 1));
-addOtherTalk(new Speaker('Aziz Ali', 'azizali', 'heyaziz'), new Talk('Getting Confident and Comfortable with Node.js', 1, 1));
-addOtherTalk(new Speaker('Bonnie Eisenman', 'bonniee', 'brindelle'), new Talk('Effective Tooling with React.js', 10, 1));
-addOtherTalk(new Speaker('Brad Marsh', 'dottertrotter', 'bbqhacker'), new Talk('React.js - When, Where and How to Use It', 3, 2));
-addOtherTalk(new Speaker('Branden Byers', 'brandenbyers', 'brandenbyers'), new Talk('Test Them Puzzles: What Test-Driven Learning Can Teach About JS and TDD', 8, 2));
-addOtherTalk(new Speaker('Chuck Rolek', 'crolek', 'crolek'), new Talk('Sailsjs, making Nodejs backends a breeze', 4, 1));
-addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), new Talk('Developing for Firefox OS: It\'s just the web... or is it?', 4, 3));
-addOtherTalk(new Speaker('Eric Ponto', 'ericponto', 'ericponto'), new Talk('Bacon.js for Breakfast: An intro to functional reactive programming', 5, 4));
-addOtherTalk(new Speaker('Ethan Jewett', 'esjewett', 'esjewett'), new Talk('Interactive, browser-based data visualization with Crossfilter', 3, 4));
-addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Adventures in Test-Driven Development', 10, 2));
-addOtherTalk(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Building Custom Directives in AngularJS', 5, 2));
-addOtherTalk(new Speaker('Jonah Stiennon', 'jonahss', 'TinyTimZamboni'), new Talk('An Introduction to Appium, Test Automation for Mobile', 6, 3));
-addOtherTalk(new Speaker('Jordan Kasper', 'jakerella', 'jakerella'), [
-  new Talk('That\'s so prototypical', 5, 3), new Talk('Triage, Diagnose, and Scale Node.js', 2, 1)
-]);
-addOtherTalk(new Speaker('Josh Longanecker', 'joshofthewest', 'joshlovesdesign'), new Talk('Better debugging in Chrome', 3, 3));
-addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Writing Better jQuery Infused JavaScript', 1, 3));
-addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('Angular-Formly: Abstracting Away Complexity', 2, 2));
-addOtherTalk(new Speaker('Kevin Moot', 'kcmoot', 'kcmoot'), new Talk('WebGL: A New Frontier for 3D Mobile Graphics', 10, 3));
-addOtherTalk(new Speaker('Kris Kowal', 'kriskowal', 'kriskowal'), new Talk('A General Theory of Reactivity', 2, 4));
-addOtherTalk(new Speaker('Kristina Durivage', 'gelicia', 'gelicia'), new Talk('Hardware and Javascript', 5, 1));
-addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('ES6: Too Much Goodness to Wait!', 1, 4));
-addOtherTalk(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk('Intro to React', 6, 1));
-addOtherTalk(new Speaker('Nick Heiner', 'nickheiner', 'nickheiner'), new Talk('DIY Programming Language', 9, 4));
-addOtherTalk(new Speaker('Nick Tomlin', 'nicktomlin', 'itsnicktomlin'), new Talk('TDD: The Hard Parts', 6, 2));
-addOtherTalk(new Speaker('Pete Hodgson', 'moredip', 'ph1'), new Talk('Theory and Practice of Functional Reactive Javascript', 10, 4));
-addOtherTalk(new Speaker('Ryan Anklam', 'bittersweetryan', 'bittersweetryan'), new Talk('Modern UI Development With Node.js', 3, 1));
-addOtherTalk(new Speaker('Ryan Glover', 'themeteorchef', 'rglover'), new Talk('Meteor: Superpowers for JavaScript Developers', 1, 2));
-addOtherTalk(new Speaker('Erik Onarheim', 'eonarheim', 'ErikOnarheim'), new Talk('HTML5: All Your Games Are Belong to Us', 9, 3));
-addOtherTalk(new Speaker('David Giard', '', ''), new Talk('Edge of Tomorrow: Introducing Microsoft\'s new browser', 9, 1));
-addOtherTalk(new Speaker('Tessa Thornton', 'tessalt', 'tessthornton'), new Talk('Components are the future of the web: it\'s going to be okay.', 2, 3));
-addOtherTalk(new Speaker('David Washington', 'dwcares', 'dwcares'), new Talk('Building Web Touch Experiences That Don\'t Suck', 7, 3));
-addOtherTalk(new Speaker('Toran Billups', 'toranb', 'toranb'), new Talk('Writing your own identity map for Ember.js', 4, 2));
-addOtherTalk(new Speaker('Todd Gardner', 'toddhgardner', 'toddhgardner'), new Talk('JavaScript Forensics', 7, 4));
-addOtherTalk(new Speaker('Tyler Gaw', 'tylergaw', 'thegaw'), new Talk('Building OS X Apps with JavaScript', 8, 3));
-addOtherTalk(new Speaker('Venkat Subramaniam', 'venkats', 'venkat_s'), new Talk('Automated testing tools and techniques for JavaScript', 7, 2));
-addOtherTalk(new Speaker('Will Buck', 'willbuck', 'wbucksoft'), new Talk('Check Your Angles and Angulars with Protractor', 9, 2));
-addOtherTalk(new Speaker('Zach Legein', 'zlegein', 'zlegein'), new Talk('Thunderdome with Gulp, Grunt and NPM', 4, 4));
-addOtherTalk(new Speaker('Benjamin Malley', 'BenjaminMalley', 'BenjaminMalley'), new Talk('Interactive Data Visualization with D3 and React', 7, 1));
-addOtherTalk(new Speaker('Kurt Wiersma', 'kwiersma', 'kwiersma'), new Talk('Enterprise JavaScript apps with TypeScript', 6, 4));
 
 
 talks.other.sort(alphabatizeBySpeaker);

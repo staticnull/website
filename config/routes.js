@@ -19,9 +19,6 @@ module.exports = function(app) {
   app.get('/contact', controllers['main'].contact);
   app.get('/code-of-conduct', controllers['main'].codeOfConduct);
   app.get('/schedule', controllers['schedule'].index);
-  app.get('/feedback', controllers['feedback'].index);
-  app.post('/feedback', controllers['feedback'].create);
-  app.get('/feedback/confirmation', controllers['feedback'].confirmation);
 
   app.use(function(req, res, next){
     res.status(404).render('404', {title: "Midwest JS | Page Not Found"});
