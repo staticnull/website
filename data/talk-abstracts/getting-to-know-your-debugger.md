@@ -1,1 +1,0 @@
-Debugging is one of those things that (almost) everyone despises, but that absolutely every software developer needs to know how to do. Over the past sixteen years, Brian has worked through some of the weirdest, wildest bits of JavaScript, and has the mental scars to prove it. In this deep dive, come and absorb some of his knowledge on how to debug all the things in your browser!

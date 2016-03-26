@@ -24,7 +24,7 @@ addOtherTalk(new Speaker('Safia Abdalla', 'captainsafia', 'captainsafia'), new T
 addOtherTalk(new Speaker('Gabrielle Crevecoeur', 'gcrev93', 'nowayshecodes'), [
     new Talk('Level up from Hardware Noob to Hardware Node ', 4, 2), new Talk('The True Powers of JavaScript: Beyond The Basics', 4, 3)
 ]);
-addOtherTalk(new Speaker('Brian Arnold Sinclair', 'brianarn', 'brianarn'), new Talk('Getting to know your Debugger', 3, 3));
+addOtherTalk(new Speaker('Aaron Ackerman', 'aackerman', '_aaronackerman_'), new Talk('JavaScript Flow', 3, 3));
 addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Components and More: Effective Angular 2 Testing Strategies', 7, 2));
 addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
     new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 8, 3)
