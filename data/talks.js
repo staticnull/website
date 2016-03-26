@@ -31,7 +31,7 @@ addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
 ]);
 addOtherTalk(new Speaker('Sarah Etter', 'sarahetter', 'SarahEtter_'), new Talk('Bringing Web Development to the Physical World', 7, 4));
 addOtherTalk(new Speaker('Stacy Kirk', 'QualityWorksCG', 'queenofagileqa'), new Talk('Full Stack Testing of NodeJS Applications', 10, 2));
-addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 8, 1));
+addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 4, 1));
 addOtherTalk(new Speaker('Kirsten Hunter', 'synedra', 'syndra'), new Talk('Quantifying your Fitness', 9, 4));
 addOtherTalk(new Speaker('Randall Koutnik', 'SomeKittens', 'rkoutnik'), new Talk('What are Observables and Why Should I Care?', 10, 4));
 addOtherTalk(new Speaker('Todd Kennedy', 'toddself', 'whale_eat_squid'), new Talk('Where Quality is Job #1', 6, 2));
@@ -56,7 +56,7 @@ addOtherTalk(new Speaker('Chris Lorenzo', 'chiefcll', 'chiefcll'), new Talk('Pol
 addOtherTalk(new Speaker('Kevin Bravestone', 'kcmoot', 'kcmoot'), new Talk('Making JavaScript beautiful again with async', 8, 4));
 addOtherTalk(new Speaker('Scott Fradkin', 'sfradkin', 'sfradkin'), new Talk('A Block Based Environment for Live Coding Music', 4, 4));
 addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Introduction to Cycle.js', 2, 4));
-addOtherTalk(new Speaker('David Kelleher', 'davidknet', 'david_kelleher'), new Talk('Rapid Game Development with CreateJS', 4, 1));
+addOtherTalk(new Speaker('David Kelleher', 'davidknet', 'david_kelleher'), new Talk('Rapid Game Development with CreateJS', 8, 1));
 addOtherTalk(new Speaker('Joel Lord', 'joellord', 'joel__lord'), new Talk('Sockets Bring Light At The End Of The Tunnel', 5, 2));
 addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), [
     new Talk('The New Mobile Web: Service Worker, Push, and App Manifests', 6, 3), new Talk('What the heck is WebAssembly, and do I have to learn C now?', 6, 4)
