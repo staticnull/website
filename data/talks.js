@@ -14,8 +14,56 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add workshops
 
+addWorkshop(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Angular 2'));
+addWorkshop(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk('React'));
+addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('React'));
+
 // Add talks
 
+addOtherTalk(new Speaker('Safia Abdalla', 'captainsafia', 'captainsafia'), new Talk('A Guide to All Things Memory in JavaScript', 5, 3));
+addOtherTalk(new Speaker('Gabrielle Crevecoeur', 'gcrev93', 'nowayshecodes'), [
+    new Talk('Level up from Hardware Noob to Hardware Node ', 4, 2), new Talk('The True Powers of JavaScript: Beyond The Basics', 4, 3)
+]);
+addOtherTalk(new Speaker('Brian Arnold Sinclair', 'brianarn', 'brianarn'), new Talk('Getting to know your Debugger', 3, 3));
+addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Components and More: Effective Angular 2 Testing Strategies', 7, 2));
+addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
+    new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 8, 3)
+]);
+addOtherTalk(new Speaker('Sarah Etter', 'sarahetter', 'SarahEtter_'), new Talk('Bringing Web Development to the Physical World', 7, 4));
+addOtherTalk(new Speaker('Stacy Kirk', 'QualityWorksCG', 'queenofagileqa'), new Talk('Full Stack Testing of NodeJS Applications', 10, 2));
+addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 8, 1));
+addOtherTalk(new Speaker('Kirsten Hunter', 'synedra', 'syndra'), new Talk('Quantifying your Fitness', 9, 4));
+addOtherTalk(new Speaker('Randall Koutnik', 'SomeKittens', 'rkoutnik'), new Talk('What are Observables and Why Should I Care?', 10, 4));
+addOtherTalk(new Speaker('Todd Kennedy', 'toddself', 'whale_eat_squid'), new Talk('Where Quality is Job #1', 6, 2));
+addOtherTalk(new Speaker('Jeff Sacks', 'jrsacks', 'jeff_sacks'), new Talk('Voice Controlled Home Automation in JavaScript', 5, 4));
+addOtherTalk(new Speaker('John Culviner', 'johnculviner', 'johnculviner'), new Talk('Node.js and MongoDB API from scratch, fully explained and tested', 3, 2));
+addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('The Definitive Guide to the Flux Pattern for React', 2, 1));
+addOtherTalk(new Speaker('Kurt Wiersma', 'kwiersma', 'kwiersma'), new Talk('Launch Yourself Into the Angular 2 and TypeScript Space', 6, 1));
+addOtherTalk(new Speaker('David Giard', 'DavidGiard', 'DavidGiard'), new Talk('Building a TV show with Angular, Bootstrap, and Web Services', 3, 1));
+addOtherTalk(new Speaker('Len Smith', 'ignu', 'ignu'), new Talk('Bootstrapping React Applications', 7, 1));
+addOtherTalk(new Speaker('Robert Hanson', 'kimtuck', 'rhansonmn'), new Talk('Introduction to Functional Programming', 1, 3));
+addOtherTalk(new Speaker('Kyle Hill', 'kylehill', 'kylehill'), new Talk('Deep Dive into ES2015 Feature Transpilation', 3, 4));
+addOtherTalk(new Speaker('David Alan LaTour', 'splayfee', ''), new Talk('Realtime Communication Between Angular 2 and Node.js', 1, 1));
+addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), [
+    new Talk('Testing React', 8, 2), new Talk('Harnessing the Power of Webpack', 1, 4)
+]);
+addOtherTalk(new Speaker('Mike Frey', 'mikefrey', 'mikefrey'), new Talk('Choosing the right Node.js Framework', 1, 2));
+addOtherTalk(new Speaker('Evan You', 'yyx990803', 'youyuxi'), new Talk('The Progressive Framework', 10, 1));
+addOtherTalk(new Speaker('Justin James', 'digitaldrummerj', 'digitaldrummerj'), new Talk('Cross Platform Mobile Apps with Ionic', 9, 3));
+addOtherTalk(new Speaker('Dustin Whittle', 'dustinwhittle', 'dustinwhittle'), new Talk('Modern Performance Best Practices', 2, 3));
+addOtherTalk(new Speaker('Mike Ball', 'mdb', 'clapexcitement'), new Talk('Headless Testing Against Real Web Browsers', 9, 2));
+addOtherTalk(new Speaker('Chris Lorenzo', 'chiefcll', 'chiefcll'), new Talk('Polymer in Practice', 9, 1));
+addOtherTalk(new Speaker('Kevin Bravestone', 'kcmoot', 'kcmoot'), new Talk('Making JavaScript beautiful again with async', 8, 4));
+addOtherTalk(new Speaker('Scott Fradkin', 'sfradkin', 'sfradkin'), new Talk('A Block Based Environment for Live Coding Music', 4, 4));
+addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Introduction to Cycle.js', 2, 4));
+addOtherTalk(new Speaker('David Kelleher', 'davidknet', 'david_kelleher'), new Talk('Rapid Game Development with CreateJS', 4, 1));
+addOtherTalk(new Speaker('Joel Lord', 'joellord', 'joel__lord'), new Talk('Sockets Bring Light At The End Of The Tunnel', 5, 2));
+addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), [
+    new Talk('The New Mobile Web: Service Worker, Push, and App Manifests', 6, 3), new Talk('What the heck is WebAssembly, and do I have to learn C now?', 6, 4)
+]);
+addOtherTalk(new Speaker('Jamison Dance', 'jergason', 'jergason'), new Talk('Functional Front End Development: Building Web Applications In Elm', 5, 1));
+addOtherTalk(new Speaker('Jim Cummins', 'jimthedev', 'jimthedev'), new Talk('Getting started with React Native', 7, 3));
+addOtherTalk(new Speaker('Steven Faulkner', 'southpolesteve', 'southpolesteve'), new Talk('Building Serverless Applications', 10, 3));
 
 talks.other.sort(alphabatizeBySpeaker);
 // TODO is this where I want to add the 2d-array stuff perhaps? or am I doing finders on the jade template? or what? no idea yet

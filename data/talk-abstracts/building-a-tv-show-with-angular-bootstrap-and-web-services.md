@@ -1,0 +1,1 @@
+In this presentation, I will show you how I implemented a responsive, scalable site to display over 400 episodes of a TV show, using Angular.js, Bootstrap, and a backend database, exposed as a REST API. I’ll review the strengths that each technology brings to this project and how they integrate to create a fast, responsive, flexible web application.

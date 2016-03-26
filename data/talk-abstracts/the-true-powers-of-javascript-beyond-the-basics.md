@@ -1,0 +1,3 @@
+Are you a Developer interested in adding moreJavaScript to your toolbox? You may have noticed that JavaScript can be just different enough to be confusing! Wonder how to create an object, classes, or inheritance? Or want advanced topics, like how to manage asynchronous operations?
+
+If you've learned the basics of JavaScript and are looking to take your skills to the next level, join Gabrielle Crevecoeur as she share best practices. Learn how to limit global variable declarations, see where to find cool add-ins to further enhance your applications, and explore some common libraries, like jQuery. Don't miss it!

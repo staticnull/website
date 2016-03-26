@@ -1,4 +1,3 @@
-
 extends layout
 
 block content
@@ -6,9 +5,281 @@ block content
   .page-header
     h1 Schedule
 
-  p.lead Stay Tuned!
+  h3 Wednesday, August 10th - Conference Day 1: Workshops
 
-  p The call for papers closes on Saturday, March 5th and the conference schedule will be posted shortly thereafter!
+  div.row.row-header
+    div.col-md-2 Time
+    div.col-md-2 Angular 2 (Auditorium)
+    div.col-md-2 React (127)
+    div.col-md-2 TBD (Law 235)
+    div.col-md-2 TBD (Law 238)
+  div.row
+    div.col-md-2 8:00 am
+    div.col-md-8 Registration and Breakfast (Coffee & Pastries)
+  div.row.row-even
+    div.col-md-2 8:45 am
+    div.col-md-8 Welcome to Midwest JS (Bobby Warner)
+  div.row
+    div.col-md-2 9:00 am
+    div.col-md-2 Morning Session on Angular 2 <br> (Jon DeJong)
+    div.col-md-2 Morning Session on React <br> (Matt Zabriskie & Kent C. Dodds)
+    div.col-md-2 TBD <br>
+    div.col-md-2 TBD <br>
+  div.row.row-even
+    div.col-md-2 12:00 pm
+    div.col-md-8 Lunch
+  div.row
+    div.col-md-2 1:00 pm
+    div.col-md-2 Afternoon Session on Angular 2 <br> (Jon DeJong)
+    div.col-md-2 Afternoon Session on React <br> (Matt Zabriskie & Kent C. Dodds)
+    div.col-md-2 TBD <br>
+    div.col-md-2 TBD <br>
+  div.row.row-even
+    div.col-md-2 7:00 pm
+    div.col-md-8 Speaker Dinner
+
+  h3 Thursday, August 11th - Conference Day 2: Talks
+
+  div.row.row-header
+    div.col-md-2 Time
+    div.col-md-2 Frameworks (Auditorium)
+    div.col-md-2 Node (127)
+    div.col-md-2 Beginner (Law 235)
+    div.col-md-2 Miscellaneous (Law 238)
+  div.row
+    div.col-md-2 8:00 am
+    div.col-md-8 Registration and Breakfast (Coffee & Pastries)
+  div.row.row-even
+    div.col-md-2 8:45 am
+    div.col-md-8 Welcome to Midwest JS (Bobby Warner)
+  div.row
+    div.col-md-2 9:00 am
+    div.col-md-8 Keynote: TBD
+  div.row.row-even
+    div.col-md-2 10:00 am
+    div.col-md-8 Coffee & Snacks Break
+
+  div.row
+    div.col-md-2 10:30 am
+    each talk in talks.dayOne[1]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row.row-even
+    div.col-md-2 11:30 am
+    each talk in talks.dayOne[2]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row
+    div.col-md-2 12:30 pm
+    div.col-md-8 Lunch
+
+  div.row.row-even
+    div.col-md-2 1:30 pm
+    each talk in talks.dayOne[3]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row
+    div.col-md-2 2:30 pm
+    each talk in talks.dayOne[4]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row.row-even
+    div.col-md-2 3:30 pm
+    div.col-md-8 Coffee & Snacks Break
+
+  div.row
+    div.col-md-2 4:00 pm
+    each talk in talks.dayOne[5]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row.row-even
+    div.col-md-2 5:00 pm
+    div.col-md-8 Happy Hour
+
+
+  h3 Friday, August 12th - Conference Day 3: Talks
+
+  div.row.row-header
+    div.col-md-2 Time
+    div.col-md-2 Frameworks (Auditorium)
+    div.col-md-2 Testing (127)
+    div.col-md-2 Mobile & Cloud (Law 235)
+    div.col-md-2 Miscellaneous (Law 238)
+  div.row
+    div.col-md-2 8:00 am
+    div.col-md-10 Breakfast (Coffee & Pastries)
+  div.row.row-even
+    div.col-md-2 9:00 am
+    each talk in talks.dayTwo[1]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row
+    div.col-md-2 10:00 am
+    div.col-md-8 Coffee & Snacks Break
+
+  div.row.row-even
+    div.col-md-2 10:30 am
+    each talk in talks.dayTwo[2]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row
+    div.col-md-2 11:30 am
+    each talk in talks.dayTwo[3]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row.row-even
+    div.col-md-2 12:30 pm
+    div.col-md-8 Lunch
+
+  div.row
+    div.col-md-2 1:30 pm
+    each talk in talks.dayTwo[4]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row.row-even
+    div.col-md-2 2:30 pm
+    each talk in talks.dayTwo[5]
+      div.col-md-2
+        a(href="#",data-toggle="modal",data-target="##{talk.uniqueId}") !{talk.title} (!{talk.speakerName})
+        div(class="modal fade",id= talk.uniqueId,tabindex="-1",role="dialog")
+          div(class="modal-dialog")
+            div(class="modal-content")
+              div(class="modal-header")
+                button(type="button",class="close",data-dismiss="modal") &times;
+                h4(class="modal-title") #{talk.title}&nbsp;
+                  small by #{talk.speakerName}
+
+              div(class="modal-body")
+                !{talk.abstractHtml}
+              div(class="modal-footer")
+                button(type="button",class="btn btn-default",data-dismiss="modal") Close
+
+  div.row
+    div.col-md-2 3:30 pm
+    div.col-md-8 Coffee & Snacks Break
+  div.row.row-even
+    div.col-md-2 4:00 pm
+    div.col-md-8 Conference Wrap Up (Bobby Warner)
+  div.row
+    div.col-md-2 4:15 pm
+    div.col-md-8 Keynote: TBD
 
   p &nbsp;
   p &nbsp;
