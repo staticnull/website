@@ -31,13 +31,13 @@ addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
 ]);
 addOtherTalk(new Speaker('Sarah Etter', 'sarahetter', 'SarahEtter_'), new Talk('Bringing Web Development to the Physical World', 7, 4));
 addOtherTalk(new Speaker('Stacy Kirk', 'QualityWorksCG', 'queenofagileqa'), new Talk('Full Stack Testing of NodeJS Applications', 10, 2));
-addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 4, 1));
+addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 2, 1));
 addOtherTalk(new Speaker('Kirsten Hunter', 'synedra', 'syndra'), new Talk('Quantifying your Fitness', 9, 4));
 addOtherTalk(new Speaker('Randall Koutnik', 'SomeKittens', 'rkoutnik'), new Talk('What are Observables and Why Should I Care?', 10, 4));
 addOtherTalk(new Speaker('Todd Kennedy', 'toddself', 'whale_eat_squid'), new Talk('Where Quality is Job #1', 6, 2));
 addOtherTalk(new Speaker('Jeff Sacks', 'jrsacks', 'jeff_sacks'), new Talk('Voice Controlled Home Automation in JavaScript', 5, 4));
 addOtherTalk(new Speaker('John Culviner', 'johnculviner', 'johnculviner'), new Talk('Node.js and MongoDB API from scratch, fully explained and tested', 3, 2));
-addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('The Definitive Guide to the Flux Pattern for React', 2, 1));
+addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('The Definitive Guide to the Flux Pattern for React', 4, 1));
 addOtherTalk(new Speaker('Kurt Wiersma', 'kwiersma', 'kwiersma'), new Talk('Launch Yourself Into the Angular 2 and TypeScript Space', 6, 1));
 addOtherTalk(new Speaker('David Giard', 'DavidGiard', 'DavidGiard'), new Talk('Building a TV show with Angular, Bootstrap, and Web Services', 3, 1));
 addOtherTalk(new Speaker('Len Smith', 'ignu', 'ignu'), new Talk('Bootstrapping React Applications', 7, 1));
