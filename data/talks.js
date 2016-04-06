@@ -17,6 +17,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 addWorkshop(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Angular 2'));
 addWorkshop(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk('React'));
 addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('React'));
+addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', '_sequoia'), new Talk('Node.js'));
 
 // Add talks
 
