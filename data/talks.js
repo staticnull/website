@@ -51,7 +51,7 @@ addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), [
 addOtherTalk(new Speaker('Mike Frey', 'mikefrey', 'mikefrey'), new Talk('Choosing the right Node.js Framework', 1, 2));
 addOtherTalk(new Speaker('Evan You', 'yyx990803', 'youyuxi'), new Talk('The Progressive Framework', 10, 1));
 addOtherTalk(new Speaker('Justin James', 'digitaldrummerj', 'digitaldrummerj'), new Talk('Cross Platform Mobile Apps with Ionic', 9, 3));
-addOtherTalk(new Speaker('Dustin Whittle', 'dustinwhittle', 'dustinwhittle'), new Talk('Modern Performance Best Practices', 2, 3));
+addOtherTalk(new Speaker('Kamran Ayub', 'kamranayub', 'kamranayub'), new Talk('Demystifying TypeScript', 2, 3));
 addOtherTalk(new Speaker('Mike Ball', 'mdb', 'clapexcitement'), new Talk('Headless Testing Against Real Web Browsers', 9, 2));
 addOtherTalk(new Speaker('Chris Lorenzo', 'chiefcll', 'chiefcll'), new Talk('Polymer in Practice', 9, 1));
 addOtherTalk(new Speaker('Kevin Bravestone', 'kcmoot', 'kcmoot'), new Talk('Making JavaScript beautiful again with async', 8, 4));
