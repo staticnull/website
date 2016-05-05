@@ -12,6 +12,8 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 
 // Add keynotes
 
+addKeynote(new Speaker('Douglas Crockford', 'douglascrockford', ''), new Talk('Opening Keynote'));
+
 // Add workshops
 
 addWorkshop(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Angular 2'));
