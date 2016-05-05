@@ -18,6 +18,8 @@ addWorkshop(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Angul
 addWorkshop(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk('React'));
 addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('React'));
 addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', '_sequoia'), new Talk('Node.js'));
+addWorkshop(new Speaker('Wyatt Lyon Preul', 'geek', 'wpreul'), new Talk('Developing Node.js Microservices'));
+addWorkshop(new Speaker('Lloyd Benson', 'lloydbenson', 'LloydWith2Ls'), new Talk('Developing Node.js Microservices'));
 
 // Add talks
 
