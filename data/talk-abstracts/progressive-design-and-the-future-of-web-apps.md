@@ -1,0 +1,1 @@
+Tired of pushing endless updates or redirecting your users to the app store? How about working with multiple code bases, workflows, deployments and more? Join me on an adventure into the future of web development with progressive design, and learn how to transform your web app into a mobile app with minimal effort required.

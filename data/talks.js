@@ -32,7 +32,7 @@ addOtherTalk(new Speaker('Gabrielle Crevecoeur', 'gcrev93', 'nowayshecodes'), [
 addOtherTalk(new Speaker('Aaron Ackerman', 'aackerman', '_aaronackerman_'), new Talk('JavaScript Flow', 3, 3));
 addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Components and More: Effective Angular 2 Testing Strategies', 7, 2));
 addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
-    new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 8, 3)
+    new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 7, 3)
 ]);
 addOtherTalk(new Speaker('Sarah Etter', 'sarahetter', 'SarahEtter_'), new Talk('Bringing Web Development to the Physical World', 7, 4));
 addOtherTalk(new Speaker('Stacy Kirk', 'QualityWorksCG', 'queenofagileqa'), new Talk('Full Stack Testing of NodeJS Applications', 10, 2));
@@ -54,7 +54,7 @@ addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), [
 ]);
 addOtherTalk(new Speaker('Mike Frey', 'mikefrey', 'mikefrey'), new Talk('Choosing the right Node.js Framework', 1, 2));
 addOtherTalk(new Speaker('Evan You', 'yyx990803', 'youyuxi'), new Talk('The Progressive Framework', 10, 1));
-addOtherTalk(new Speaker('Justin James', 'digitaldrummerj', 'digitaldrummerj'), new Talk('Cross Platform Mobile Apps with Ionic', 9, 3));
+addOtherTalk(new Speaker('Justin James', 'digitaldrummerj', 'digitaldrummerj'), new Talk('Cross Platform Mobile Apps with Ionic', 8, 3));
 addOtherTalk(new Speaker('Kamran Ayub', 'kamranayub', 'kamranayub'), new Talk('Demystifying TypeScript', 2, 3));
 addOtherTalk(new Speaker('Mike Ball', 'mdb', 'clapexcitement'), new Talk('Headless Testing Against Real Web Browsers', 9, 2));
 addOtherTalk(new Speaker('Chris Lorenzo', 'chiefcll', 'chiefcll'), new Talk('Polymer in Practice', 9, 1));
@@ -67,7 +67,7 @@ addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), [
     new Talk('The New Mobile Web: Service Worker, Push, and App Manifests', 6, 3), new Talk('What the heck is WebAssembly, and do I have to learn C now?', 3, 4)
 ]);
 addOtherTalk(new Speaker('Jamison Dance', 'jergason', 'jergason'), new Talk('Functional Front End Development: Building Web Applications In Elm', 5, 1));
-addOtherTalk(new Speaker('Jim Cummins', 'jimthedev', 'jimthedev'), new Talk('Getting started with React Native', 7, 3));
+addOtherTalk(new Speaker('Josh Longanecker', 'joshofthewest', 'joshlovesdesign'), new Talk('Progressive Design and the Future of Web Apps', 9, 3));
 addOtherTalk(new Speaker('Steven Faulkner', 'southpolesteve', 'southpolesteve'), new Talk('Building Serverless Applications', 10, 3));
 
 talks.other.sort(alphabatizeBySpeaker);
