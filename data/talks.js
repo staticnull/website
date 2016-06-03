@@ -68,7 +68,7 @@ addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), [
     new Talk('The New Mobile Web: Service Worker, Push, and App Manifests', 6, 3), new Talk('What the heck is WebAssembly, and do I have to learn C now?', 3, 4)
 ]);
 addOtherTalk(new Speaker('Jamison Dance', 'jergason', 'jergason'), new Talk('Functional Front End Development: Building Web Applications In Elm', 5, 1));
-addOtherTalk(new Speaker('Josh Longanecker', 'joshofthewest', 'joshlovesdesign'), new Talk('Progressive Design and the Future of Web Apps', 9, 3));
+addOtherTalk(new Speaker('Kevin Hakanson', 'hakanson', 'hakanson'), new Talk('Introduction to Speech Interfaces for Web Applications', 9, 3));
 addOtherTalk(new Speaker('Steven Faulkner', 'southpolesteve', 'southpolesteve'), new Talk('Building Serverless Applications', 10, 3));
 
 talks.other.sort(alphabatizeBySpeaker);
