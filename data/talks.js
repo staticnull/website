@@ -14,6 +14,7 @@ var folder = APP_ROOT.join('data/talk-abstracts');
 // Add keynotes
 
 addKeynote(new Speaker('Douglas Crockford', 'douglascrockford', ''), new Talk('Opening Keynote'));
+addKeynote(new Speaker('Kevin Whinnery', 'kwhinnery', 'kevinwhinnery'), new Talk('Closing Keynote'));
 
 // Add workshops
 
