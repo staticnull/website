@@ -19,6 +19,7 @@ addKeynote(new Speaker('Kevin Whinnery', 'kwhinnery', 'kevinwhinnery'), new Talk
 // Add workshops
 
 addWorkshop(new Speaker('Jon DeJong', 'jondejong', 'jondejong'), new Talk('Angular 2'));
+addWorkshop(new Speaker('Michael Cacek', 'mcacek', ''), new Talk('Angular 2'));
 addWorkshop(new Speaker('Matt Zabriskie', 'mzabriskie', 'mzabriskie'), new Talk('React'));
 addWorkshop(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), new Talk('React'));
 addWorkshop(new Speaker('Sequoia McDowell', 'Sequoia', '_sequoia'), new Talk('Hands-on Introduction to Node.js: Build, Deploy & Scale'));
@@ -32,7 +33,7 @@ addOtherTalk(new Speaker('Gabrielle Crevecoeur', 'gcrev93', 'nowayshecodes'), [
     new Talk('Level up from Hardware Noob to Hardware Node ', 5, 2), new Talk('The True Powers of JavaScript: Beyond The Basics', 1, 3)
 ]);
 addOtherTalk(new Speaker('Aaron Ackerman', 'aackerman', '_aaronackerman_'), new Talk('JavaScript Flow', 3, 3));
-addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Components and More: Effective Angular 2 Testing Strategies', 7, 2));
+addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Components and More: Effective Angular 2 Testing Strategies', 6, 2));
 addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
     new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 7, 3)
 ]);
