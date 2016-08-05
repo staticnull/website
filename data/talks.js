@@ -52,7 +52,7 @@ addOtherTalk(new Speaker('Robert Hanson', 'kimtuck', 'rhansonmn'), new Talk('Int
 addOtherTalk(new Speaker('Kyle Hill', 'kylehill', 'kylehill'), new Talk('Deep Dive into ES2015 Feature Transpilation', 6, 4));
 addOtherTalk(new Speaker('David Alan LaTour', 'splayfee', ''), new Talk('Realtime Communication Between Angular 2 and Node.js', 1, 1));
 addOtherTalk(new Speaker('Kent C. Dodds', 'kentcdodds', 'kentcdodds'), [
-    new Talk('Testing React', 8, 2), new Talk('Harnessing the Power of Webpack', 1, 4)
+    new Talk('Testing React', 8, 2), new Talk('More than you want to know about ES6 Modules', 1, 4)
 ]);
 addOtherTalk(new Speaker('Mike Frey', 'mikefrey', 'mikefrey'), new Talk('Choosing the right Node.js Framework', 1, 2));
 addOtherTalk(new Speaker('Evan You', 'yyx990803', 'youyuxi'), new Talk('The Progressive Framework', 10, 1));
