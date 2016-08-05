@@ -36,12 +36,12 @@ addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Compon
 addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
     new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 7, 3)
 ]);
-addOtherTalk(new Speaker('Sarah Etter', 'sarahetter', 'SarahEtter_'), new Talk('Bringing Web Development to the Physical World', 7, 4));
+//addOtherTalk(new Speaker('', '', ''), new Talk('', 7, 4));
 addOtherTalk(new Speaker('Stacy Kirk', 'QualityWorksCG', 'queenofagileqa'), new Talk('Full Stack Testing of NodeJS Applications', 10, 2));
 addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 2, 1));
-addOtherTalk(new Speaker('Kirsten Hunter', 'synedra', 'syndra'), new Talk('Quantifying your Fitness', 9, 4));
+//addOtherTalk(new Speaker('', '', ''), new Talk('', 9, 4));
 addOtherTalk(new Speaker('Randall Koutnik', 'SomeKittens', 'rkoutnik'), new Talk('What are Observables and Why Should I Care?', 10, 4));
-addOtherTalk(new Speaker('Todd Kennedy', 'toddself', 'whale_eat_squid'), new Talk('Where Quality is Job #1', 6, 2));
+//addOtherTalk(new Speaker('', '', ''), new Talk('', 6, 2));
 addOtherTalk(new Speaker('Jeff Sacks', 'jrsacks', 'jeff_sacks'), new Talk('Voice Controlled Home Automation in JavaScript', 5, 4));
 addOtherTalk(new Speaker('John Culviner', 'johnculviner', 'johnculviner'), new Talk('Node.js and MongoDB API from scratch, fully explained and tested', 3, 2));
 addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('The Definitive Guide to the Flux Pattern for React', 4, 1));
