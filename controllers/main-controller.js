@@ -12,6 +12,10 @@ module.exports = {
     res.render('tickets', { title: 'Midwest JS | Tickets', ticketsActive: 'active' });
   },
 
+  venue: function(req, res){
+    res.render('venue', { title: 'Midwest JS | Venue', venueActive: 'active' });
+  },
+
   hotel: function(req, res){
     res.render('hotel', { title: 'Midwest JS | Hotel', hotelActive: 'active' });
   },
