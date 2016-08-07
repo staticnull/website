@@ -32,7 +32,7 @@ addOtherTalk(new Speaker('Safia Abdalla', 'captainsafia', 'captainsafia'), new T
 addOtherTalk(new Speaker('Gabrielle Crevecoeur', 'gcrev93', 'nowayshecodes'), [
     new Talk('Level up from Hardware Noob to Hardware Node ', 5, 2), new Talk('The True Powers of JavaScript: Beyond The Basics', 3, 4)
 ]);
-addOtherTalk(new Speaker('Aaron Ackerman', 'aackerman', '_aaronackerman_'), new Talk('JavaScript Flow', 3, 3));
+addOtherTalk(new Speaker('Aaron Ackerman', 'aackerman', '_aaronackerman_'), new Talk('JavaScript Flow', 1, 3));
 addOtherTalk(new Speaker('Ken Dale', 'kendaleiv', 'kendaleiv'), new Talk('Components and More: Effective Angular 2 Testing Strategies', 6, 4));
 addOtherTalk(new Speaker('Raymond Camden', 'cfjedimaster', 'raymondcamden'), [
     new Talk('Rapidly developing APIs with StrongLoop', 2, 2), new Talk('What they didn\'t tell you about Cordova', 7, 2)
@@ -66,10 +66,10 @@ addOtherTalk(new Speaker('Jeremy Lund', 'lund0n', 'Jeremy_Lund'), new Talk('Intr
 addOtherTalk(new Speaker('David Kelleher', 'davidknet', 'david_kelleher'), new Talk('Rapid Game Development with CreateJS', 8, 1));
 addOtherTalk(new Speaker('Joel Lord', 'joellord', 'joel__lord'), new Talk('Sockets Bring Light At The End Of The Tunnel', 4, 2));
 addOtherTalk(new Speaker('Dan Callahan', 'callahad', 'callahad'), [
-    new Talk('The New Mobile Web: Service Worker, Push, and App Manifests', 6, 2), new Talk('What the heck is WebAssembly, and do I have to learn C now?', 1, 3)
+    new Talk('The New Mobile Web: Service Worker, Push, and App Manifests', 6, 2), new Talk('What the heck is WebAssembly, and do I have to learn C now?', 9, 3)
 ]);
 addOtherTalk(new Speaker('Jamison Dance', 'jergason', 'jergason'), new Talk('Functional Front End Development: Building Web Applications In Elm', 5, 1));
-addOtherTalk(new Speaker('Kevin Hakanson', 'hakanson', 'hakanson'), new Talk('Introduction to Speech Interfaces for Web Applications', 9, 3));
+addOtherTalk(new Speaker('Kevin Hakanson', 'hakanson', 'hakanson'), new Talk('Introduction to Speech Interfaces for Web Applications', 3, 3));
 addOtherTalk(new Speaker('Steven Faulkner', 'southpolesteve', 'southpolesteve'), new Talk('Building Serverless Applications', 10, 2));
 
 talks.other.sort(alphabatizeBySpeaker);
