@@ -28,7 +28,7 @@ addWorkshop(new Speaker('Lloyd Benson', 'lloydbenson', 'LloydWith2Ls'), new Talk
 
 // Add talks
 
-addOtherTalk(new Speaker('Safia Abdalla', 'captainsafia', 'captainsafia'), new Talk('A Guide to All Things Memory in JavaScript', 4, 4));
+addOtherTalk(new Speaker('Safia Abdalla', 'captainsafia', 'captainsafia'), new Talk('A Guide to All Things Memory in JavaScript', 5, 3));
 addOtherTalk(new Speaker('Gabrielle Crevecoeur', 'gcrev93', 'nowayshecodes'), [
     new Talk('Level up from Hardware Noob to Hardware Node ', 5, 2), new Talk('The True Powers of JavaScript: Beyond The Basics', 3, 4)
 ]);
@@ -41,7 +41,7 @@ addOtherTalk(new Speaker('David Washington', 'dwcares', 'dwcares'), new Talk('Bu
 addOtherTalk(new Speaker('Stacy Kirk', 'QualityWorksCG', 'queenofagileqa'), new Talk('Full Stack Testing of NodeJS Applications', 9, 4));
 addOtherTalk(new Speaker('Mark Volkmann', 'mvolkmann', 'mark_volkmann'), new Talk('React - Say No to Complexity', 2, 1));
 addOtherTalk(new Speaker('Kevin Remde', '', ''), new Talk('Code your Infrastructure', 9, 2));
-addOtherTalk(new Speaker('Randall Koutnik', 'SomeKittens', 'rkoutnik'), new Talk('What are Observables and Why Should I Care?', 5, 3));
+addOtherTalk(new Speaker('Randall Koutnik', 'SomeKittens', 'rkoutnik'), new Talk('What are Observables and Why Should I Care?', 4, 4));
 addOtherTalk(new Speaker('Jeff Sacks', 'jrsacks', 'jeff_sacks'), new Talk('Voice Controlled Home Automation in JavaScript', 6, 3));
 addOtherTalk(new Speaker('John Culviner', 'johnculviner', 'johnculviner'), new Talk('Node.js and MongoDB API from scratch, fully explained and tested', 3, 2));
 addOtherTalk(new Speaker('Vince Bullinger', 'vbullinger', 'vbullinger'), new Talk('The Definitive Guide to the Flux Pattern for React', 4, 1));
