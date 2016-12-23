@@ -19,7 +19,6 @@ export class SpeakersComponent {
   getSpeakers(){
     this.apiService.get(`/api/speaker`)
         .subscribe((res: Response) => {
-          console.log(res.json());
           this.speakers = res.json();
         });
   }
@@ -27,7 +26,6 @@ export class SpeakersComponent {
   getSpeaker(id){
     this.apiService.get(`/api/speaker/`+id)
         .subscribe((res: Response) => {
-          console.log(res.json());
           this.speakers = res.json();
         });
   }
