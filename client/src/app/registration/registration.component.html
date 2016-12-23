@@ -1,0 +1,70 @@
+<!-- Registration section -->
+<section id="register" class="register">
+  <div class="container">
+    <div class="col-sm-12">
+      <h1 class="wow fadeInUp">Registration</h1>
+      <br>
+    </div>
+
+    <!-- Registration form -->
+    <form>
+      <div class="col-sm-6">
+
+        <!-- First Name -->
+        <div class="form-group wow fadeInUp">
+          <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group wow fadeInUp">
+          <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group wow fadeInUp">
+          <input type="email" class="form-control" name="email" placeholder="Email" required>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group wow fadeInUp">
+          <input type="tel" class="form-control" name="phone" placeholder="Phone" required>
+        </div>
+
+        <!-- Pricing plans selection -->
+        <div class="form-group wow fadeInUp">
+          <div class="btn-group pricing-options" data-toggle="buttons">
+            <h3>Select pricing plan</h3>
+            <label class="btn btn-default active">
+              <input type="radio" name="plan" id="option1" autocomplete="off" checked> Early Bird
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="plan" id="option2" autocomplete="off"> Pro
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="plan" id="option3" autocomplete="off"> VIP
+            </label>
+          </div>
+        </div>
+
+        <!-- Register button -->
+        <button type="submit" class="btn btn-default wow fadeInUp">REGISTER <i class="fa fa-paper-plane-o"></i>
+        </button>
+      </div>
+    </form>
+    <!-- Registration form -->
+  </div>
+
+  <!-- Map -->
+  <div class="event-map wow fadeIn" data-latitude="51.500946" data-longitude="-0.129050">
+
+    <!-- Map details -->
+    <div class="info text-center wow bounceIn">
+      <h3>One Great George Street</h3>
+      <p>1 Great George Street <br>
+        London, SW1P 3AA</p>
+    </div>
+    <div id="map" class="map"></div>
+  </div>
+  <!-- End of Map -->
+</section>
+<!-- End of Registration section -->

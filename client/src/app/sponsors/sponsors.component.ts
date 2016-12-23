@@ -3,11 +3,11 @@ import {NavService} from '../nav/nav.service';
 import {Route, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  selector: 'app-sponsors',
+  templateUrl: './sponsors.component.html',
+  styleUrls: ['./sponsors.component.css']
 })
-export class NavComponent implements OnInit {
+export class SponsorsComponent implements OnInit {
 
   controllers: Array<any>;
 

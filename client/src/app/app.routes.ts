@@ -1,8 +1,8 @@
 import {Routes} from '@angular/router';
-import {IndexComponent} from "./index/index.component";
+import {MainComponent} from "./main/main.component";
 
 export const rootRouterConfig: Routes = [
-    {path: '', redirectTo: 'index', pathMatch: 'full'},
-    {path: 'index', component: IndexComponent},
+    {path: '', redirectTo: 'main', pathMatch: 'full'},
+    {path: 'main', component: MainComponent},
 ];
 
