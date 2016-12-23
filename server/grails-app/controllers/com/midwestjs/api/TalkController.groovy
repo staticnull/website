@@ -22,4 +22,9 @@ class TalkController extends RestfulController {
         }
         render view: '/talk/index', model: [talkList: results]
     }
+
+    def lookupBySpeaker(){
+        def talks = Talk.findAllBySpeaker(Speaker.get(params.id))
+        render view: '/talk/index', model: [talkList: talks]
+    }
 }

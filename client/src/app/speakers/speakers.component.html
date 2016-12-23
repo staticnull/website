@@ -6,79 +6,31 @@
         <h1 class="wow fadeInUp">Speakers</h1>
       </div>
     </div>
+
     <div class="row">
-      <!-- Speaker -->
-      <div class="speaker-details col-sm-6 col-xs-12">
+
+      <div class="speaker-details col-sm-6 col-xs-12" *ngFor="let speaker of speakers">
+        <!-- Speaker -->
         <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 wow fadeInUp">
           <!-- Speaker social links -->
           <div class="speaker-social-links text-center">
-            <a href="#"><i class="fa fa-twitter wow bounceIn"></i></a>
-            <a href="#"><i class="fa fa-linkedin wow bounceIn"></i></a>
+            <a href="{{speaker.twitter}}"><i class="fa fa-twitter wow bounceIn"></i></a>
+            <a href="{{speaker.github}}"><i class="fa fa-github wow bounceIn"></i></a>
           </div>
           <!-- Speaker image -->
           <img src="http://placehold.it/500x500" alt="John Doe" class="img-responsive">
         </div>
         <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.2s">
           <!-- Speaker name -->
-          <h2>John Doe</h2>
+          <h2>{{speaker.fullName}}</h2>
           <!-- Speaker position -->
-          <h4>CEO of Eve Inc.</h4>
+          <h4>{{speaker.employer}}</h4>
           <!-- Speaker description -->
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum praesentium obcaecati minus quod. Quod, dolor ratione, necessitatibus impedit beatae dolore. Debitis eius magni saepe ex eligendi nemo similique quisquam dignissimos.</p>
+          <p>{{speaker.bio}}</p>
         </div>
+        <!-- End of Speaker -->
       </div>
-      <!-- End of Speaker -->
 
-      <!-- Speaker -->
-      <div class="speaker-details col-sm-6 col-xs-12">
-        <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-delay="0.4s">
-          <div class="speaker-social-links text-center">
-            <a href="#"><i class="fa fa-twitter wow bounceIn"></i></a>
-            <a href="#"><i class="fa fa-linkedin wow bounceIn"></i></a>
-          </div>
-          <img src="http://placehold.it/500x500" alt="Jane Doe" class="img-responsive">
-        </div>
-        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.6s">
-          <h2>Jane Doe</h2>
-          <h4>Senior HR Manager at Yahoo</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum praesentium obcaecati minus quod. Quod, dolor ratione, necessitatibus impedit beatae dolore. Debitis eius magni saepe ex eligendi nemo similique quisquam dignissimos.</p>
-        </div>
-      </div>
-      <!-- End of Speaker -->
-
-      <!-- Speaker -->
-      <div class="speaker-details col-sm-6 col-xs-12">
-        <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 wow fadeInUp">
-          <div class="speaker-social-links text-center">
-            <a href="#"><i class="fa fa-twitter wow bounceIn"></i></a>
-            <a href="#"><i class="fa fa-linkedin wow bounceIn"></i></a>
-          </div>
-          <img src="http://placehold.it/500x500" alt="Janie Roe" class="img-responsive">
-        </div>
-        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.2s">
-          <h2>Janie Roe</h2>
-          <h4>Designer at NY Times</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum praesentium obcaecati minus quod. Quod, dolor ratione, necessitatibus impedit beatae dolore. Debitis eius magni saepe ex eligendi nemo similique quisquam dignissimos.</p>
-        </div>
-      </div>
-      <!-- End of Speaker -->
-
-      <!-- Speaker -->
-      <div class="speaker-details col-sm-6 col-xs-12">
-        <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 wow fadeInUp" data-wow-delay="0.4s">
-          <div class="speaker-social-links text-center">
-            <a href="#"><i class="fa fa-twitter wow bounceIn"></i></a>
-            <a href="#"><i class="fa fa-linkedin wow bounceIn"></i></a>
-          </div>
-          <img src="http://placehold.it/500x500" alt="Jonnie Doe" class="img-responsive">
-        </div>
-        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.6s">
-          <h2>Jonnie Doe</h2>
-          <h4>Director of Code.One</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum praesentium obcaecati minus quod. Quod, dolor ratione, necessitatibus impedit beatae dolore. Debitis eius magni saepe ex eligendi nemo similique quisquam dignissimos.</p>
-        </div>
-      </div>
-      <!-- End of Speaker -->
     </div>
   </div>
 </section>

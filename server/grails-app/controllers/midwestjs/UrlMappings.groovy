@@ -15,6 +15,7 @@ class UrlMappings {
         "/conferenceFeedback/"(controller: 'conferenceFeedback')
         "/conferenceFeedback/stats"(controller: 'conferenceFeedback', action: 'stats')
         "/api/talk/search"(controller: 'talk', action: 'search')
+        "/api/talk/lookupBySpeaker/$id"(controller: 'talk', action: 'lookupBySpeaker')
         "/"(controller: 'application', action:'index')
         "500"(view: '/error')
         "404"(view: '/notFound')

@@ -1,37 +1,36 @@
 import {Component, OnInit} from '@angular/core';
-import {NavService} from '../nav/nav.service';
-import {Route, Router} from '@angular/router';
+import {ApiService} from "../app.service";
+import {Response} from "@angular/http";
 
 @Component({
   selector: 'app-speakers',
   templateUrl: './speakers.component.html',
-  styleUrls: ['./speakers.component.css']
+  styleUrls: ['./speakers.component.css'],
+  providers: [ApiService]
 })
-export class SpeakersComponent implements OnInit {
+export class SpeakersComponent {
 
-  controllers: Array<any>;
+  speakers: Object;
 
-  constructor(private navService: NavService, private router: Router) { }
-
-  ngOnInit(): void {
-    this.navService.getNavData().subscribe(applicationData => {
-      this.controllers = applicationData.controllers.sort((a: any, b: any) => {
-        if (a.name < b.name) {
-          return -1;
-        } else if (a.name > b.name) {
-          return 1;
-        } else {
-          return 0;
-        }
-      });
-    });
+  constructor(private apiService: ApiService) {
+    this.getSpeakers();
   }
 
-  hasRoute(controllerName: string): boolean {
-    return this.router.config.some((route: Route) => {
-      if (route.path === controllerName) {
-        return true;
-      }
-    });
+  getSpeakers(){
+    this.apiService.get(`/api/speaker`)
+        .subscribe((res: Response) => {
+          console.log(res.json());
+          this.speakers = res.json();
+        });
   }
+
+  getSpeaker(id){
+    this.apiService.get(`/api/speaker/`+id)
+        .subscribe((res: Response) => {
+          console.log(res.json());
+          this.speakers = res.json();
+        });
+  }
+
+
 }
