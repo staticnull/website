@@ -1,0 +1,7 @@
+import com.midwestjs.api.Talk
+
+model {
+	Talk talk
+}
+
+json g.render(talk)

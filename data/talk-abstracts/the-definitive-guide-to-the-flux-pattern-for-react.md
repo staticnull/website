@@ -1,3 +1,0 @@
-React is a JavaScript framework that makes a radical departure from the MV frameworks that have been inundating the development space for the last several years. With this radically new approach comes a pattern to replace the common paradigm of two-way data-binding MV frameworks. This pattern is known as "Flux." While React has been gaining steam for a couple of years now, the Flux pattern is still a relative mystery to most of us.
-
-In this talk, we'll start with a quick recap of React to get everybody up to speed. Then we'll dive into the nuts and bolts of the Flux pattern, investigate some of the more popular Flux frameworks and make sure you walk away fully understanding this enigma.

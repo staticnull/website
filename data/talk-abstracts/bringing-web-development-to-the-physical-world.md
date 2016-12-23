@@ -1,1 +1,0 @@
-Are you ready for the robot apocalypse? Can you build your own internet of things? This task is made simple with the use of a web server and an Arduino. Learn how to make household monitoring and management tasks easier with Arduino, a wifi module, and Node.js.

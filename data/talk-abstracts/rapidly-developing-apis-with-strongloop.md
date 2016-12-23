@@ -1,1 +1,0 @@
-A look at StrongLoop (and Loopback) and how it can help you rapidly build out a REST-enabled API in Node.js. I'll discuss StrongLoop (and Loopback) and demonstrate how to quickly create a model (both with the CLI and the web-based tool) and how to use that model over the REST API. I'll wrap up with an Apache Cordova app that makes use of the API.

@@ -1,0 +1,8 @@
+import com.midwestjs.api.Speaker
+
+model {
+	Iterable<Speaker> speakerList
+}
+
+json tmpl.speaker(speakerList ?: [])
+
