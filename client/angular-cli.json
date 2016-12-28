@@ -24,6 +24,7 @@
         "../node_modules/jquery/dist/jquery.js",
         "jquery.easing.min.js",
         "wow.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
         "custom.js"
       ],
       "environments": {
