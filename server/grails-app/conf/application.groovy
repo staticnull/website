@@ -1,3 +1,18 @@
+import grails.util.Environment
+
+String envShortName = Environment.envNameMappings.entrySet().find { it.value == Environment.current.name }.key
+
+dataSource {
+	dbCreate = 'none'
+	dialect = 'net.kaleidos.hibernate.PostgresqlExtensionsDialect'
+	driverClassName = 'org.postgresql.Driver'
+	jmxExport = true
+	password = ''
+	pooled = true
+	url = 'jdbc:postgresql://localhost/midwestjs_' + envShortName
+	username = 'midwestjs_' + envShortName
+}
+
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.midwestjs.api.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.midwestjs.api.UserRole'
@@ -43,3 +58,7 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 ]
 
 grails.plugin.springsecurity.active = false
+
+app.cfp.year = 2017
+app.cfp.accepting = true
+app.conference.year = 2017

@@ -4,17 +4,34 @@ package com.midwestjs.api
 import grails.rest.*
 import grails.converters.*
 import grails.plugin.springsecurity.annotation.Secured
+import grails.util.Holders
+
 import static org.springframework.http.HttpStatus.*
 
 
 
 @Secured(['ROLE_PUBLIC'])
-class SpeakerController  {
+class SpeakerController extends RestfulController  {
 	static responseFormats = ['json', 'xml']
-	
-//	SpeakerController (){
-//		super(Speaker)
-//	}
+
+    SpeakerController (){
+        super(Speaker)
+    }
+
+    @Override
+    def index(){
+        def approvedSpeakers = Talk.findAllByConferenceYearAndApproved(Holders.config.app.conference.year, true)
+                .collect{ it.speaker }
+
+        def sortedSpeakers = []
+        for(speaker in approvedSpeakers){
+            if(!sortedSpeakers.contains(speaker)){
+                sortedSpeakers.add(speaker)
+            }
+        }
+
+        render view: '/speaker/index', model: [speakerList: sortedSpeakers]
+    }
 
 //	@Secured(['ROLE_ADMIN'])
 //	def update(){
@@ -41,6 +58,8 @@ class SpeakerController  {
 //            render status: 404, message: speaker.errors
 //        }
 //	}
+
+
 }
 
 class SpeakerCommand implements grails.validation.Validateable {

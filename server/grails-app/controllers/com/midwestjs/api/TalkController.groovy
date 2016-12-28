@@ -3,6 +3,7 @@ package com.midwestjs.api
 
 import grails.rest.*
 import grails.converters.*
+import grails.util.Holders
 
 
 class TalkController extends RestfulController {
@@ -12,9 +13,16 @@ class TalkController extends RestfulController {
         super(Talk)
     }
 
+    @Override
+    def index(){
+        def talks = Talk.findAllByConferenceYearAndApproved(Holders.config.app.conference.year, true)
+        render view: '/talk/index', model: [talkList: talks]
+    }
+
 	def search(){
-        def c = Talk.createCriteria()
-        def results = c.list {
+        def results = Talk.withCriteria {
+            eq ('approved', true)
+            eq ('conferenceYear', Holders.config.app.conference.year)
             or {
                 ilike("title", "%${params.q}%")
                 ilike("talkAbstract", "%${params.q}%")
@@ -24,7 +32,7 @@ class TalkController extends RestfulController {
     }
 
     def lookupBySpeaker(){
-        def talks = Talk.findAllBySpeaker(Speaker.get(params.id))
+        def talks = Talk.findAllBySpeakerAndApproved(Speaker.get(params.id), true)
         render view: '/talk/index', model: [talkList: talks]
     }
 }

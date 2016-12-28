@@ -18,7 +18,7 @@
             <a href="{{speaker.github}}"><i class="fa fa-github wow bounceIn"></i></a>
           </div>
           <!-- Speaker image -->
-          <img src="http://placehold.it/500x500" alt="John Doe" class="img-responsive">
+          <img src="{{speaker.image ? 'http://localhost:8080/api/speakerImage/'+speaker.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker.fullName}}" class="img-responsive">
         </div>
         <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.2s">
           <!-- Speaker name -->
