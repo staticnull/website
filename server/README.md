@@ -12,3 +12,27 @@ Run the [migrations](https://grails-plugins.github.io/grails-database-migration/
 ```
 grails dbm-update
 ```
+
+## Call for Papers
+
+Example cfp submission
+```
+curl -X POST -H "Content-Type: application/json" -d '{
+	"fullName": "",
+	"email": "",
+	"bio": "",
+	"twitter": "",
+	"github": "",
+	"employer": "",
+	"talks": [
+		{
+			"title": "",
+			"talkAbstract": ""
+		},
+		{
+			"title": "",
+			"talkAbstract": ""
+		}
+	]
+}' "http://localhost:8080/api/cfp/"
+```

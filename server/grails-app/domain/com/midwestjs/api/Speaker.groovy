@@ -16,7 +16,7 @@ class Speaker {
 
     static constraints = {
         fullName nullable: false
-        email nullable: false, email: true
+        email nullable: false, email: true, unique: true
         twitter nullable: true, url: true
         github nullable: true, url: true
         employer nullable: true
