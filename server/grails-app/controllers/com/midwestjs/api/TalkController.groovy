@@ -1,19 +1,11 @@
 package com.midwestjs.api
 
 
-import grails.rest.*
-import grails.converters.*
 import grails.util.Holders
 
 
-class TalkController extends RestfulController {
-	static responseFormats = ['json', 'xml']
+class TalkController {
 
-    TalkController(){
-        super(Talk)
-    }
-
-    @Override
     def index(){
         def talks = Talk.findAllByConferenceYearAndApproved(Holders.config.app.conference.year, true)
         render view: '/talk/index', model: [talkList: talks]
@@ -22,7 +14,7 @@ class TalkController extends RestfulController {
 	def search(){
         def results = Talk.withCriteria {
             eq ('approved', true)
-            eq ('conferenceYear', Holders.config.app.conference.year)
+            eq ('conferenceYear', Holders.config.app.conference.year.toLong())
             or {
                 ilike("title", "%${params.q}%")
                 ilike("talkAbstract", "%${params.q}%")

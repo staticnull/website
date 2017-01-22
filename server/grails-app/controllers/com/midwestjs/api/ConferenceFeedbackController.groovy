@@ -1,15 +1,9 @@
 package com.midwestjs.api
 
 
-import grails.rest.*
 import grails.converters.*
 
-class ConferenceFeedbackController extends RestfulController {
-	static responseFormats = ['json', 'xml']
-	
-    ConferenceFeedbackController(){
-        super(ConferenceFeedback)
-    }
+class ConferenceFeedbackController {
 
     def stats() {
         def results = [:]

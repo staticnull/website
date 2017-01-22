@@ -1,27 +1,25 @@
 package com.midwestjs.api
 
 
-import grails.rest.*
 import grails.converters.*
 import grails.plugin.springsecurity.annotation.Secured
 import org.springframework.http.HttpStatus
 
 
 @Secured(['ROLE_PUBLIC'])
-class SpeakerImageController extends RestfulController  {
-	static responseFormats = ['json', 'xml']
-
-    SpeakerImageController(){
-        super(SpeakerImage)
-    }
+class SpeakerImageController  {
 
     def show(){
         def image = SpeakerImage.get(params.id)
-        response.contentLength = image.image.size()
-        response.contentType = 'image/jpeg'
-        OutputStream out = response.outputStream
-        out.write(image.image)
-        out.close()
+        if(!image){
+            render status: HttpStatus.NO_CONTENT
+        } else {
+            response.contentLength = image.image.size()
+            response.contentType = 'image/jpeg'
+            OutputStream out = response.outputStream
+            out.write(image.image)
+            out.close()
+        }
     }
 
     @Secured(['ROLE_ADMIN'])

@@ -1,7 +1,5 @@
 package com.midwestjs.api
 
-import grails.converters.JSON
-import grails.util.Holders
 import grails.validation.Validateable
 import org.springframework.http.HttpStatus
 import grails.plugin.springsecurity.annotation.Secured
@@ -9,12 +7,7 @@ import grails.plugin.springsecurity.annotation.Secured
 
 class CallForPapersController {
 
-    static allowedMethods = [submit: "POST", listAllSubmisions: "GET"]
-
-    @Secured(['ROLE_ADMIN'])
-    def list(){
-        render Talk.findAllByConferenceYear(Holders.config.app.cfp.year) as JSON //TODO create json view
-    }
+    static allowedMethods = [submit: "POST"]
 
     @Secured(['ROLE_PUBLIC'])
     def submit(CFPSpeakerCommand cmd){
