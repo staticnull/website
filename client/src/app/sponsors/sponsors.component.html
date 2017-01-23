@@ -13,7 +13,7 @@
        <img (click)="agileModal.open()" src="../../images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale hand">
       </div>
     </div>
-    <h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <a href="mailto:cory.tranby@gmail.com">Get in touch</a></h4>
+    <h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>
   </div>
 </section>
 <modal #agileModal>
@@ -28,6 +28,38 @@
   <modal-footer>
     <a class="sponsor-website" href="http://www.agileorbit.com">Website</a>
     <button class="btn btn-primary" (click)="agileModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #emailModal class="modal-wide">
+  <modal-header>
+    <h1>By the community, For the community</h1>
+  </modal-header>
+  <modal-content>
+
+    <h5>Midwest JS is organized and run by members of the JavaScript community in their spare time.</h5>
+
+    <div class="row contact-channels">
+      <div class="col-md-4">
+        <h3>Email</h3>
+        <a href="mailto:cory.tranby@gmail.com"><i class="fa fa-envelope largeIcon"></i></a>
+        <p>Please contact <a href="mailto:cory.tranby@gmail.com">Cory Tranby</a> for more information about the conference.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Slack</h3>
+        <a href="https://midwestjs-slack.herokuapp.com/"><i class="fa fa-slack largeIcon"></i></a>
+        <p>Midwest JS has a Slack channel. You can request access <a href="https://midwestjs-slack.herokuapp.com/">here</a>.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Twitter</h3>
+        <a href="https://twitter.com/midwest_js"><i class="fa fa-twitter largeIcon"></i></a>
+        <p>The Midwest JS Twitter handle is <a href="https://twitter.com/midwest_js">@Midwest_JS</a></p>
+      </div>
+    </div>
+
+
+  </modal-content>
+  <modal-footer>
+    <button class="btn btn-primary" (click)="emailModal.close()">close</button>
   </modal-footer>
 </modal>
 <!-- End of Supported by section-->

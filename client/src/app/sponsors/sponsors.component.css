@@ -1,0 +1,19 @@
+.largeIcon {
+    font-size: 10em;
+}
+
+.contact-channels {
+    text-align: center;
+}
+
+.contact-channels a i {
+    color: #603813;
+}
+
+span.contact {
+    color: #337ab7;
+}
+
+span.contact:hover {
+    cursor: pointer;
+}
