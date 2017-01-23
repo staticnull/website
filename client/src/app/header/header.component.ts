@@ -21,11 +21,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     var dateOfConference: Date = new Date('2017-08-16');
-    var tilThen: any = this.getTimeRemaining(dateOfConference);
-    this.daysUntil = tilThen.days;
-    this.hoursUntil = tilThen.hours;
-    this.minutesUntil = tilThen.minutes;
-    this.secondsUntil = tilThen.seconds;
+    //setInterval(function(){ this.updateCountdown(dateOfConference) }, 1000);
+    setInterval(() => this.updateCountdown(dateOfConference), 1000);
+
 
     this.navService.getNavData().subscribe(applicationData => {
       this.controllers = applicationData.controllers.sort((a: any, b: any) => {
@@ -38,6 +36,14 @@ export class HeaderComponent implements OnInit {
         }
       });
     });
+  }
+
+  updateCountdown(dateOfConference: any): void {
+    var tilThen: any = this.getTimeRemaining(dateOfConference);
+    this.daysUntil = tilThen.days;
+    this.hoursUntil = tilThen.hours;
+    this.minutesUntil = tilThen.minutes;
+    this.secondsUntil = tilThen.seconds;
   }
 
   getTimeRemaining(endTime: any): any {

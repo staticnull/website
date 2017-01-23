@@ -3,11 +3,11 @@ import {NavService} from '../nav/nav.service';
 import {Route, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-pricing',
-  templateUrl: './pricing.component.html',
-  styleUrls: ['./pricing.component.css']
+  selector: 'app-cfp',
+  templateUrl: './cfp.component.html',
+  styleUrls: ['./cfp.component.css']
 })
-export class PricingComponent implements OnInit {
+export class CfpComponent implements OnInit {
 
   controllers: Array<any>;
 

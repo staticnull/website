@@ -9,7 +9,6 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component'
 import { FooterComponent } from './footer/footer.component'
-import { PricingComponent } from './pricing/pricing.component'
 import { RegistrationComponent } from './registration/registration.component'
 import { ScheduleComponent } from './schedule/schedule.component'
 import { SpeakersComponent } from './speakers/speakers.component'
@@ -18,6 +17,7 @@ import { AppComponent } from './app.component';
 import { rootRouterConfig } from './app.routes';
 import { NavComponent } from './nav/nav.component';
 import { NavService } from './nav/nav.service';
+import { CfpComponent } from './cfp/cfp.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +26,11 @@ import { NavService } from './nav/nav.service';
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    PricingComponent,
     RegistrationComponent,
     ScheduleComponent,
     SpeakersComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    CfpComponent
   ],
   imports: [
     BrowserModule,

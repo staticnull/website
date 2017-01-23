@@ -288,7 +288,7 @@ header {
 }
 .schedule li {
     position: relative;
-    padding: 3rem;
+    padding: 1rem;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     -o-transition: 0.5s ease;
@@ -439,6 +439,13 @@ header {
     position: relative;
     background: #333;
     color: #fff;
+    font-size: 18px;
+}
+.register .ticketBox{
+    height: 300px;
+}
+.register p {
+    margin: 0 0 0 5px;
 }
 .register .pricing-options {
     width: 100%;
