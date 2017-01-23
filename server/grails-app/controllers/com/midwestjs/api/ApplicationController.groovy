@@ -1,4 +1,4 @@
-package midwestjs
+package com.midwestjs.api
 
 import grails.core.GrailsApplication
 import grails.util.Environment
