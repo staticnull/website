@@ -192,6 +192,10 @@ select:focus,
     border-bottom-width: 0px;
     background: #eee;
 }
+
+.navbar-nav li {
+    cursor: pointer;
+}
 /**************************
 	3. Header - Home
 ***************************/
@@ -733,4 +737,9 @@ modal.modal-wide .modal-dialog {
 }
 modal-wide .modal-body {
     overflow-y: auto;
+}
+
+a.sponsor-website {
+    margin-top: 5px;
+    float: left;
 }
