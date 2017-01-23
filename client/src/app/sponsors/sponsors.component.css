@@ -17,3 +17,10 @@ span.contact {
 span.contact:hover {
     cursor: pointer;
 }
+
+.supporters h1 {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 6px 15px;
+    margin: 0;
+}
