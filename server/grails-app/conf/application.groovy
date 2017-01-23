@@ -13,6 +13,16 @@ dataSource {
 	username = 'midwestjs_' + envShortName
 }
 
+environments {
+	production {
+		dataSource {
+			url = "jdbc:postgresql://${System.getenv('RDS_HOSTNAME')}:${System.getenv('RDS_PORT')}/${System.getenv('RDS_DB_NAME')}"
+			username = System.getenv('RDS_USERNAME')
+			password = System.getenv('RDS_PASSWORD')
+		}
+	}
+}
+
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.midwestjs.api.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.midwestjs.api.UserRole'
