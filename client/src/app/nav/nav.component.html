@@ -27,11 +27,33 @@
         <li> <a href="#register" data-scroll>VENUE</a> </li>
         <li> <a href="#tickets" data-scroll>TICKETS</a> </li>
         <li> <a href="#supporters" data-scroll>SPONSORS</a> </li>
-        <li> <a href="mailto:cory.tranby@gmail.com"><i class="fa fa-envelope"></i></a> </li>
+        <li (click)="contactModal.open()"> <a><i class="fa fa-envelope"></i></a> </li>
         <li> <a href="https://twitter.com/midwest_js"><i class="fa fa-twitter"></i></a> </li>
       </ul>
       <!-- End of Navigation items -->
     </div>
   </div>
 </nav>
+
+<modal #contactModal class="modal-wide">
+  <modal-header>
+    <h1>By the community, For the community</h1>
+  </modal-header>
+  <modal-content>
+    <h5>Midwest JS is organized and run by members of the JavaScript community in their spare time.</h5>
+    <br>
+    Please contact <a href="mailto:cory.tranby@gmail.com">Cory Tranby</a> for more information about the conference.
+    <br><br>
+    <h5>Slack</h5>
+    <br>
+    Midwest JS has a Slack channel. You can request access <a href="https://midwestjs-slack.herokuapp.com/">here</a>.
+    <br><br>
+    <h5>Twitter</h5>
+    <br>
+    The Midwest JS Twitter handle is @Midwest_JS - Link: <a href="https://twitter.com/midwest_js"><i class="fa fa-twitter"></i></a>
+  </modal-content>
+  <modal-footer>
+    <button class="btn btn-primary" (click)="contactModal.close()">close</button>
+  </modal-footer>
+</modal>
 <!-- End of Top navigation -->
