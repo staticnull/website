@@ -3,8 +3,13 @@ plugins {
 }
 
 node {
-    version = '6.6.0'
+    version = '6.9.1'
     npmVersion = '3.10.7'
+    download = true
+}
+
+npm_install {
+    args = ['--no-optional']
 }
 
 task bootRun(type: NpmTask, dependsOn: 'npmInstall') {
@@ -22,3 +27,15 @@ task test(type: NpmTask, dependsOn: 'npmInstall') {
 task integrationTest(type: NpmTask, dependsOn: 'npmInstall') {
     args = ['run', 'e2e']
 }
+
+task assemble(type: NpmTask, dependsOn: 'npmInstall') {
+    group = 'application'
+    description = 'Build files'
+    args = ['run', 'build']
+}
+
+task clean(type: Delete) {
+    delete "dist", "node_modules"
+}
+
+assemble.mustRunAfter clean

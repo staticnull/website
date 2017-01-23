@@ -14,10 +14,9 @@ buildscript {
 version "0.1"
 group "midwestjs"
 
-apply plugin:"eclipse"
 apply plugin:"idea"
-apply plugin:"war"
 apply plugin:"org.grails.grails-web"
+apply plugin:'org.grails.grails-gsp'
 apply plugin:"org.grails.plugins.views-json"
 
 repositories {
@@ -78,3 +77,14 @@ sourceSets {
         }
     }
 }
+
+jar {
+    archiveName 'midwestjs.jar'
+}
+
+task copyClientDistFiles(type: Copy) {
+    from('../client/dist')
+    into('src/main/resources/public')
+}
+
+processResources.dependsOn copyClientDistFiles

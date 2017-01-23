@@ -11,7 +11,7 @@ class UrlMappings {
         "/api/talk/lookupBySpeaker/$id"(controller: 'talk', action: 'lookupBySpeaker')
         post "/api/cfp"(controller: 'callForPapers', action: "submit")
 
-        "/"(controller: 'application', action:'index')
+        "/"(redirect: "/index.html")
         "500"(view: '/error')
         "404"(view: '/notFound')
     }

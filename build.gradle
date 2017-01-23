@@ -1,0 +1,5 @@
+task assemble() {
+    dependsOn ":client:clean", ":client:assemble", ":server:assemble"
+}
+
+task('server:copyClientDistFiles').mustRunAfter('client:assemble')

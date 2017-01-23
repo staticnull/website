@@ -20,6 +20,7 @@ environments {
 			username = System.getenv('RDS_USERNAME')
 			password = System.getenv('RDS_PASSWORD')
 		}
+		server.port = 5000
 	}
 }
 
@@ -68,6 +69,10 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 ]
 
 grails.plugin.springsecurity.active = false
+
+grails.plugin.databasemigration.updateOnStart = true
+
+grails.resources.pattern = '/**'
 
 app.cfp.year = 2017
 app.cfp.accepting = true
