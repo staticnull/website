@@ -55,7 +55,7 @@ footer {
 section h1 {
     margin-top: 0px;
 }
-img {
+img.grayscale {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
@@ -460,12 +460,17 @@ header {
 .register .event-map .info {
     position: absolute;
     bottom: 2rem;
-    right: 2rem;
+    left: 2rem;
     background: #fff;
     padding: 0 20px 10px;
     z-index: 99;
     border: 2px solid #333;
     color: #333;
+    font-size: 50%;
+}
+
+.register .event-map h3 {
+    font-size: 12px;
 }
 /**************************
 	8. Supporters section
@@ -694,3 +699,12 @@ footer h3 {
 /**************************
 	END
 **************************/
+
+a.no-style {
+    color: white;
+}
+
+a.no-style:hover {
+    text-decoration: none;
+    color: white;
+}

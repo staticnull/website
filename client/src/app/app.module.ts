@@ -18,6 +18,7 @@ import { rootRouterConfig } from './app.routes';
 import { NavComponent } from './nav/nav.component';
 import { NavService } from './nav/nav.service';
 import { CfpComponent } from './cfp/cfp.component';
+import { TicketComponent } from './tickets/tickets.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CfpComponent } from './cfp/cfp.component';
     ScheduleComponent,
     SpeakersComponent,
     SponsorsComponent,
-    CfpComponent
+    CfpComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,
