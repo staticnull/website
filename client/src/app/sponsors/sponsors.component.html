@@ -10,11 +10,23 @@
 
       <!--Supporter 1 -->
       <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
-        <a href="#"><img src="../../images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale">
-        </a>
+       <img (click)="agileModal.open()" src="../../images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale hand">
       </div>
     </div>
     <h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <a href="mailto:cory.tranby@gmail.com">Get in touch</a></h4>
   </div>
 </section>
+<modal #agileModal>
+  <modal-header>
+    <h1>Agile Orbit <img src="../../images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    Agile Orbit is a technology consulting firm specializing in enterprise architecture, web development, mobile development and infrastructure automation.
+    <br><br>
+    We bring web and mobile technology to life using innovative and cost-effective solutions. We architect, develop and deliver software solutions for our customers using agile development best practices and coach teams on integrating continuous delivery into their projects.
+  </modal-content>
+  <modal-footer>
+    <button class="btn btn-primary" (click)="agileModal.close()">close</button>
+  </modal-footer>
+</modal>
 <!-- End of Supported by section-->

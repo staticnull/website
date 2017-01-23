@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { ModalModule } from "../../node_modules/ng2-modal";
 
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component'
@@ -38,6 +39,7 @@ import { TicketComponent } from './tickets/tickets.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ModalModule,
     RouterModule.forRoot(rootRouterConfig),
     NgbModule.forRoot()
   ],

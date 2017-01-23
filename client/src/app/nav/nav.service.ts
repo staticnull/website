@@ -14,7 +14,7 @@ export class NavService {
 
   getNavData(): Observable<any> {
     if (!this._navData) {
-      this._navData = this.http.get('http://localhost:8080/application')
+      this._navData = this.http.get('http://localhost:8080/api/application')
           .map((res: Response) => res.json())
           .cache();
     }

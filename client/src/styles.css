@@ -414,6 +414,7 @@ header {
 ***************************/
 .pricing {
     border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
     padding-top: 0px;
 }
 .pricing-header {
@@ -700,6 +701,20 @@ footer h3 {
 	END
 **************************/
 
+/**************************
+		10.8 Modals
+***************************/
+
+img.modal-logo {
+    max-height: 40px;
+    float: right;
+    margin: 0 25px 0 0;
+}
+
+/**************************
+	END
+**************************/
+
 a.no-style {
     color: white;
 }
@@ -707,4 +722,8 @@ a.no-style {
 a.no-style:hover {
     text-decoration: none;
     color: white;
+}
+
+img.hand {
+    cursor: pointer;
 }
