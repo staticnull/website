@@ -8,6 +8,7 @@ import {CfpComponent} from "./cfp/cfp.component";
 
 export const rootRouterConfig: Routes = [
     {path: '', redirectTo: 'main', pathMatch: 'full'},
+    {path: 'home', component: MainComponent},
     {path: 'main', component: MainComponent},
     {path: 'cfp', component: CfpComponent},
     {path: 'register', component: SpeakersComponent},

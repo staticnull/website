@@ -10,7 +10,7 @@ export class ApiService {
 
     constructor(http: Http) {
         this.http = http;
-        this.baseUrl = "http://localhost:8080";
+        this.baseUrl = baseUrl;
     }
 
     createHeaders(headers: Headers) {

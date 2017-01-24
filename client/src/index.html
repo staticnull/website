@@ -9,6 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6VYS4vxwW69sCCQdz8nvjEES05l3430k"
           type="text/javascript"></script>
+  <script type="text/javascript">
+    var baseUrl;
+    if (window.location.port == 4200) {
+      baseUrl = "http://localhost:8080";
+    } else {
+      baseUrl = window.location.origin;
+    }
+  </script>
 </head>
 <body>
 
