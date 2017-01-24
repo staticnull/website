@@ -7,7 +7,7 @@
     {
       "root": "src",
       "outDir": "dist",
-      "assets": [],
+      "assets": ["assets"],
       "index": "index.html",
       "main": "main.ts",
       "test": "test.ts",
@@ -15,17 +15,17 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css",
-        "animate.css",
+        "assets/css/styles.css",
+        "assets/css/animate.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "css/font-awesome.min.css"
+        "assets/css/font-awesome.min.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "jquery.easing.min.js",
-        "wow.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "custom.js"
+        "assets/js/jquery.easing.min.js",
+        "assets/js/wow.min.js",
+        "assets/js/custom.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

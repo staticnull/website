@@ -35,7 +35,8 @@ task assemble(type: NpmTask, dependsOn: 'npmInstall') {
 }
 
 task clean(type: Delete) {
-    delete "dist", "node_modules"
+    delete "dist"
+    //delete "dist", "node_modules"
 }
 
 assemble.mustRunAfter clean
