@@ -24,11 +24,103 @@
             <p>opening on Monday, January 30th.</p>
           </div>
           <hr>
-          <h2><button class="btn btn-default">Opening Soon! <i class="fa fa-paper-plane-o"></i></button></h2>
+          <h2><button (click)="cfpModal.open()" class="btn btn-default">Opening Soon! <i class="fa fa-paper-plane-o"></i></button></h2>
         </div>
       </div>
       <!-- End of Pricing plan -->
     </div>
   </div>
 </section>
+
+<modal #cfpModal class="modal-wide">
+  <modal-header>
+    <h2>Call For Papers - Submission Form</h2>
+  </modal-header>
+  <modal-content>
+    <h5>Thank you for your interest in speaking at Midwest JS 2017.</h5>
+    <div class="container">
+      <h3>Personal Information</h3>
+      <form [formGroup]="cfpForm" (ngSubmit)="onSubmit($event)">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input formControlName="fullName"  type="text" class="form-control" id="fullName" required>
+          <div *ngIf="formErrors.fullName" class="alert alert-danger">
+            {{ formErrors.fullName }}
+          </div>
+        </div>
+        <div class="form-group">
+          <label ng-class="{true: 'error', false: ''}[!email.valid]" for="email">Email</label>
+          <input formControlName="email" type="text" class="form-control" id="email" required>
+          <div *ngIf="formErrors.email" class="alert alert-danger">
+            {{ formErrors.email }}
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="twitter">Twitter <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="If provided, a link to your Twitter page will be included with your bio on the website."></i></label>
+          <input formControlName="twitter" type="text" class="form-control" id="twitter">
+          <div *ngIf="formErrors.twitter" class="alert alert-danger">
+            {{ formErrors.twitter }}
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="github">Github <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="If provided, a link to your Github page will be included with your bio on the website."></i></label>
+          <input formControlName="github" type="text" class="form-control" id="github">
+          <div *ngIf="formErrors.github" class="alert alert-danger">
+            {{ formErrors.github }}
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="employer">Employer</label>
+          <input formControlName="employer" type="text" class="form-control" id="employer">
+        </div>
+        <div class="form-group">
+          <label for="position">Position <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="This is the title that we'll use beside your name on in the speaker's section of the website."></i></label>
+          <input formControlName="position" type="text" class="form-control" id="position">
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="A brief 3-5 sentence description of yourself."></i></label>
+          <textarea formControlName="bio" class="form-control" rows="5" id="bio" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="from">Traveling From</label>
+          <input formControlName="from" type="text" class="form-control" id="from" required>
+        </div>
+        <div class="form-group">
+          <label class="radio-label">Travel Required:</label>
+          <label class="radio-inline"><input formControlName="travel" type="radio" value="true" name="travel">Yes</label>
+          <label class="radio-inline"><input formControlName="travel" type="radio" value="false" checked name="travel">No</label>
+        </div>
+        <div class="form-group">
+          <label class="radio-label">Accommodations Required:</label>
+          <label class="radio-inline"><input formControlName="accommodations" type="radio" value="true" name="accommodations">Yes</label>
+          <label class="radio-inline"><input formControlName="accommodations" type="radio" value="false" checked name="accommodations">No</label>
+        </div>
+        <h3 class="section-break">Presentation Detail</h3>
+        <div>
+          <ul class="tab">
+            <li *ngFor="let talk of talksArray;" (click)="selectTalk(talk)" [ngClass]="{'active': talk == activeTalk}">Talk {{talk+1}}</li>
+            <li (click)="addTalk()"><i class="fa fa-plus"></i>Add Talk</li>
+          </ul>
+          <div *ngFor="let talk of talksArray;" [ngClass]="{'hidden': talk != activeTalk}">
+
+              <div class="form-group title">
+                <label for="title">Talk Title</label>
+                <input name="title_{{talk}}" type="text" class="form-control" id="title" required>
+              </div>
+              <div class="form-group abstract">
+                <label for="abstract">Abstract</label>
+                <textarea name="abstract_{{talk}}" class="form-control" rows="5" id="abstract" required></textarea>
+              </div>
+
+          </div>
+          <h3 class="section-break"></h3>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">submit</button>
+            <button class="btn btn-primary" (click)="cfpModal.close()">cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </modal-content>
+</modal>
 <!-- End of Pricing section -->

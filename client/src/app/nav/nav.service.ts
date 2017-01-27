@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
 
-import 'rxjs/add/operator/cache';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs';
 
@@ -20,8 +19,7 @@ export class NavService {
   getNavData(): Observable<any> {
     if (!this._navData) {
       this._navData = this.http.get(this.baseUrl + "/api/application")
-          .map((res: Response) => res.json())
-          .cache();
+          .map((res: Response) => res.json());
     }
     return this._navData;
   }

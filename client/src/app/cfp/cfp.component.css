@@ -1,0 +1,47 @@
+.form-group {
+    width: 500px;
+    float: left;
+    padding: 0 40px 0 0;
+}
+.section-break {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+input {
+    color: black;
+}
+.title {
+    width: 100%;
+}
+.abstract {
+    width: 100%;
+}
+.radio-label {
+    width: 220px;
+}
+.error {
+    color: coral;
+}
+ul.tab {
+    clear: both;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+ul.tab li {
+    float: left;
+}
+ul.tab li:hover {
+    background-color: #ddd;
+}
+ul.tab li.active {
+    background-color: #ccc;
+}
+.hidden {
+    display: none;
+}
