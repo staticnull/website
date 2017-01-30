@@ -50,6 +50,7 @@
       <div class="container">
         <h3>Personal Information</h3>
         <form [formGroup]="cfpForm" (ngSubmit)="onSubmit($event)">
+          <div class="col-md-6">
           <div class="form-group">
             <label for="fullName">Full Name</label>
             <input formControlName="fullName"  type="text" class="form-control" id="fullName" required>
@@ -86,29 +87,27 @@
             <label for="position">Position <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="This is the title that we'll use beside your name on in the speaker's section of the website."></i></label>
             <input formControlName="position" type="text" class="form-control" id="position">
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="bio">Bio <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="A brief 3-5 sentence description of yourself."></i></label>
-            <textarea formControlName="bio" class="form-control" rows="5" id="bio" required></textarea>
+            </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="bio">Bio <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="A brief 3-5 sentence description of yourself."></i></label>
+              <textarea formControlName="bio" class="form-control" rows="5" id="bio" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="from">Traveling From</label>
+              <input formControlName="from" type="text" class="form-control" id="from" required>
+            </div>
+            <div class="form-group">
+              <label class="radio-label">Travel Required:</label>
+              <label class="radio-inline"><input formControlName="travel" type="radio" value="true" name="travel">Yes</label>
+              <label class="radio-inline"><input formControlName="travel" type="radio" value="false" checked name="travel">No</label>
+            </div>
+            <div class="form-group">
+              <label class="radio-label">Accommodations Required:</label>
+              <label class="radio-inline"><input formControlName="accommodations" type="radio" value="true" name="accommodations">Yes</label>
+              <label class="radio-inline"><input formControlName="accommodations" type="radio" value="false" checked name="accommodations">No</label>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="from">Traveling From</label>
-            <input formControlName="from" type="text" class="form-control" id="from" required>
-          </div>
-          <div class="form-group">
-            <label class="radio-label">Travel Required:</label>
-            <label class="radio-inline"><input formControlName="travel" type="radio" value="true" name="travel">Yes</label>
-            <label class="radio-inline"><input formControlName="travel" type="radio" value="false" checked name="travel">No</label>
-          </div>
-          <div class="form-group">
-            <label class="radio-label">Accommodations Required:</label>
-            <label class="radio-inline"><input formControlName="accommodations" type="radio" value="true" name="accommodations">Yes</label>
-            <label class="radio-inline"><input formControlName="accommodations" type="radio" value="false" checked name="accommodations">No</label>
-          </div>
-        </div>
-
-
         <h3 class="section-break">Presentation Detail</h3>
         <div>
           <ul class="nav nav-tabs">
@@ -126,56 +125,14 @@
                 <textarea name="abstract_{{talk}}" class="form-control" rows="5" id="abstract" required></textarea>
               </div>
           </div>
-          <div class="form-group">
-            <label for="employer">Employer</label>
-            <input formControlName="employer" type="text" class="form-control" id="employer">
-          </div>
-          <div class="form-group">
-            <label for="position">Position <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="This is the title that we'll use beside your name on in the speaker's section of the website."></i></label>
-            <input formControlName="position" type="text" class="form-control" id="position">
-          </div>
-          <div class="form-group">
-            <label for="bio">Bio <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="A brief 3-5 sentence description of yourself."></i></label>
-            <textarea formControlName="bio" class="form-control" rows="5" id="bio" required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="from">Traveling From</label>
-            <input formControlName="from" type="text" class="form-control" id="from" required>
-          </div>
-          <div class="form-group">
-            <label class="radio-label">Travel Required:</label>
-            <label class="radio-inline"><input formControlName="travel" type="radio" value="true" name="travel">Yes</label>
-            <label class="radio-inline"><input formControlName="travel" type="radio" value="false" checked name="travel">No</label>
-          </div>
-          <div class="form-group">
-            <label class="radio-label">Accommodations Required:</label>
-            <label class="radio-inline"><input formControlName="accommodations" type="radio" value="true" name="accommodations">Yes</label>
-            <label class="radio-inline"><input formControlName="accommodations" type="radio" value="false" checked name="accommodations">No</label>
-          </div>
-          <h3 class="section-break">Presentation Detail</h3>
-          <div>
-            <ul class="tab">
-              <li *ngFor="let talk of talksArray;" (click)="selectTalk(talk)" [ngClass]="{'active': talk == activeTalk}">Talk {{talk+1}}</li>
-              <li (click)="addTalk()"><i class="fa fa-plus"></i>Add Talk</li>
-            </ul>
-            <div *ngFor="let talk of talksArray;" [ngClass]="{'hidden': talk != activeTalk}">
 
-                <div class="form-group title">
-                  <label for="title">Talk Title</label>
-                  <input name="title_{{talk}}" type="text" class="form-control" id="title" required>
-                </div>
-                <div class="form-group abstract">
-                  <label for="abstract">Abstract</label>
-                  <textarea name="abstract_{{talk}}" class="form-control" rows="5" id="abstract" required></textarea>
-                </div>
-
-            </div>
             <h3 class="section-break"></h3>
             <div class="form-group">
               <button type="submit" class="btn btn-primary">submit</button>
               <button class="btn btn-primary" (click)="cfpModal.close()">cancel</button>
             </div>
           </div>
+
         </form>
       </div>
     </div>
