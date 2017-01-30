@@ -20,6 +20,7 @@ export class CfpComponent implements OnInit {
   talks: number = 1;
   activeTalk: number = 0;
   talksArray: Object[];
+  submitted: boolean = false;
 
   formErrors = {
     'fullName': '',
@@ -138,6 +139,7 @@ export class CfpComponent implements OnInit {
     this.apiService.post(`/api/cfp`, JSON.stringify(this.cfpForm.value))
       .subscribe((res: Response) => {
         this.json = res.json();
+        this.submitted = true;
     });
   }
 
