@@ -111,7 +111,6 @@ export class CfpComponent implements OnInit {
   }
 
   selectTalk(talk) {
-    console.log(talk);
     this.activeTalk = talk;
   }
 
@@ -135,7 +134,6 @@ export class CfpComponent implements OnInit {
       }
     }
     this.cfpForm.value['talks'] = talkArray;
-    console.log('you submitted value: ', JSON.stringify(this.cfpForm.value));
     this.apiService.post(`/api/cfp`, JSON.stringify(this.cfpForm.value))
       .subscribe((res: Response) => {
         this.json = res.json();

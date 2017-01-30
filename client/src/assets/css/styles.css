@@ -117,8 +117,6 @@ textarea,
 select,
 .form-control {
     background: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-bottom: 1px solid transparent;
     color: #fff;
     font-size: 1.8rem;
     resize: none;
@@ -144,7 +142,6 @@ textarea:focus,
 select:focus,
 .form-control:focus {
     background: rgba(255, 255, 255, 0);
-    border-color: #fff;
     -webkit-box-shadow: none;
     box-shadow: none;
 }

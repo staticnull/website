@@ -11,12 +11,6 @@
 input {
     color: black;
 }
-.title {
-    width: 100%;
-}
-.abstract {
-    width: 100%;
-}
 .radio-label {
     width: 220px;
 }
@@ -42,6 +36,9 @@ ul.tab li:hover {
 ul.tab li.active {
     background-color: #ccc;
 }
+.nav-tabs > li.active > a:focus{
+    outline: none;
+}
 .hidden {
     display: none;
 }
@@ -51,5 +48,8 @@ ul.tab li.active {
 }
 
 .tab-content {
-    padding-top: 15px;
+    margin-top: -1px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
 }
