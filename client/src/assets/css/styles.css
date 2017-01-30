@@ -243,6 +243,10 @@ header {
     margin-top: 30px;
     border: 2px solid #fff;
     padding: 6px 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.event-detail-span {
+    font-size: 18px;
 }
 #countdown {
     position: relative;
