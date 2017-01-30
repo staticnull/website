@@ -15,8 +15,8 @@ class Speaker {
     Date dateCreated
     Date lastUpdated
     SpeakerImage image
-    boolean travelRequired = false
-    boolean accommodationsRequired = false
+    Boolean travelRequired = false
+    Boolean accommodationsRequired = false
 
     static constraints = {
         fullName nullable: false
