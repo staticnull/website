@@ -20,6 +20,8 @@ class CallForPapersController {
         log.info "Processing CFP submission for ${cmd.fullName}"
         def speaker = Speaker.findByEmail(cmd.email) ?: new Speaker()
         speaker.properties = cmd.properties
+        speaker.travelRequired = cmd.travel
+        speaker.accommodationsRequired = cmd.accommodations
         if(!speaker.save(flush: true)){
             render status: HttpStatus.BAD_REQUEST, message: 'Error while processing speaker submission', errors: speaker.errors
             return
@@ -52,7 +54,11 @@ class CFPSpeakerCommand implements Validateable {
     String github
     String employer
     String bio
+    String position
+    String travelingFrom
     List<Talk> talks
+    boolean travel
+    boolean accommodations
 
     static constraints = {
         fullName nullable: false
@@ -62,5 +68,7 @@ class CFPSpeakerCommand implements Validateable {
         employer nullable: true
         bio nullable: true
         talks minSize: 1
+        position nullable: true
+        travelingFrom nullable: true
     }
 }

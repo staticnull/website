@@ -7,12 +7,16 @@ class Speaker {
     String twitter
     String github
     String employer
+    String position
     String bio
     String tshirt
     String reimbursement
+    String travelingFrom
     Date dateCreated
     Date lastUpdated
     SpeakerImage image
+    boolean travelRequired = false
+    boolean accommodationsRequired = false
 
     static constraints = {
         fullName nullable: false
@@ -20,11 +24,15 @@ class Speaker {
         twitter nullable: true, url: true
         github nullable: true, url: true
         employer nullable: true
+        position nullable: true
         bio nullable: true
         tshirt nullable: true
         reimbursement nullable: true
+        travelingFrom nullable: true
         dateCreated nullable: true
         image nullable: true
+        travelRequired nullable: true
+        accommodationsRequired nullable: true
     }
 
 }

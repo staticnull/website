@@ -45,3 +45,11 @@ ul.tab li.active {
 .hidden {
     display: none;
 }
+
+.nav-tabs > li > a {
+    font-size: 15px;
+}
+
+.tab-content {
+    padding-top: 15px;
+}

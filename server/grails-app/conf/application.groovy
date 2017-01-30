@@ -71,6 +71,7 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 grails.plugin.springsecurity.active = false
 
 grails.plugin.databasemigration.updateOnStart = true
+grails.plugin.databasemigration.updateOnStartFileName = 'changelog-manifest.groovy'
 
 grails.resources.pattern = '/**'
 
