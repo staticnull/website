@@ -11,13 +11,13 @@ class CallForPapersController {
 
     @Secured(['ROLE_PUBLIC'])
     def submit(CFPSpeakerCommand cmd){
-
         if(cmd.hasErrors()){
             render status: HttpStatus.BAD_REQUEST, message: cmd.errors
             return
         }
 
         log.info "Processing CFP submission for ${cmd.fullName}"
+        log.info cmd
         def speaker = Speaker.findByEmail(cmd.email) ?: new Speaker()
         speaker.properties = cmd.properties
         speaker.travelRequired = cmd.travel
