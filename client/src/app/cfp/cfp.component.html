@@ -53,49 +53,49 @@
           <div class="col-md-6">
           <div class="form-group">
             <label for="fullName">Full Name</label>
-            <input formControlName="fullName"  type="text" class="form-control" id="fullName" required>
+            <input formControlName="fullName"  type="text" maxlength="128" class="form-control" id="fullName" required>
             <div *ngIf="formErrors.fullName" class="alert alert-danger">
               {{ formErrors.fullName }}
             </div>
           </div>
           <div class="form-group">
             <label ng-class="{true: 'error', false: ''}[!email.valid]" for="email">Email</label>
-            <input formControlName="email" type="text" class="form-control" id="email" required>
+            <input formControlName="email" type="text" maxlength="128" class="form-control" id="email" required>
             <div *ngIf="formErrors.email" class="alert alert-danger">
               {{ formErrors.email }}
             </div>
           </div>
           <div class="form-group">
             <label for="twitter">Twitter <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="If provided, a link to your Twitter page will be included with your bio on the website."></i></label>
-            <input formControlName="twitter" type="text" class="form-control" id="twitter">
+            <input formControlName="twitter" type="text" maxlength="128" class="form-control" id="twitter">
             <div *ngIf="formErrors.twitter" class="alert alert-danger">
               {{ formErrors.twitter }}
             </div>
           </div>
           <div class="form-group">
             <label for="github">Github <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="If provided, a link to your Github page will be included with your bio on the website."></i></label>
-            <input formControlName="github" type="text" class="form-control" id="github">
+            <input formControlName="github" type="text" maxlength="128" class="form-control" id="github">
             <div *ngIf="formErrors.github" class="alert alert-danger">
               {{ formErrors.github }}
             </div>
           </div>
           <div class="form-group">
             <label for="employer">Employer</label>
-            <input formControlName="employer" type="text" class="form-control" id="employer">
+            <input formControlName="employer" type="text" maxlength="128" class="form-control" id="employer">
           </div>
           <div class="form-group">
             <label for="position">Position <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="This is the title that we'll use beside your name on in the speaker's section of the website."></i></label>
-            <input formControlName="position" type="text" class="form-control" id="position">
+            <input formControlName="position" type="text" maxlength="128" class="form-control" id="position">
           </div>
             </div>
           <div class="col-md-6">
             <div class="form-group">
               <label for="bio">Bio <i class="glyphicon glyphicon-question-sign info-tooltip" data-toggle="tooltip" title="A brief 3-5 sentence description of yourself."></i></label>
-              <textarea formControlName="bio" class="form-control" rows="5" id="bio" required></textarea>
+              <textarea formControlName="bio" class="form-control" maxlength="255" rows="5" id="bio" required></textarea>
             </div>
             <div class="form-group">
               <label for="from">Traveling From</label>
-              <input formControlName="travelingFrom" type="text" class="form-control" id="from" required>
+              <input formControlName="travelingFrom" type="text" maxlength="128" class="form-control" id="from" required>
             </div>
             <div class="form-group">
               <label class="radio-label">Travel Required:</label>
@@ -118,7 +118,7 @@
 
               <div class="title">
                 <label for="title">Talk Title</label>
-                <input name="title_{{talk}}" type="text" class="form-control" id="title" required>
+                <input name="title_{{talk}}" type="text" maxlength="128" class="form-control" id="title" required>
               </div>
               <div class="abstract">
                 <label for="abstract">Abstract</label>

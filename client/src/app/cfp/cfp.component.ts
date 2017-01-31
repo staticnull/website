@@ -43,6 +43,9 @@ export class CfpComponent implements OnInit {
     },
     'github': {
       'pattern': 'Please enter the full url to your github profile.'
+    },
+    'bio': {
+      'maxlength': 'Please keep bio to under 255 characters.'
     }
   };
 
@@ -78,7 +81,7 @@ export class CfpComponent implements OnInit {
       'github': ["", Validators.pattern("^http(?:s)?:\/\/(?:www\.)?github\.com\/([a-zA-Z0-9_]+)")],
       'employer': ["", null],
       'position': ["", null],
-      'bio': ["", null],
+      'bio': ["", Validators.maxLength(255)],
       'travelingFrom': ["", null],
       'travel': [false, null],
       'accommodations': [false, null],
