@@ -27,4 +27,9 @@ databaseChangeLog = {
     changeSet(author: "mike (generated)", id: "1485796707299-5") {
         addUniqueConstraint(columnNames: "email", constraintName: "UC_SPEAKEREMAIL_COL", tableName: "speaker")
     }
+
+    changeSet(author: "cory", id: "fixAbstract") {
+        modifyDataType(tableName: "talk", columnName: "talk_abstract", newDataType: "varchar(1024)")
+        confirm "Successfully updated the description column."
+    }
 }
