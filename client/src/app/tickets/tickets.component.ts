@@ -27,6 +27,10 @@ export class TicketComponent implements OnInit {
     });
   }
 
+  sendToTito() {
+    window.location.href='https://ti.to/midwestjs/2017-midwest-js-conference';
+  }
+
   hasRoute(controllerName: string): boolean {
     return this.router.config.some((route: Route) => {
       if (route.path === controllerName) {
