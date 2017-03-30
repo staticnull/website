@@ -9,6 +9,7 @@ class UrlMappings {
         "/api/conferenceFeedback/stats"(controller: 'conferenceFeedback', action: 'stats')
         "/api/talk/search"(controller: 'talk', action: 'search')
         "/api/talk/lookupBySpeaker/$id"(controller: 'talk', action: 'lookupBySpeaker')
+        "/api/talk/listAll"(controller: 'talk', action: 'listAll')
         post "/api/cfp"(controller: 'callForPapers', action: "submit")
 
         "/"(redirect: "/index.html")

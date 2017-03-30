@@ -27,4 +27,9 @@ class TalkController {
         def talks = Talk.findAllBySpeakerAndApproved(Speaker.get(params.id), true)
         render view: '/talk/index', model: [talkList: talks]
     }
+
+    def listAll(){
+        def talks = Talk.findAllByConferenceYear(Holders.config.app.conference.year, [fetch:[speaker:"join"]])
+        render view: '/talk/list', model: [talkList: talks]
+    }
 }

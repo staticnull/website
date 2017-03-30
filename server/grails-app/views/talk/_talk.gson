@@ -4,4 +4,4 @@ model {
 	Talk talk
 }
 
-json g.render(talk)
+json g.render(talk, [deep: true])
