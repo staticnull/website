@@ -11,6 +11,8 @@ class CallForPapersController {
 
     @Secured(['ROLE_PUBLIC'])
     def submit(CFPSpeakerCommand cmd){
+        render status: HttpStatus.FORBIDDEN
+        /*
         if(cmd.hasErrors()){
             render status: HttpStatus.BAD_REQUEST, message: cmd.errors
             return
@@ -40,6 +42,7 @@ class CallForPapersController {
             }
             render status: HttpStatus.CREATED
         }
+        */
     }
 
 }

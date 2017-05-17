@@ -1,0 +1,21 @@
+.container-speaker {
+    width:1200px;
+}
+
+#main-content{
+    min-height: 100%;
+    height: auto;
+}
+
+#main-content > .row {
+    overflow-x:scroll;
+    overflow-y:hidden;
+    white-space:nowrap;
+}
+
+#main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
+    float:none;
+    display:inline-block;
+    overflow: hidden;
+    height: 250px;
+}

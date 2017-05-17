@@ -6,12 +6,12 @@
         <h1 class="wow fadeInUp">Speakers</h1>
       </div>
     </div>
-
+  </div>
+  <div class="container container-speaker" id="main-content">
     <div class="row">
-
       <div class="speaker-details col-sm-6 col-xs-12" *ngFor="let speaker of speakers">
         <!-- Speaker -->
-        <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 wow fadeInUp">
+        <div class="col-sm-6 col-sm-offset-0 col-xs-8 wow fadeInUp">
           <!-- Speaker social links -->
           <div class="speaker-social-links text-center">
             <a href="{{speaker.twitter}}"><i class="fa fa-twitter wow bounceIn"></i></a>
@@ -20,7 +20,7 @@
           <!-- Speaker image -->
           <img src="{{speaker.image ? 'http://localhost:8080/api/speakerImage/'+speaker.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker.fullName}}" class="img-responsive">
         </div>
-        <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-sm-6 col-sm-offset-0 col-xs-8 wow fadeInUp" data-wow-delay="0.2s">
           <!-- Speaker name -->
           <h2>{{speaker.fullName}}</h2>
           <!-- Speaker position -->
