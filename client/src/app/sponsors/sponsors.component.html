@@ -14,6 +14,9 @@
       <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
         <img (click)="agileModal.open()" src="assets/images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale hand">
       </div>
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="braintreeModal.open()" src="assets/images/sponsors/logo-braintree.png" alt="Braintree" class="img-responsive grayscale hand braintree-logo">
+      </div>
     </div>
     <h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>
   </div>
@@ -30,6 +33,18 @@
   <modal-footer>
     <a class="sponsor-website" href="http://www.agileorbit.com">Website</a>
     <button class="btn btn-primary" (click)="agileModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #braintreeModal>
+  <modal-header>
+    <h1>Braintree <img src="assets/images/sponsors/logo-braintree.png" alt="Braintree" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    Braintree provides the global commerce tools people need to build businesses, accept payments, and enable commerce for their users. It’s the simplest way to get paid for your great ideas -- across any device, and through almost any payment method. Merchants in more than 40 countries worldwide can accept, split, and enable payments in more than 130 currencies using Braintree. And we’re here for you -- with stellar support, innovative concepts, and simple processes -- from your first dollar up past your billionth.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://www.braintreepayments.com/">Website</a>
+    <button class="btn btn-primary" (click)="braintreeModal.close()">Close</button>
   </modal-footer>
 </modal>
 <modal #emailModal class="modal-wide">

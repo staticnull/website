@@ -11,6 +11,12 @@ class TalkController {
         render view: '/talk/index', model: [talkList: talks]
     }
 
+    def update(){
+        def talk = Talk.findById(params.id)
+        talk.approved = params.approved
+        talk.save(flush:true)
+    }
+
 	def search(){
         def results = Talk.withCriteria {
             eq ('approved', true)

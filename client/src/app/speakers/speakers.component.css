@@ -19,3 +19,12 @@
     overflow: hidden;
     height: 250px;
 }
+
+#main-content .speaker-bio{
+    white-space: normal;
+}
+
+#main-content .speaker-bio h2{
+    font-size: 25px;
+
+}

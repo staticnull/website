@@ -17,9 +17,11 @@ import { SponsorsComponent } from './sponsors/sponsors.component'
 import { AppComponent } from './app.component';
 import { rootRouterConfig } from './app.routes';
 import { NavComponent } from './nav/nav.component';
-import { NavService } from './nav/nav.service';
 import { CfpComponent } from './cfp/cfp.component';
 import { TicketComponent } from './tickets/tickets.component';
+
+import { NavService } from './nav/nav.service';
+import { SubstringPipe } from './pipes/substring';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { TicketComponent } from './tickets/tickets.component';
     SpeakersComponent,
     SponsorsComponent,
     CfpComponent,
-    TicketComponent
+    TicketComponent,
+    SubstringPipe
   ],
   imports: [
     BrowserModule,

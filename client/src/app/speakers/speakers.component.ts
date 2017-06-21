@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {ApiService} from "../app.service";
 import {Response} from "@angular/http";
 
@@ -11,8 +11,11 @@ import {Response} from "@angular/http";
 export class SpeakersComponent {
 
   speakers: Object;
+  baseUrl: Object;   
+    
 
   constructor(private apiService: ApiService) {
+    this.baseUrl = apiService.baseUrl;  
     this.getSpeakers();
   }
 

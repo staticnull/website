@@ -18,13 +18,13 @@
             <a href="{{speaker.github}}"><i class="fa fa-github wow bounceIn"></i></a>
           </div>
           <!-- Speaker image -->
-          <img src="{{speaker.image ? 'http://localhost:8080/api/speakerImage/'+speaker.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker.fullName}}" class="img-responsive">
+          <img src="{{speaker.image ? baseUrl+'/api/speakerImage/'+speaker.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker.fullName}}" class="img-responsive">
         </div>
-        <div class="col-sm-6 col-sm-offset-0 col-xs-8 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="speaker-bio col-sm-6 col-sm-offset-0 col-xs-8 wow fadeInUp" data-wow-delay="0.2s">
           <!-- Speaker name -->
-          <h2>{{speaker.fullName}}</h2>
+          <h2>{{speaker.fullName | substring:20}}</h2>
           <!-- Speaker position -->
-          <h4>{{speaker.employer}}</h4>
+          <h4>{{speaker.employer | substring:20}}</h4>
           <!-- Speaker description -->
           <p>{{speaker.bio}}</p>
         </div>
