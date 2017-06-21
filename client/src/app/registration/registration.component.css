@@ -1,0 +1,14 @@
+h1 {
+    font-size: 24px;
+}
+
+p,a {
+    margin-left: 25px;
+}
+
+.register .ticketBox{
+    height: 450px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
