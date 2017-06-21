@@ -8,9 +8,21 @@
       <p class="host-words wow fadeInUp">
         Midwest JS is a premier technology conference focused on the JavaScript ecosystem. The conference has been a tremendous success
         the past three years and we hope to make it even better in 2017! The conference will be held in downtown Minneapolis at the University of St. Thomas.
-
+        <br/>
         There will be a variety of talks from well­known speakers in the community in a typical presentation format. Talks are categorized
         and structured based on the following tracks:
+      </p>
+      <ul class="wow fadeInUp">
+        <li>Frameworks</li>
+        <li>Observables / RX</li>
+        <li>React</li>
+        <li>IoT</li>
+        <li>Beginner</li>
+        <li>Advanced</li>
+        <li>Testing</li>
+      </ul>
+      <p class="host-words wow fadeInUp">
+        An overview of the conference schedule is available to the right. A detailed schedule including tracks and times can be found <a (click)="scheduleModal.open()">here</a>.
       </p>
         <!-- Host image and details -->
         <!--
@@ -97,8 +109,8 @@
               </li>
               <li>
                 <h4 class="time">8:45AM</h4>
-                <h3>Welcome to Midwest JS</h3>
-                <p>Announcements and introduction of keynote speaker.</p>
+                <h3>Opening Announcements</h3>
+                <p>Opening nnouncements and introduction of keynote speaker.</p>
                 <span class="line"><span class="bullet"></span></span>
               </li>
               <li>
@@ -108,13 +120,43 @@
                 <span class="line"><span class="bullet"></span></span>
               </li>
               <li>
+                <h4 class="time">10:00AM - 10:30</h4>
+                <h3>Coffee & Snack Break</h3>
+                <p>Stuff about snacks</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">10:30AM</h4>
+                <h3>Morning Sessions</h3>
+                <p>Stuff about sessions</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
                 <h4 class="time">12:30PM</h4>
                 <h3>Lunch</h3>
                 <p></p>
                 <span class="line"><span class="bullet"></span></span>
               </li>
               <li>
-                <h4 class="time">11:30AM</h4>
+                <h4 class="time">1:30PM</h4>
+                <h3>Afternoon Sessions</h3>
+                <p>Stuff about sessions</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">3:30PM - 4:00PM</h4>
+                <h3>Coffee & Snack Break</h3>
+                <p>Stuff about snacks</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">4:00PM</h4>
+                <h3>Afternoon Session</h3>
+                <p>Stuff about session</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">5:00PM</h4>
                 <h3>Happy Hour</h3>
                 <p>TBD</p>
                 <span class="line"><span class="bullet"></span></span>
@@ -126,14 +168,44 @@
             <ul class="schedule">
               <li>
                 <h4 class="time">8:00AM</h4>
-                <h3>Registration and Breakfast</h3>
+                <h3>Breakfast</h3>
                 <p>Registration desk opens at 8:00 in the atrium of Schultz hall. A simple breakfast is provided consisting of pastries, coffee, and orange juice.</p>
                 <span class="line"><span class="bullet"></span></span>
               </li>
               <li>
-                <h4 class="time">12:00PM</h4>
+                <h4 class="time">9:00AM</h4>
+                <h3>Morning Sessions</h3>
+                <p>Stuff about sessions</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">10:00AM - 10:30</h4>
+                <h3>Coffee & Snack Break</h3>
+                <p>Stuff about snacks</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">10:30AM</h4>
+                <h3>Morning Sessions</h3>
+                <p>Stuff about sessions</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">12:30PM</h4>
                 <h3>Lunch</h3>
                 <p></p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">1:30PM</h4>
+                <h3>Afternoon Sessions</h3>
+                <p>Stuff about sessions</p>
+                <span class="line"><span class="bullet"></span></span>
+              </li>
+              <li>
+                <h4 class="time">3:30PM - 4:00PM</h4>
+                <h3>Coffee & Snack Break</h3>
+                <p>Stuff about snacks</p>
                 <span class="line"><span class="bullet"></span></span>
               </li>
               <li>
@@ -159,3 +231,217 @@
   </div>
 </section>
 <!-- End of Schedule section -->
+<modal #scheduleModal class="modal-wide">
+  <modal-header>
+    <h1>2017 Midwest JS Detailed Schedule</h1>
+  </modal-header>
+  <modal-content>
+    <div role="tabpanel">
+      <!-- Days -->
+      <ul class="nav nav-tabs" role="tablist" id="detail-schedule-tabs">
+        <li role="presentation" class="active">
+          <a href="#day-1-detail" aria-controls="day-1-detail" role="tab" data-toggle="tab">Wednesday</a>
+        </li>
+        <li role="presentation"><a href="#day-2-detail" aria-controls="day-2" role="tab" data-toggle="tab">Thursday</a>
+        </li>
+        <li role="presentation"><a href="#day-3-detail" aria-controls="day-3" role="tab" data-toggle="tab">Friday</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <!-- Day 1 schedule -->
+        <div role="tabpanel" class="tab-pane fade in active" id="day-1-detail">
+          <h3>Wednesday - August 16th 2017</h3>
+          <table class="table table-bordered table-sm">
+            <thead class="thead-default">
+              <tr>
+                <th class="session-time">
+                <th class="session-room">Auditorium</th>
+                <th class="session-room">Schulze 127</th>
+                <th class="session-room">Law 235</th>
+                <th class="session-room">Law 238</th>
+              </tr>
+            </thead>
+            <tr class="table-active">
+              <td>8:00</td>
+              <td colspan="4"><span class="talk-title">Registration / Breakfast (Coffee & Pastries) 8:00 - 9:00</span></td>
+            </tr>
+            <tr>
+              <td>8:45</td>
+              <td colspan="4"><span class="talk-title">Welcome to Midwest JS</span><span class="talk-speaker">(Cory Tranby)</span></td>
+            </tr>
+            <tr>
+              <td>9:00</td>
+              <td><span class="talk-title">Intro to React and Redux Workshop</span><span class="talk-speaker">(Samuel Parsons)</span></td>
+              <td><span class="talk-title">Angular 2 Workshop</span>(Michael Cacek)</td>
+              <td><span class="talk-title">Node.js Workshop</span>(Sequoia McDowell)</td>
+              <td>TBA</td>
+            </tr>
+            <tr class="table-active">
+              <td>12:00</td>
+              <td colspan="4"><span class="talk-title">Lunch (Terrence Murphy Hall 2nd Floor) 12:00 - 1:00</span></td>
+            </tr>
+            <tr>
+              <td>1:00</td>
+              <td><span class="talk-title">Intro to React and Redux Workshop</span><span class="talk-speaker">(Samuel Parsons)</span></td>
+              <td><span class="talk-title">Angular 2 Workshop</span>(Michael Cacek)</td>
+              <td><span class="talk-title">Node.js Workshop</span>(Sequoia McDowell)</td>
+              <td>TBA</td>
+            </tr>
+          </table>
+        </div>
+        <!-- Day 2 schedule -->
+        <div role="tabpanel" class="tab-pane fade" id="day-2-detail">
+          <h3>Thursday - August 17th 2017</h3>
+          <table class="table table-bordered table-sm">
+            <tr>
+              <th class="session-time"></th>
+              <th class="session-room">Auditorium</th>
+              <th class="session-room">Schulze 127</th>
+              <th class="session-room">Law 235</th>
+              <th class="session-room">Law 238</th>
+            </tr>
+            <tr class="table-active">
+              <td class="session-time">8:00</td>
+              <td colspan="4"><span class="talk-title">Registration / Breakfast (Coffee & Pastries) 8:00 - 8:45</span></td>
+            </tr>
+            <tr>
+              <td>8:45</td>
+              <td colspan="4"><span class="talk-title">Opening Announcements</span><span class="talk-speaker">(Cory Tranby)</span></td>
+            </tr>
+            <tr>
+              <td>9:00</td>
+              <td colspan="4"><span class="talk-title">Keynote - TBA</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>10:00</td>
+              <td colspan="4"><span class="talk-title">Coffee & Snack Break 10:00 - 10:30</span></td>
+            </tr>
+            <tr>
+              <td>10:30</td>
+              <td><span class="talk-title">Effective RxJS in Angular 2</span><span class="talk-speaker">(Randall Koutnik)</span></td>
+              <td><span class="talk-title">Getting Started with GraphQL, Apollo, and React</span><span class="talk-speaker">(Ryan Glover)</span></td>
+              <td><span class="talk-title">Web Components: Lego bricks of the web</span><span class="talk-speaker">(Pearl Latteier / Abraham Williams)</span></td>
+              <td><span class="talk-title">Unit Testing Your React App</span><span class="talk-speaker">(Steven Hicks)</span></td>
+            </tr>
+            <tr>
+              <td>11:30</td>
+              <td><span class="talk-title">Marble Driven Development with RxJS</span><span class="talk-speaker">(Eric Ponto)</span></td>
+              <td><span class="talk-title">What It Means to Choose React</span><span class="talk-speaker">(Rushaine McBean)</span></td>
+              <td><span class="talk-title">Angular2 for absolute beginners</span><span class="talk-speaker">(Khan Md)</span></td>
+              <td><span class="talk-title">JS Vulnerabilities</span><span class="talk-speaker">(Tim Kadlec)</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>12:30</td>
+              <td colspan="4"><span class="talk-title">Lunch (Terrence Murphy Hall 2nd Floor) 12:30 - 1:00</span></td>
+            </tr>
+            <tr>
+              <td>1:30</td>
+              <td><span class="talk-title">Taming space and time with RxJS Observables</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
+              <td><span class="talk-title">Building Scalable, Maintainable Apps Using TypeScript and React</span><span class="talk-speaker">(Kamran Ayub)</span></td>
+              <td><span class="talk-title">React Simply</span><span class="talk-speaker">(Mark Volkmann)</span></td>
+              <td><span class="talk-title">Investing in JavaScript Testing</span><span class="talk-speaker">(Rushaine McBean)</span></td>
+            </tr>
+            <tr>
+              <td>2:30</td>
+              <td><span class="talk-title">An Intro to Reactive Programming for the Web: RxJS and Cycle.js</span><span class="talk-speaker">(Pratik Patel)</span></td>
+              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td><span class="talk-title">Getting Asynchronous with NodeJS</span><span class="talk-speaker">(Alex Schwartz)</span></td>
+              <td><span class="talk-title">React UI and Unit Testing with Airbnb's Enzyme</span><span class="talk-speaker">(Ryan Walsh)</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>3:30</td>
+              <td colspan="4"><span class="talk-title">Coffee & Snack Break 3:30 - 4:00</span></td>
+            </tr>
+            <tr>
+              <td>4:00</td>
+              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td><span class="talk-title">Resilient React.js - Building apps with a functional approach</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
+              <td><span class="talk-title">A First View of Vue.js</span><span class="talk-speaker">(Vince Bullinger)</span></td>
+              <td><span class="talk-title">ESLint, Don't Write JavaScript Without It!</span><span class="talk-speaker">(Mark Volkmann)</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>5:00</td>
+              <td colspan="4"><span class="talk-title">Happy Hour</span><span class="talk-speaker"></span></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Day 3 schedule -->
+        <div role="tabpanel" class="tab-pane fade" id="day-3-detail">
+          <h3>Friday - August 18th 2017</h3>
+          <table class="table table-bordered table-sm">
+            <tr>
+              <th class="session-time"></th>
+              <th>Auditorium</th>
+              <th>Schulze 127</th>
+              <th>Law 235</th>
+              <th>Law 238</th>
+            </tr>
+            <tr class="table-active">
+              <td class="session-time">8:00</td>
+              <td colspan="4"><span class="talk-title">Registration / Breakfast (Coffee & Pastries) 8:00 - 9:00</span></td>
+            </tr>
+            <tr>
+              <td>9:00</td>
+              <td><span class="talk-title">Disney's Room Detective - A Real World JavaScript IoT Solution</span><span class="talk-speaker">(Garth Henson)</span></td>
+              <td><span class="talk-title">A Deep Dive Into the Crankshaft Compiler</span><span class="talk-speaker">(Safia Abdalla)</span></td>
+              <td><span class="talk-title">Who got DNA in my JavaScript?  An introduction to Genetic Algorithms</span><span class="talk-speaker">(Randall Koutnik)</span></td>
+              <td><span class="talk-title">Advanced JavaScript Debugging</span><span class="talk-speaker">(Khan MD)</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>10:00</td>
+              <td colspan="4"><span class="talk-title">Coffee & Snack Break 10:00 - 10:30</span></td>
+            </tr>
+            <tr>
+              <td>10:30</td>
+              <td><span class="talk-title">Let's Get Physical</span><span class="talk-speaker">(Joel Lord)</span></td>
+              <td><span class="talk-title">Full Stack Development with Node.js and NoSQL</span><span class="talk-speaker">(Nic Rabo)</span></td>
+              <td><span class="talk-title">Multiplayer JavaScript Game Development</span><span class="talk-speaker">(Jeremy Lund)</span></td>
+              <td><span class="talk-title">Your code is lying to you</span><span class="talk-speaker">(Robert Hanson)</span></td>
+            </tr>
+            <tr>
+              <td>11:30</td>
+              <td><span class="talk-title">The Internet of JavaScripty Things: Control Bluetooth Devices with your Browser</span><span class="talk-speaker">(Matt Steele)</span></td>
+              <td><span class="talk-title">Breaking Into Bots</span><span class="talk-speaker">(Gabrielle Crevecoeur)</span></td>
+              <td><span class="talk-title">Static Typing and Bundling for Vue.js with Typescript and Webpack 2</span><span class="talk-speaker">(Garth Henson)</span></td>
+              <td><span class="talk-title">Angular Unit Testing from the Trenches</span><span class="talk-speaker">(Justin James)</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>12:30</td>
+              <td colspan="4"><span class="talk-title">Lunch (Terrence Murphy Hall 2nd Floor) 12:30 - 1:00</span></td>
+            </tr>
+            <tr>
+              <td>1:30</td>
+              <td><span class="talk-title">Rise of the Nodebots</span><span class="talk-speaker">(Joel Lord)</span></td>
+              <td><span class="talk-title">Leverage the power of native with Progressive Web Apps</span><span class="talk-speaker">(Pearl Latteier / Abraham Williams)</span></td>
+              <td><span class="talk-title">Jumpstart Your Angular App With Angular CLI</span><span class="talk-speaker">(Kurt Wiersma)</span></td>
+              <td><span class="talk-title">Application tracing in Node and the Browser</span><span class="talk-speaker">(Aaron Ackerman)</span></td>
+            </tr>
+            <tr>
+              <td>2:30</td>
+              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td><span class="talk-title">How to "build your damn app already!" with Meteor</span><span class="talk-speaker">(Joshua Longanecker)</span></td>
+              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td><span class="talk-title">Hot React Testing Practices</span><span class="talk-speaker">(Blaine Kasten)</span></td>
+            </tr>
+            <tr class="table-active">
+              <td>3:30</td>
+              <td colspan="4"><span class="talk-title">Coffee & Snack Break 3:30 - 4:00</span></td>
+            </tr>
+            <tr>
+              <td>4:00</td>
+              <td colspan="4"><span class="talk-title">Conference Wrap Up</span></td>
+            </tr>
+            <tr>
+              <td>5:00</td>
+              <td colspan="4"><span class="talk-title">Closing Keynote</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </modal-content>
+  <modal-footer>
+    <span><h5 class="pull-left">* This schedule is tentative and is expected to change as things solidify. Full talk descriptions to be added soon!</h5></span>
+    <button class="btn btn-primary" (click)="scheduleModal.close()">Close</button>
+  </modal-footer>
+</modal>

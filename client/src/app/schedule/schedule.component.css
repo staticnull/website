@@ -1,0 +1,37 @@
+h3 {
+    font-size: 20px;
+}
+ul {
+    font-size: 18px;
+}
+a {
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+span.talk-title {
+    display: block;
+    font-weight: 500;
+}
+span.talk-speaker {
+    display: block;
+    clear: both;
+}
+.table th,td {
+    text-align: center;
+}
+.table th.session-time {
+    width: 50px;
+}
+.table th.session-room {
+    width: 200px;
+}
+.table tr.table-active {
+    background-color: rgba(0,0,0,.075);
+}
+.schedule {
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
