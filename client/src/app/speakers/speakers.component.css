@@ -8,13 +8,13 @@
 }
 
 #main-content > .row {
-    overflow-x:scroll;
-    overflow-y:hidden;
+    overflow-x:visible;
+    overflow-y:visible;
     white-space:nowrap;
 }
 
 #main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
-    float:none;
+    float:left;
     display:inline-block;
     overflow: hidden;
     height: 250px;
