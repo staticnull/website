@@ -34,6 +34,11 @@ class TalkController {
         render view: '/talk/index', model: [talkList: talks]
     }
 
+    def findById(){
+        def talks = Talk.findAllById(params.id, [fetch:[speaker:"join"]])
+        render view: '/talk/index', model: [talkList: talks]
+    }
+
     def listAll(){
         def talks = Talk.findAllByConferenceYear(Holders.config.app.conference.year, [fetch:[speaker:"join"]])
         render view: '/talk/list', model: [talkList: talks]

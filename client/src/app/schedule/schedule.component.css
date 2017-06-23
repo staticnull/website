@@ -18,6 +18,27 @@ span.talk-speaker {
     display: block;
     clear: both;
 }
+span.talk-room {
+    display: block;
+}
+span.talk-track {
+    display: block;
+    clear: both;
+    font-weight: normal;
+}
+span.abstract {
+    padding: 15px;
+}
+img.bio-image {
+    height: 250px;
+    width: 250px;
+}
+.speaker-panel {
+    min-height: 300px;
+}
+.detail-box {
+    padding: 10px;
+}
 .table th,td {
     text-align: center;
 }
