@@ -51,6 +51,10 @@ img.bio-image {
 .table tr.table-active {
     background-color: rgba(0,0,0,.075);
 }
+.table td.talk-detail:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.075);
+}
 .schedule {
     height: 500px;
     overflow: hidden;
