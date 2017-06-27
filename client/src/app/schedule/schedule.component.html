@@ -326,7 +326,7 @@
             <tr>
               <td>11:30</td>
               <td class="talk-detail" (click)="openDetail(56, detailModal.open())"><span class="talk-title">Marble Driven Development with RxJS</span><span class="talk-speaker">(Eric Ponto)</span></td>
-              <td class="talk-detail" (click)="openDetail(111, detailModal.open())"><span class="talk-title">What It Means to Choose React</span><span class="talk-speaker">(Rushaine McBean)</span></td>
+              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
               <td class="talk-detail" (click)="openDetail(138, detailModal.open())"><span class="talk-title">Angular2 for absolute beginners</span><span class="talk-speaker">(Khan Md)</span></td>
               <td><span class="talk-title">JS Vulnerabilities</span><span class="talk-speaker">(Tim Kadlec)</span></td>
             </tr>
@@ -339,7 +339,7 @@
               <td class="talk-detail" (click)="openDetail(64, detailModal.open())"><span class="talk-title">Taming space and time with RxJS Observables</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
               <td class="talk-detail" (click)="openDetail(167, detailModal.open())"><span class="talk-title">Building Scalable, Maintainable Apps Using TypeScript and React</span><span class="talk-speaker">(Kamran Ayub)</span></td>
               <td class="talk-detail" (click)="openDetail(54, detailModal.open())"><span class="talk-title">React Simply</span><span class="talk-speaker">(Mark Volkmann)</span></td>
-              <td class="talk-detail" (click)="openDetail(113, detailModal.open())"><span class="talk-title">Investing in JavaScript Testing</span><span class="talk-speaker">(Rushaine McBean)</span></td>
+              <td class="talk-detail"><span class="talk-title">Investing in JavaScript Testing</span><span class="talk-speaker"></span></td>
             </tr>
             <tr>
               <td>2:30</td>
@@ -418,7 +418,7 @@
             </tr>
             <tr>
               <td>2:30</td>
-              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td class="talk-detail" (click)="openDetail(246, detailModal.open())"><span class="talk-title">IoT security using facial and voice recognition</span><span class="talk-speaker">(Kevin Leung)</span></td>
               <td class="talk-detail" (click)="openDetail(128, detailModal.open())"><span class="talk-title">How to "build your damn app already!" with Meteor</span><span class="talk-speaker">(Joshua Longanecker)</span></td>
               <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
               <td class="talk-detail" (click)="openDetail(181, detailModal.open())"><span class="talk-title">Hot React Testing Practices</span><span class="talk-speaker">(Blaine Kasten)</span></td>
@@ -458,6 +458,8 @@
         </li>
         <li role="presentation"><a href="#speaker-detail" aria-controls="day-2" role="tab" data-toggle="tab">Speaker Bio</a>
         </li>
+        <li *ngIf="speaker2.id != null" role="presentation"><a href="#speaker-detail-2" aria-controls="day-2" role="tab" data-toggle="tab">Speaker Bio</a>
+        </li>
       </ul>
       <div class="tab-content">
         <!-- Day 1 schedule -->
@@ -479,9 +481,29 @@
             <!-- Speaker name -->
             <h2>{{speaker.fullName | substring:20}}</h2>
             <!-- Speaker position -->
-            <h4>{{speaker.employer | substring:20}}</h4>
+            <h4>{{speaker.employer | substring:25}}</h4>
             <!-- Speaker description -->
             <p>{{speaker.bio}}</p>
+          </div>
+        </div>
+        <!-- Day 2 schedule -->
+        <div *ngIf="speaker2.id != null" role="tabpanel" class="tab-pane fade speaker-panel" id="speaker-detail-2">
+          <!-- Speaker Image -->
+          <div class="col-sm-6 col-sm-offset-0 col-xs-8">
+            <div class="speaker-social-links text-center">
+              <a href="{{speaker2.twitter}}"><i class="fa fa-twitter"></i></a>
+              <a href="{{speaker2.github}}"><i class="fa fa-github"></i></a>
+            </div>
+            <img src="{{speaker2.image ? baseUrl+'/api/speakerImage/'+speaker2.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker2.fullName}}" class="bio-image">
+          </div>
+          <!-- Speaker Bio -->
+          <div class="">
+            <!-- Speaker name -->
+            <h2>{{speaker2.fullName | substring:20}}</h2>
+            <!-- Speaker position -->
+            <h4>{{speaker2.employer | substring:25}}</h4>
+            <!-- Speaker description -->
+            <p>{{speaker2.bio}}</p>
           </div>
         </div>
       </div>

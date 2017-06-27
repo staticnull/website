@@ -15,6 +15,7 @@ export class ScheduleComponent implements OnInit {
   controllers: Array<any>;
   talk: Object = [];
   speaker: Object = [];
+  speaker2: Object = [];
   baseUrl: Object;
 
   constructor(private navService: NavService, private router: Router, private apiService: ApiService) {
@@ -45,8 +46,21 @@ export class ScheduleComponent implements OnInit {
         .subscribe((res: Response) => {
           this.talk = res.json()[0];
           this.speaker = this.talk['speaker'];
-          console.log(this.talk);
-          console.log(this.speaker);
+          console.log(this.speaker['id']);
+          if(this.speaker['id'] == 79) {
+            this.getSecondSpeaker(84)
+          } else if (this.speaker['id'] == 84) {
+            this.getSecondSpeaker(79)
+          } else {
+            this.speaker2 = [];
+          }
+        });
+  }
+
+  getSecondSpeaker(id){
+    this.apiService.get(`/api/speaker/findById/`+id)
+        .subscribe((res: Response) => {
+          this.speaker2 = res.json()[0];
         });
   }
 
