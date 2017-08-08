@@ -9,16 +9,41 @@
   </div>
   <div class="container">
     <div class="col-sm-10 col-sm-offset-1">
-
       <!--Supporter 1 -->
       <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
-        <img (click)="agileModal.open()" src="assets/images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale hand">
+        <img (click)="agileModal.open()" src="assets/images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale hand agile-logo">
       </div>
       <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
         <img (click)="braintreeModal.open()" src="assets/images/sponsors/logo-braintree.png" alt="Braintree" class="img-responsive grayscale hand braintree-logo">
       </div>
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="targetModal.open()" src="assets/images/sponsors/logo-target.jpg" alt="Target" class="img-responsive grayscale hand target-logo">
+      </div>
     </div>
-    <h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>
+    <div class="col-sm-10 col-sm-offset-1">
+      <!--Supporter 2 -->
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="sdgModal.open()" src="assets/images/sponsors/logo-sdg.jpg" alt="sdg" class="img-responsive grayscale hand sdg-logo">
+      </div>
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="horizontalModal.open()" src="assets/images/sponsors/logo-horizontal.png" alt="Horizontal Integration" class="img-responsive grayscale hand horizontal-logo">
+      </div>
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="daughertyModal.open()" src="assets/images/sponsors/logo-daugherty.png" alt="Daugherty Business Solutions" class="img-responsive grayscale hand daugherty-logo">
+      </div>
+    </div>
+    <div class="col-sm-10 col-sm-offset-1">
+      <!--Supporter 2 -->
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="ociModal.open()" src="assets/images/sponsors/logo-oci.png" alt="OCI" class="img-responsive grayscale hand oci-logo">
+      </div>
+      <div class="offset-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="microsoftModal.open()" src="assets/images/sponsors/logo-microsoft.png" alt="Microsoft" class="img-responsive grayscale hand microsoft-logo">
+      </div>
+
+    </div>
+
+    <!--<h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>-->
   </div>
 </section>
 <modal #agileModal>
@@ -45,6 +70,84 @@
   <modal-footer>
     <a class="sponsor-website" href="https://www.braintreepayments.com/">Website</a>
     <button class="btn btn-primary" (click)="braintreeModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #sdgModal>
+  <modal-header>
+    <h1>Solution Design Group (sdg) <img src="assets/images/sponsors/logo-sdg.jpg" alt="sdg" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    sdg (Solution Design Group) is an IT consulting firm based in Golden Valley, MN. We deliver IT solutions around Microsoft and Open Source technologies and utilize our Project Delivery Team to help round out these service offerings. We have more than 135 consultants and just over 20 operations members that make up the sdg Team. Most of our customers can be found locally around the Twin Cities, but a few of our projects are nationwide.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://www.solutiondesign.com/">Website</a>
+    <button class="btn btn-primary" (click)="sdgModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #targetModal>
+  <modal-header>
+    <h1>Target <img src="assets/images/sponsors/logo-target.jpg" alt="Target" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    With a digital career at Target, you’ll help transform one of the nation’s most-loved brands. Develop innovative solutions, leverage cutting-edge technologies to make our platforms even better, or drive this critical work forward through marketing or project management. If you are a developer, check out CodewithTarget.com.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://www.codewithtarget.com/">Website</a>
+    <button class="btn btn-primary" (click)="targetModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #horizontalModal>
+  <modal-header>
+    <h1>Horizontal Integration <img src="assets/images/sponsors/logo-horizontal.png" alt="Horizontal Integration" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    Horizontal Integration offers two service lines. Our digital agency provides digital marketing strategy and technology consulting on a project basis. Our staffing agency places IT, digital and creative talent in both contract and permanent roles. Many of our clients take advantage of both service lines. <br /><br />
+
+    Horizontal Integration is a certified Minority Business Enterprise, with more than 200 employees across our offices in Minneapolis, Denver, Dallas and Vadodara, India. We’ve been consistently growing and profitable since the company was founded in 2003. Learn more at <a href="http://www.horizontalintegration.com">horizontalintegration.com</a>.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="http://www.horizontalintegration.com">Website</a>
+    <button class="btn btn-primary" (click)="horizontalModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #microsoftModal>
+  <modal-header>
+    <h1>Microsoft <img src="assets/images/sponsors/logo-microsoft.png" alt="Microsoft" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    Microsoft is looking for the best and brightest talent, and we invite candidates of all abilities to come as they are and do what they love.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://www.microsoft.com">Website</a>
+    <button class="btn btn-primary" (click)="microsoftModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #daughertyModal>
+  <modal-header>
+    <h1>Daugherty Business Solutions <img src="assets/images/sponsors/logo-daugherty.png" alt="Daugherty Business Solutions" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    At Daugherty Business Solutions, we bring a fresh approach to consulting by rolling up our sleeves and working with our clients—collaborating to solve some of their most pressing business challenges. We’re practical, not pompous. We deliver results, not reports. It’s why some of the most well-known companies in the world trust us with their mission-critical projects and why working here satisfies the smart, the talented, and the curious.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://www.daugherty.com/">Website</a>
+    <button class="btn btn-primary" (click)="daughertyModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #ociModal>
+  <modal-header>
+    <h1>OCI<img src="assets/images/sponsors/logo-oci.png" alt="OCI" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    Today, the world recognizes this truth: Open Source represents industrial- strength, secure, fully-endorsed software solutions that are used across industries and throughout organizations worldwide.
+
+    Over twenty years ago, we embraced Open Source as a cost-effective alternative to commercial off-the-shelf software (COTS), enabling us to build scalable enterprise-class solutions for our clients.
+
+    Since 1993, our teams have been active contributors in the development, incubation, and advancement of Open Source technologies and engineering services, serving Fortune 500 companies locally and around the globe. We built and actively support a suite of Open Source products, including Grails, OpenDDS, TAO, and JBoss.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://objectcomputing.com/services/software-engineering/">Website</a>
+    <button class="btn btn-primary" (click)="ociModal.close()">Close</button>
   </modal-footer>
 </modal>
 <modal #emailModal class="modal-wide">

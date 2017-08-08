@@ -60,3 +60,14 @@ img.bio-image {
     overflow: hidden;
     overflow-y: scroll;
 }
+.schedule-button {
+    width: 100%;
+    margin: auto;
+}
+ul.track-list {
+    margin-bottom:-20px;
+    font-size: 15px;
+}
+.host-words {
+    font-size: 17px;
+}

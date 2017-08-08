@@ -12,7 +12,7 @@
         There will be a variety of talks from well­known speakers in the community in a typical presentation format. Talks are categorized
         and structured based on the following tracks:
       </p>
-      <ul class="wow fadeInUp">
+      <ul class="wow fadeInUp track-list">
         <li>Frameworks</li>
         <li>Observables / RX</li>
         <li>React</li>
@@ -23,6 +23,8 @@
       </ul>
       <p class="host-words wow fadeInUp">
         An overview of the conference schedule is available to the right. A detailed schedule including tracks and times can be found <a (click)="scheduleModal.open()">here</a>.
+        <br><br>
+        <a (click)="scheduleModal.open()"><button class="schedule-button btn btn-default wow fadeInUp">Detailed Schedule <i class="fa fa-calendar"></i></button></a>
       </p>
         <!-- Host image and details -->
         <!--
@@ -257,7 +259,7 @@
                 <th class="session-time">
                 <th class="session-room"><span class="talk-room">Auditorium</span><span class="talk-track">React</span></th>
                 <th class="session-room"><span class="talk-room">Schulze 127</span><span class="talk-track">Angular</span></th>
-                <th class="session-room"><span class="talk-room">Law 235</span><span class="talk-track">Node</span></th>
+                <th class="session-room"><span class="talk-room">Law 235</span><span class="talk-track">Advanced React</span></th>
                 <th class="session-room"><span class="talk-room">Law 238</span><span class="talk-track"></span></th>
               </tr>
             </thead>
@@ -271,9 +273,9 @@
             </tr>
             <tr>
               <td>9:00</td>
-              <td><span class="talk-title">Intro to React and Redux Workshop</span><span class="talk-speaker">(Samuel Parsons)</span></td>
-              <td><span class="talk-title">Angular 2 Workshop</span><span class="talk-speaker">(Michael Cacek)</span></td>
-              <td><span class="talk-title">Node.js Workshop</span><span class="talk-speaker">(Sequoia McDowell)</span></td>
+              <td><span class="talk-title">Intro to React and Redux Workshop</span><span class="talk-speaker">(Justin Perinovic / Travis Martensen)</span></td>
+              <td><span class="talk-title">Angular 2 Workshop</span><span class="talk-speaker">(Michael Cacek / Dustin Shau)</span></td>
+              <td><span class="talk-title">Advanced React Workshop</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
               <td>TBA</td>
             </tr>
             <tr class="table-active">
@@ -282,9 +284,9 @@
             </tr>
             <tr>
               <td>1:00</td>
-              <td><span class="talk-title">Intro to React and Redux Workshop</span><span class="talk-speaker">(Samuel Parsons)</span></td>
-              <td><span class="talk-title">Angular 2 Workshop</span><span class="talk-speaker">(Michael Cacek)</span></td>
-              <td><span class="talk-title">Node.js Workshop</span><span class="talk-speaker">(Sequoia McDowell)</span></td>
+              <td><span class="talk-title">Intro to React and Redux Workshop</span><span class="talk-speaker">(Justin Perinovic / Travis Martensen)</span></td>
+              <td><span class="talk-title">Angular 2 Workshop</span><span class="talk-speaker">(Michael Cacek / Dustin Shau)</span></td>
+              <td><span class="talk-title">Advanced React Workshop</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
               <td>TBA</td>
             </tr>
           </table>
@@ -326,9 +328,9 @@
             <tr>
               <td>11:30</td>
               <td class="talk-detail" (click)="openDetail(56, detailModal.open())"><span class="talk-title">Marble Driven Development with RxJS</span><span class="talk-speaker">(Eric Ponto)</span></td>
-              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td class="talk-detail" (click)="openDetail(54, detailModal.open())"><span class="talk-title">React Simply</span><span class="talk-speaker">(Mark Volkmann)</span></td>
               <td class="talk-detail" (click)="openDetail(138, detailModal.open())"><span class="talk-title">Angular2 for absolute beginners</span><span class="talk-speaker">(Khan Md)</span></td>
-              <td><span class="talk-title">JS Vulnerabilities</span><span class="talk-speaker">(Tim Kadlec)</span></td>
+              <td class="talk-detail" (click)="openDetail(201, detailModal.open())"><span class="talk-title">JS Vulnerabilities</span><span class="talk-speaker">(Tim Kadlec)</span></td>
             </tr>
             <tr class="table-active">
               <td>12:30</td>
@@ -338,12 +340,12 @@
               <td>1:30</td>
               <td class="talk-detail" (click)="openDetail(64, detailModal.open())"><span class="talk-title">Taming space and time with RxJS Observables</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
               <td class="talk-detail" (click)="openDetail(167, detailModal.open())"><span class="talk-title">Building Scalable, Maintainable Apps Using TypeScript and React</span><span class="talk-speaker">(Kamran Ayub)</span></td>
-              <td class="talk-detail" (click)="openDetail(54, detailModal.open())"><span class="talk-title">React Simply</span><span class="talk-speaker">(Mark Volkmann)</span></td>
-              <td class="talk-detail"><span class="talk-title">Investing in JavaScript Testing</span><span class="talk-speaker"></span></td>
+              <td class="talk-detail" (click)="openDetail(183, detailModal.open())"><span class="talk-title">Kick Your Server to the Curb with OpenWhisk</span><span class="talk-speaker">(Raymond Camden)</span></td>
+              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
             </tr>
             <tr>
               <td>2:30</td>
-              <td class="talk-detail" (click)="openDetail(125, detailModal.open())"><span class="talk-title">An Intro to Reactive Programming for the Web: RxJS and Cycle.js</span><span class="talk-speaker">(Pratik Patel)</span></td>
+              <td class="talk-detail" (click)="openDetail(255, detailModal.open())"><span class="talk-title">Building artificial intelligence into your Node.js apps</span><span class="talk-speaker">(David Washington)</span></td>
               <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
               <td class="talk-detail" (click)="openDetail(59, detailModal.open())"><span class="talk-title">Getting Asynchronous with NodeJS</span><span class="talk-speaker">(Alex Schwartz)</span></td>
               <td class="talk-detail" (click)="openDetail(115, detailModal.open())"><span class="talk-title">React UI and Unit Testing with Airbnb's Enzyme</span><span class="talk-speaker">(Ryan Walsh)</span></td>
@@ -354,10 +356,10 @@
             </tr>
             <tr>
               <td>4:00</td>
-              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td class="talk-detail" (click)="openDetail(37, detailModal.open())"><span class="talk-title">A math-free introduction to Neural Networks</span><span class="talk-speaker">(Randall Koutnik)</span></td>
               <td class="talk-detail" (click)="openDetail(65, detailModal.open())"><span class="talk-title">Resilient React.js - Building apps with a functional approach</span><span class="talk-speaker">(Jeff Barczewski)</span></td>
               <td class="talk-detail" (click)="openDetail(178, detailModal.open())"><span class="talk-title">A First View of Vue.js</span><span class="talk-speaker">(Vince Bullinger)</span></td>
-              <td class="talk-detail" (click)="openDetail(33, detailModal.open())"><span class="talk-title">ESLint, Don't Write JavaScript Without It!</span><span class="talk-speaker">(Mark Volkmann)</span></td>
+              <td class="talk-detail" (click)="openDetail(33, detailModal.open())"><span class="talk-title">Flow - Am I Your Type?</span><span class="talk-speaker">(Mark Volkmann)</span></td>
             </tr>
             <tr class="table-active">
               <td>5:00</td>
@@ -420,7 +422,7 @@
               <td>2:30</td>
               <td class="talk-detail" (click)="openDetail(246, detailModal.open())"><span class="talk-title">IoT security using facial and voice recognition</span><span class="talk-speaker">(Kevin Leung)</span></td>
               <td class="talk-detail" (click)="openDetail(128, detailModal.open())"><span class="talk-title">How to "build your damn app already!" with Meteor</span><span class="talk-speaker">(Joshua Longanecker)</span></td>
-              <td><span class="talk-title">TBA</span><span class="talk-speaker"></span></td>
+              <td class="talk-detail" (click)="openDetail(251, detailModal.open())"><span class="talk-title">Blockchain App Development with JavaScript and Sawtooth</span><span class="talk-speaker">(Zac Delventhal)</span></td>
               <td class="talk-detail" (click)="openDetail(181, detailModal.open())"><span class="talk-title">Hot React Testing Practices</span><span class="talk-speaker">(Blaine Kasten)</span></td>
             </tr>
             <tr class="table-active">
