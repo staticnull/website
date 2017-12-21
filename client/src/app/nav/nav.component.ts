@@ -12,7 +12,6 @@ export class NavComponent implements OnInit {
   controllers: Array<any>;
 
   constructor(private navService: NavService, private router: Router) {
-    console.log("in the nav")
   }
 
   ngOnInit(): void {

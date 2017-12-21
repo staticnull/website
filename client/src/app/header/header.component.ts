@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   constructor(private navService: NavService, private router: Router) { }
 
   ngOnInit(): void {
-    var dateOfConference: Date = new Date('2017-08-16');
+    var dateOfConference: Date = new Date('2017-08-16T08:00:00');
     //setInterval(function(){ this.updateCountdown(dateOfConference) }, 1000);
     setInterval(() => this.updateCountdown(dateOfConference), 1000);
 
@@ -50,7 +50,7 @@ export class HeaderComponent implements OnInit {
     var t = endTime.valueOf() - new Date().valueOf();
     var seconds = Math.floor( (t/1000) % 60 );
     var minutes = Math.floor( (t/1000/60) % 60 );
-    var hours = Math.floor( (t/(1000*60*60)) % 24 ) + 6;
+    var hours = Math.floor( (t/(1000*60*60)) % 24 );
     var days = Math.floor( t/(1000*60*60*24) );
     return {
       'total': t,

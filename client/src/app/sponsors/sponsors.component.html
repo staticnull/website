@@ -37,10 +37,12 @@
       <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
         <img (click)="ociModal.open()" src="assets/images/sponsors/logo-oci.png" alt="OCI" class="img-responsive grayscale hand oci-logo">
       </div>
-      <div class="offset-sm-4 col-xs-6 supporter wow bounceIn">
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
         <img (click)="microsoftModal.open()" src="assets/images/sponsors/logo-microsoft.png" alt="Microsoft" class="img-responsive grayscale hand microsoft-logo">
       </div>
-
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="nerderyModal.open()" src="assets/images/sponsors/logo-nerdery.png" alt="Nerdery" class="img-responsive grayscale hand nerdery-logo">
+      </div>
     </div>
 
     <!--<h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>-->
@@ -148,6 +150,20 @@
   <modal-footer>
     <a class="sponsor-website" href="https://objectcomputing.com/services/software-engineering/">Website</a>
     <button class="btn btn-primary" (click)="ociModal.close()">Close</button>
+  </modal-footer>
+</modal>
+<modal #nerderyModal>
+  <modal-header>
+    <h1>Nerdery<img src="assets/images/sponsors/logo-nerdery.png" alt="Nerdery" class="modal-logo"></h1>
+  </modal-header>
+  <modal-content>
+    The key to impactful technology solutions and holistic problem solving are innovative and pragmatic Nerds deeply invested in understanding your business. The earlier we engage with you, the deeper our understanding will be of your business needs and what success is to you.
+    <br />
+    We believe that passionate Nerds are the driving force behind business breakthroughs; our purpose is to redefine what's possible through technology. The two most important words of our vision statement, "We will be the best place in the world for Nerds to work," are "Nerds" and "work." You'll love them both.
+  </modal-content>
+  <modal-footer>
+    <a class="sponsor-website" href="https://www.nerdery.com/">Website</a>
+    <button class="btn btn-primary" (click)="nerderyModal.close()">Close</button>
   </modal-footer>
 </modal>
 <modal #emailModal class="modal-wide">
