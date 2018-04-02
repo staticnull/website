@@ -15,7 +15,7 @@ class UrlMappings {
         "/api/speaker/listAll"(controller: 'speaker', action: 'listAll')
         "/api/speaker/findById/$id"(controller: 'speaker', action: 'findById')
         "/api/speaker/save"(controller: 'speaker', action: 'save')
-        //post "/api/cfp"(controller: 'callForPapers', action: "submit")
+        post "/api/cfp"(controller: 'callForPapers', action: "submit")
         post "/api/speakerImage"(controller: 'speakerImage', action: "save")
 
         "/"(redirect: "/index.html")

@@ -32,4 +32,9 @@ databaseChangeLog = {
         modifyDataType(tableName: "talk", columnName: "talk_abstract", newDataType: "varchar(1024)")
         confirm "Successfully updated the description column."
     }
+
+    changeSet(author: "cory", id: "enlargenBio") {
+        modifyDataType(tableName: "speaker", columnName: "bio", newDataType: "varchar(4096)")
+        confirm "Successfully updated the bio column."
+    }
 }

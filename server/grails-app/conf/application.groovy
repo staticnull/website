@@ -75,6 +75,6 @@ grails.plugin.databasemigration.updateOnStartFileName = 'changelog-manifest.groo
 
 grails.resources.pattern = '/**'
 
-app.cfp.year = 2017
+app.cfp.year = 2018
 app.cfp.accepting = true
-app.conference.year = 2017
+app.conference.year = 2018

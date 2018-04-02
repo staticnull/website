@@ -122,6 +122,7 @@ export class CfpComponent implements OnInit {
     var talkArray = [];
     for (let input of event.target) {
       var talkTitle;
+      var talkTrack;
       var talkNumber;
       var talkAbstract;
       if (input['name'].indexOf('title') > -1) {
@@ -129,9 +130,12 @@ export class CfpComponent implements OnInit {
         var nameSplit = input['name'].split("_");
         talkNumber = nameSplit[nameSplit.length - 1];
         for (let input of event.target) {
+          if (input['name'].indexOf('track_'+talkNumber) > -1) {
+            talkTrack = input['value'];
+          }
           if (input['name'].indexOf('abstract_'+talkNumber) > -1) {
             talkAbstract = input['value'];
-            talkArray.push({"title":talkTitle,"talkAbstract":talkAbstract})
+            talkArray.push({"title":talkTitle,"talkAbstract":talkAbstract,"track":talkTrack})
           }
         }
       }

@@ -28,7 +28,7 @@ export class TicketComponent implements OnInit {
   }
 
   sendToTito() {
-    window.location.href='https://ti.to/midwestjs/2017-midwest-js-conference';
+    window.location.href='https://ti.to/midwestjs/2018-midwest-js-conference';
   }
 
   hasRoute(controllerName: string): boolean {

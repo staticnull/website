@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   constructor(private navService: NavService, private router: Router) { }
 
   ngOnInit(): void {
-    var dateOfConference: Date = new Date('2017-08-16T08:00:00');
+    var dateOfConference: Date = new Date('2018-08-08T08:00:00');
     //setInterval(function(){ this.updateCountdown(dateOfConference) }, 1000);
     setInterval(() => this.updateCountdown(dateOfConference), 1000);
 
