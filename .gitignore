@@ -8,6 +8,7 @@ lib-cov
 *.gz
 .DS_Store
 .gradle
+.idea
 
 pids
 logs
