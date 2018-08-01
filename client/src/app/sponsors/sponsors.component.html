@@ -13,8 +13,38 @@
       <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
         <img (click)="agileModal.open()" src="assets/images/sponsors/logo-agileorbit.jpg" alt="AgileOrbit" class="img-responsive grayscale hand agile-logo">
       </div>
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="sdgModal.open()" src="assets/images/sponsors/logo-sdg.jpg" alt="sdg" class="img-responsive grayscale hand sdg-logo">
+      </div>
+      <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        <img (click)="targetModal.open()" src="assets/images/sponsors/logo-target.jpg" alt="Target" class="img-responsive grayscale hand target-logo">
+      </div>
     </div>
-    <!--<h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>-->
+    <div class="col-sm-10 col-sm-offset-1">
+        <!--Supporter 1 -->
+        <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+            <img (click)="daughertyModal.open()" src="assets/images/sponsors/logo-daugherty.png" alt="Daugherty Business Solutions" class="img-responsive grayscale hand daugherty-logo">
+        </div>
+        <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+            <img (click)="opiModal.open()" src="assets/images/sponsors/logo-objectpartners.png" alt="OPI" class="img-responsive grayscale hand opi-logo">
+        </div>
+        <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+            <img (click)="nerderyModal.open()" src="assets/images/sponsors/logo-nerdery.png" alt="Nerdery" class="img-responsive grayscale hand nerdery-logo">
+        </div>
+      </div>
+    <div class="col-sm-10 col-sm-offset-1">
+        <!--Supporter 1 -->
+        <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        </div>
+        <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+            <img (click)="mastersModal.open()" src="assets/images/sponsors/logo-frontendmasters.png" alt="Frontend Masters" class="img-responsive grayscale hand masters-logo">
+        </div>
+        <div class="col-sm-4 col-xs-6 supporter wow bounceIn">
+        </div>
+      </div>
+    </div>
+  <div>
+    <h4 class="text-center col-xs-12 wow fadeInUp">Interested in becoming sponsor? <span class="contact" (click)="emailModal.open()">Get in touch</span></h4>
   </div>
 </section>
 <modal #agileModal>
@@ -105,6 +135,22 @@
     <button class="btn btn-primary" (click)="daughertyModal.close()">Close</button>
   </modal-footer>
 </modal>
+<modal #opiModal>
+    <modal-header>
+      <h1>Object Partners <img src="assets/images/sponsors/logo-objectpartners.png" alt="OPI" class="modal-logo"></h1>
+    </modal-header>
+    <modal-content>
+        Delivering custom software solutions using best of breed technology can only be accomplished by very talented software developers. The software project graveyard is huge, as many companies have used cheap development resources only to see their applications crumble due to defects, instability, and poor scalability. Using the best and brightest software developers is the only reasonable option.
+        <br /><br />
+        And since we only hire the best, our consultants don’t require the level of management that many companies have. Our consultants need the tools and support to do their jobs well, so we provide that and get out of their way.
+        <br /><br />
+        By employing these philosophies, using the best software developers with the best tools and technologies, we have an impressive history of successful custom software development projects. 
+    </modal-content>
+    <modal-footer>
+      <a class="sponsor-website" href="https://objectpartners.com/">Website</a>
+      <button class="btn btn-primary" (click)="opiModal.close()">Close</button>
+    </modal-footer>
+  </modal>
 <modal #ociModal>
   <modal-header>
     <h1>OCI<img src="assets/images/sponsors/logo-oci.png" alt="OCI" class="modal-logo"></h1>
@@ -127,7 +173,7 @@
   </modal-header>
   <modal-content>
     The key to impactful technology solutions and holistic problem solving are innovative and pragmatic Nerds deeply invested in understanding your business. The earlier we engage with you, the deeper our understanding will be of your business needs and what success is to you.
-    <br />
+    <br /><br />
     We believe that passionate Nerds are the driving force behind business breakthroughs; our purpose is to redefine what's possible through technology. The two most important words of our vision statement, "We will be the best place in the world for Nerds to work," are "Nerds" and "work." You'll love them both.
   </modal-content>
   <modal-footer>
@@ -135,6 +181,18 @@
     <button class="btn btn-primary" (click)="nerderyModal.close()">Close</button>
   </modal-footer>
 </modal>
+<modal #mastersModal>
+    <modal-header>
+      <h1>Frontend Masters<img src="assets/images/sponsors/logo-frontendmasters.png" alt="Frontend Masters" class="modal-logo"></h1>
+    </modal-header>
+    <modal-content>
+        Master the most important JavaScript and front-end development skills such as React, Node.js, Vue, Functional JavaScript, CSS Grid, Flexbox and more!
+    </modal-content>
+    <modal-footer>
+      <a class="sponsor-website" href="https://frontendmasters.com/">Website</a>
+      <button class="btn btn-primary" (click)="mastersModal.close()">Close</button>
+    </modal-footer>
+  </modal>
 <modal #emailModal class="modal-wide">
   <modal-header>
     <h1>By the community, For the community</h1>

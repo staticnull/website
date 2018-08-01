@@ -53,9 +53,25 @@ export class ScheduleComponent implements OnInit {
           this.getSecondSpeaker(84)
         } else if (this.speaker['id'] == 84) {
           this.getSecondSpeaker(79)
+        } 
+        if(this.speaker['id'] == 398) {
+          this.getSecondSpeaker(467)
+        } else if (this.speaker['id'] == 467) {
+          this.getSecondSpeaker(398)
+        }
+        if(this.speaker['id'] == 414) {
+          this.getSecondSpeaker(459)
+        } else if (this.speaker['id'] == 459) {
+          this.getSecondSpeaker(414)
+        }
+        if(this.speaker['id'] == 315) {
+          this.getSecondSpeaker(432)
+        } else if (this.speaker['id'] == 432) {
+          this.getSecondSpeaker(315)
         } else {
           this.speaker2 = [];
         }
+
       });
   }
 

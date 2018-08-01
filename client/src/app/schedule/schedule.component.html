@@ -14,38 +14,20 @@
       </p>
       <ul class="wow fadeInUp track-list">
         <li>Frameworks</li>
-        <li>Observables / RX</li>
+        <li>Node.js</li>
         <li>React</li>
-        <li>IoT</li>
-        <li>Beginner</li>
-        <li>Advanced</li>
+        <li>Tooling</li>
+        <li>Vue</li>
+        <li>Experiences</li>
         <li>Testing</li>
+        <li>Security</li>
       </ul>
       <p class="host-words wow fadeInUp">
         An overview of the conference schedule is available to the right. A detailed schedule including tracks and times can be found <a (click)="scheduleModal.open()">here</a>.
         <br><br>
-        <a><button class="schedule-button btn btn-default wow fadeInUp">Detailed Schedule Coming Soon! <i class="fa fa-calendar"></i></button></a>
-        <!--<a (click)="scheduleModal.open()"><button class="schedule-button btn btn-default wow fadeInUp">Detailed Schedule <i class="fa fa-calendar"></i></button></a>-->
+        <a (click)="scheduleModal.open()"><button class="schedule-button btn btn-default wow fadeInUp">Detailed Schedule <i class="fa fa-calendar"></i></button></a>
       </p>
         <!-- Host image and details -->
-        <!--
-        <div class="speaker-details ">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2 wow fadeInUp">
-            <div class="speaker-social-links text-center">
-              <a href="#"><i class="fa fa-twitter wow bounceIn"></i></a>
-              <a href="#"><i class="fa fa-linkedin wow bounceIn"></i></a>
-            </div>
-            <img src="http://placehold.it/500x500" alt="John Doe" class="img-responsive">
-          </div>
-          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.2s">
-            <h2>Keynote Speaker</h2>
-            <h4>CEO Bob's Burgers.</h4>
-            <p>Blurb about the Keynote guy.</p>
-          </div>
-        </div>
-
-      </div>-->
     </div>
     <!-- End of Word Of Host section -->
 
@@ -68,7 +50,7 @@
 
           <!-- Day 1 schedule -->
           <div role="tabpanel" class="tab-pane fade in active" id="day-1">
-            <ul class="schedule">
+            <ul class="schedule" (click)="scheduleModal.open()">
               <li>
                 <h4 class="time">8:00AM</h4>
                 <h3>Registration and Breakfast</h3>
@@ -103,7 +85,7 @@
           </div>
           <!-- Day 2 schedule -->
           <div role="tabpanel" class="tab-pane fade" id="day-2">
-            <ul class="schedule">
+            <ul class="schedule" (click)="scheduleModal.open()">
               <li>
                 <h4 class="time">8:00AM</h4>
                 <h3>Registration and Breakfast</h3>
@@ -168,7 +150,7 @@
           </div>
           <!-- Day 3 schedule -->
           <div role="tabpanel" class="tab-pane fade" id="day-3">
-            <ul class="schedule">
+            <ul class="schedule" (click)="scheduleModal.open()">
               <li>
                 <h4 class="time">8:00AM</h4>
                 <h3>Breakfast</h3>
@@ -234,3 +216,285 @@
   </div>
 </section>
 <!-- End of Schedule section -->
+<modal #scheduleModal class="modal-wide">
+   <modal-header>
+     <h1>2018 Midwest JS Detailed Schedule</h1>
+   </modal-header>
+   <modal-content>
+     <div role="tabpanel">
+       <!-- Days -->
+       <ul class="nav nav-tabs" role="tablist" id="detail-schedule-tabs">
+         <li role="presentation" class="active">
+           <a href="#day-1-detail" aria-controls="day-1-detail" role="tab" data-toggle="tab">Wednesday</a>
+         </li>
+         <li role="presentation"><a href="#day-2-detail" aria-controls="day-2" role="tab" data-toggle="tab">Thursday</a>
+         </li>
+         <li role="presentation"><a href="#day-3-detail" aria-controls="day-3" role="tab" data-toggle="tab">Friday</a>
+         </li>
+       </ul>
+       <div class="tab-content">
+         <!-- Day 1 schedule -->
+         <div role="tabpanel" class="tab-pane fade in active" id="day-1-detail">
+           <h3>Wednesday - August 8th 2018</h3>
+           <table class="table table-bordered table-sm">
+             <thead class="thead-default">
+               <tr>
+                 <th class="session-time">
+                 <th class="session-room"><span class="talk-room">Auditorium</span><span class="talk-track">Full Stack</span></th>
+                 <th class="session-room"><span class="talk-room">Schulze 127</span><span class="talk-track">Spring Boot</span></th>
+                 <th class="session-room"><span class="talk-room">Law 235</span><span class="talk-track">React</span></th>
+                 <th class="session-room"><span class="talk-room">Law 238</span><span class="talk-track">Angular</span></th>
+               </tr>
+             </thead>
+             <tr class="table-active">
+               <td>8:00</td>
+               <td colspan="4"><span class="talk-title">Registration / Breakfast (Coffee & Pastries) 8:00 9:00</span></td>
+             </tr>
+             <tr>
+               <td>8:45</td>
+               <td colspan="4"><span class="talk-title">Welcome to Midwest JS</span><span class="talk-speaker">(Cory Tranby)</span></td>
+             </tr>
+             <tr>
+               <td>9:00</td>
+               <td><span class="talk-title">Full Stack JavaScript Workshop</span><span class="talk-speaker">(Mark Volkmann)</span></td>
+               <td><span class="talk-title">Modern JS Development with Spring Boot Workshop</span><span class="talk-speaker">(Bruce Coddington)</span></td>
+               <td><span class="talk-title">React + Redux Workshop</span><span class="talk-speaker">(Dustin Schau & Travis Martensen)</span></td>
+               <td><span class="talk-title">Hands On Workshop - Up and Running with Angular</span><span class="talk-speaker">(Justin James)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>12:00</td>
+               <td colspan="4"><span class="talk-title">Lunch (Terrence Murphy Hall 2nd Floor) 12:00 1:00</span></td>
+             </tr>
+             <tr>
+               <td>1:00 - 4:00</td>
+               <td><span class="talk-title">Full Stack JavaScript Workshop</span><span class="talk-speaker">(Mark Volkmann)</span></td>
+               <td><span class="talk-title">Modern JS Development with Spring Boot Workshop</span><span class="talk-speaker">(Bruce Coddington)</span></td>
+               <td><span class="talk-title">React + Redux Workshop</span><span class="talk-speaker">(Dustin Schau & Travis Martensen)</span></td>
+               <td><span class="talk-title">Hands On Workshop - Up and Running with Angular</span><span class="talk-speaker">(Justin James)</span></td>
+             </tr>
+           </table>
+         </div>
+         <!-- Day 2 schedule -->
+         <div role="tabpanel" class="tab-pane fade" id="day-2-detail">
+           <h3>Thursday August 9th 2018</h3>
+           <table class="table table-bordered table-sm">
+             <tr>
+               <th class="session-time"></th>
+               <th class="session-room"><span class="talk-room">Auditorium</span><span class="talk-track">Node.js</span></th>
+               <th class="session-room"><span class="talk-room">Schulze 127</span><span class="talk-track">Tooling</span></th>
+               <th class="session-room"><span class="talk-room">Law 235</span><span class="talk-track">Vue</span></th>
+               <th class="session-room"><span class="talk-room">Law 238</span><span class="talk-track">Testing</span></th>
+             </tr>
+             <tr class="table-active">
+               <td class="session-time">8:00</td>
+               <td colspan="4"><span class="talk-title">Registration / Breakfast (Coffee & Pastries) 8:00 8:45</span></td>
+             </tr>
+             <tr>
+               <td>8:45</td>
+               <td colspan="4"><span class="talk-title">Opening Announcements</span><span class="talk-speaker">(Cory Tranby)</span></td>
+             </tr>
+             <tr>
+               <td>9:00</td>
+               <td colspan="4"><span class="talk-title">Blenders, Boeing, and Bad Software</span><span class="talk-speaker">(Randall Koutnik)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>10:00</td>
+               <td colspan="4"><span class="talk-title">Coffee & Snack Break 10:00 10:30</span></td>
+             </tr>
+             <tr>
+               <td>10:30</td>
+               <td class="talk-detail" (click)="openDetail(408, detailModal.open())"><span class="talk-title">Using Node.js to build Successful Products</span><span class="talk-speaker">(Jacopo Daeli)</span></td>
+               <td class="talk-detail" (click)="openDetail(369, detailModal.open())"><span class="talk-title">const name: Language = 'TypeScript';</span><span class="talk-speaker">(Pearl Latteier / Abraham Williams)</span></td>
+               <td class="talk-detail" (click)="openDetail(344, detailModal.open())"><span class="talk-title">Intro to Vue.js: The Frontend Framework for Everyone!</span><span class="talk-speaker">(David Dangerfield)</span></td>
+               <td class="talk-detail" (click)="openDetail(279, detailModal.open())"><span class="talk-title">Automated Testing with Cypress</span><span class="talk-speaker">(Mike Plummer)</span></td>
+             </tr>
+             <tr>
+               <td>11:30</td>
+               <td class="talk-detail" (click)="openDetail(285, detailModal.open())"><span class="talk-title">An Introduction to Webtask</span><span class="talk-speaker">(Bobby Johnson)</span></td>
+               <td class="talk-detail" (click)="openDetail(265, detailModal.open())"><span class="talk-title">Modern JavaScript Tools</span><span class="talk-speaker">(Mark Volkmann)</span></td>
+               <td class="talk-detail" (click)="openDetail(434, detailModal.open())"><span class="talk-title">All Aboard the Hypetrain: Blockchains or Bust</span><span class="talk-speaker">(Zac Delventhal)</span></td>
+               <td class="talk-detail" (click)="openDetail(384, detailModal.open())"><span class="talk-title">Angular Test Dependency Injection</span><span class="talk-speaker">(Lance Finney)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>12:30</td>
+               <td colspan="4"><span class="talk-title">Lunch (Terrence Murphy Hall 2nd Floor) 12:30 1:00</span></td>
+             </tr>
+             <tr>
+               <td>1:30</td>
+               <td class="talk-detail" (click)="openDetail(353, detailModal.open())"><span class="talk-title">Selling your Boss on GraphQL</span><span class="talk-speaker">(Ryan Walsh)</span></td>
+               <td class="talk-detail" (click)="openDetail(274, detailModal.open())"><span class="talk-title">Webassembly and Rust</span><span class="talk-speaker">(Robert Hanson)</span></td>
+               <td class="talk-detail" (click)="openDetail(379, detailModal.open())"><span class="talk-title">Room with a Vue - Introduction to Vue.js</span><span class="talk-speaker">(Zachary Klein)</span></td>
+               <td class="talk-detail" (click)="openDetail(329, detailModal.open())"><span class="talk-title">E2E testing your SEO with headless chrome and puppeteer.</span><span class="talk-speaker">(Tristan Sokol)</span></td>
+             </tr>
+             <tr>
+               <td>2:30</td>
+               <td class="talk-detail" (click)="openDetail(293, detailModal.open())"><span class="talk-title">Rapid REST API Development with Node and SailsJS</span><span class="talk-speaker">(Justin James)</span></td>
+               <td class="talk-detail" (click)="openDetail(352, detailModal.open())"><span class="talk-title">Narrowing the Field - Choosing the Right Compile-to-JS Language for You</span><span class="talk-speaker">(Ryan Walsh)</span></td>
+               <td class="talk-detail" (click)="openDetail(346, detailModal.open())"><span class="talk-title">Reducing Vuex Boilerplate (Vue.js)</span><span class="talk-speaker">(Matthew Dangerfield)</span></td>
+               <td class="talk-detail" (click)="openDetail(365, detailModal.open())"><span class="talk-title">Harness the Power of ASTs using jscodeshift</span><span class="talk-speaker">(Jeremy Lund)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>3:30</td>
+               <td colspan="4"><span class="talk-title">Coffee & Snack Break 3:30 4:00</span></td>
+             </tr>
+             <tr>
+               <td>4:00</td>
+               <td class="talk-detail" (click)="openDetail(309, detailModal.open())"><span class="talk-title">A Practical Approach to the Component Library Challenge</span><span class="talk-speaker">(Amy Gebhardt)</span></td>
+               <td class="talk-detail" (click)="openDetail(397, detailModal.open())"><span class="talk-title">How to identify bad third-parties on your page</span><span class="talk-speaker">(Charles Vazac)</span></td>
+               <td class="talk-detail" (click)="openDetail(316, detailModal.open())"><span class="talk-title">Blazing Fast UI Development with Storybook 🚀</span><span class="talk-speaker">(Mike Eastes / Caitlin Collins)</span></td>
+               <td class="talk-detail" (click)="openDetail(323, detailModal.open())"><span class="talk-title">Focusing on Focus</span><span class="talk-speaker">(Chris DeMars)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>5:00</td>
+               <td colspan="4"><span class="talk-title">Happy Hour - Union Rooftop</span><span class="talk-speaker"></span></td>
+             </tr>
+           </table>
+         </div>
+         <!-- Day 3 schedule -->
+         <div role="tabpanel" class="tab-pane fade" id="day-3-detail">
+           <h3>Friday August 10th 2018</h3>
+           <table class="table table-bordered table-sm">
+             <tr>
+               <th class="session-time"></th>
+               <th class="session-room"><span class="talk-room">Auditorium</span><span class="talk-track">Experiences</span></th>
+               <th class="session-room"><span class="talk-room">Schulze 127</span><span class="talk-track">Accessibility / Mobile</span></th>
+               <th class="session-room"><span class="talk-room">Law 235</span><span class="talk-track">React</span></th>
+               <th class="session-room"><span class="talk-room">Law 238</span><span class="talk-track">Security</span></th>
+             </tr>
+             <tr class="table-active">
+               <td class="session-time">8:00</td>
+               <td colspan="4"><span class="talk-title">Registration / Breakfast (Coffee & Pastries) 8:00 9:00</span></td>
+             </tr>
+             <tr>
+               <td>9:00</td>
+               <td class="talk-detail" (click)="openDetail(312, detailModal.open())"><span class="talk-title">How Does JavaScript Math?</span><span class="talk-speaker">(Meara Charnetzki)</span></td>
+               <td class="talk-detail" (click)="openDetail(333, detailModal.open())"><span class="talk-title">Accessibility for Web Apps: A Pragmatic Approach.</span><span class="talk-speaker">(Aaron Cannon)</span></td>
+               <td class="talk-detail" (click)="openDetail(388, detailModal.open())"><span class="talk-title">Building High Performance React Applications</span><span class="talk-speaker">(Joe Karlsson)</span></td>
+               <td class="talk-detail" (click)="openDetail(304, detailModal.open())"><span class="talk-title">I Don't Care About Security (And Neither Should You)</span><span class="talk-speaker">(Joel Lord)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>10:00</td>
+               <td colspan="4"><span class="talk-title">Coffee & Snack Break 10:00 10:30</span></td>
+             </tr>
+             <tr>
+               <td>10:30</td>
+               <td class="talk-detail" (click)="openDetail(335, detailModal.open())"><span class="talk-title">Modern Javascript in the Java-only Enterprise</span><span class="talk-speaker">(Bruce Coddington)</span></td>
+               <td class="talk-detail" (click)="openDetail(338, detailModal.open())"><span class="talk-title">Gatsby: Static Site Generation with React</span><span class="talk-speaker">(Dustin Schau)</span></td>
+               <td class="talk-detail" (click)="openDetail(278, detailModal.open())"><span class="talk-title">Taming Redux with Sagas</span><span class="talk-speaker">(Mike Plummer)</span></td>
+               <td class="talk-detail" (click)="openDetail(378, detailModal.open())"><span class="talk-title">Shields Up! Security and React Apps</span><span class="talk-speaker">(Zachary Klein)</span></td>
+             </tr>
+             <tr>
+               <td>11:30</td>
+               <td class="talk-detail" (click)="openDetail(372, detailModal.open())"><span class="talk-title">Hello Real World Of Legacy Code: Story Of Yelp's Migration To React</span><span class="talk-speaker">(Tanvi)</span></td>
+               <td class="talk-detail" (click)="openDetail(405, detailModal.open())"><span class="talk-title">Gatsby & Drupal</span><span class="talk-speaker">(Joe Shindelar)</span></td>
+               <td class="talk-detail" (click)="openDetail(364, detailModal.open())"><span class="talk-title">Pack your Callbags! A new spec for Streams</span><span class="talk-speaker">(Jeremy Lund)</span></td>
+               <td class="talk-detail" (click)="openDetail(385, detailModal.open())"><span class="talk-title">So you're doing Redux but is your Data Safe?</span><span class="talk-speaker">(Lance Finney)</span></td>
+             </tr>
+             <tr class="table-active">
+               <td>12:30</td>
+               <td colspan="4"><span class="talk-title">Lunch (Terrence Murphy Hall 2nd Floor) 12:30 - 1:00</span></td>
+             </tr>
+             <tr>
+               <td>1:30</td>
+               <td class="talk-detail" (click)="openDetail(399, detailModal.open())"><span class="talk-title">Practical Application of Ngrx in Medical Research</span><span class="talk-speaker">(Aspen Payton / Kirk Balderes)</span></td>
+               <td class="talk-detail" (click)="openDetail(289, detailModal.open())"><span class="talk-title">Wicked Fast ⚡ Mobile Web</span><span class="talk-speaker">(Pearl Latteier / Abraham Williams)</span></td>
+               <td class="talk-detail" (click)="openDetail(390, detailModal.open())"><span class="talk-title">Building a GraphQL Client in JavaScript</span><span class="talk-speaker">(Joe Karlsson)</span></td>
+               <td class="talk-detail" (click)="openDetail(305, detailModal.open())"><span class="talk-title">Forgot Password? Yes I did!</span><span class="talk-speaker">(Joel Lord)</span></td>
+             </tr>
+             <tr>
+               <td>2:30</td>
+               <td class="talk-detail" (click)="openDetail(362, detailModal.open())"><span class="talk-title">AngularJS to Angular: How We Did It</span><span class="talk-speaker">(David Stanich)</span></td>
+               <td class="talk-detail" (click)="openDetail(415, detailModal.open())"><span class="talk-title">Using JavaScript to write Native Applications/SDK's for iOS Android and the Web.</span><span class="talk-speaker">(Siddharth Reddy Malkireddy / Derek Anderson)</span></td>
+               <td class="talk-detail" (click)="openDetail(364, detailModal.open())"><span class="talk-title">TBD</span><span class="talk-speaker"></span></td>
+               <td class="talk-detail" (click)="openDetail(405, detailModal.open())"><span class="talk-title">TBD</span><span class="talk-speaker"></span></td>
+             </tr>
+             <tr class="table-active">
+               <td>3:30</td>
+               <td colspan="4"><span class="talk-title">Coffee & Snack Break 3:30 - 4:00</span></td>
+             </tr>
+             <tr>
+               <td>4:00</td>
+               <td colspan="4"><span class="talk-title">Conference Wrap Up</span></td>
+             </tr>
+             <tr>
+               <td>4:15</td>
+               <td colspan="4"><span class="talk-title">Closing Keynote</span></td>
+             </tr>
+           </table>
+         </div>
+       </div>
+     </div>
+   </modal-content>
+   <modal-footer>
+     <span><h5 class="pull-left">* This schedule is tentative and is expected to change as things solidify. Full talk descriptions to be added soon!</h5></span>
+     <button class="btn btn-primary" (click)="scheduleModal.close()">Close</button>
+   </modal-footer>
+  -</modal>
+  -<modal #detailModal>
+   <modal-header>
+     <h1>{{talk.title}}</h1>
+   </modal-header>
+   <modal-content>
+     <div role="tabpanel">
+       <!-- Days -->
+       <ul class="nav nav-tabs" role="tablist" id="talk-detail-tabs">
+         <li role="presentation" class="active">
+           <a href="#talk-detail" aria-controls="day-1-detail" role="tab" data-toggle="tab">Abstract</a>
+         </li>
+         <li role="presentation"><a href="#speaker-detail" aria-controls="day-2" role="tab" data-toggle="tab">Speaker Bio</a>
+         </li>
+         <li *ngIf="speaker2.id != null" role="presentation"><a href="#speaker-detail-2" aria-controls="day-2" role="tab" data-toggle="tab">Speaker Bio</a>
+         </li>
+       </ul>
+       <div class="tab-content">
+         <!-- Day 1 schedule -->
+         <div role="tabpanel" class="tab-pane fade in active detail-box" id="talk-detail">
+           <span class="abstract">{{talk.talkAbstract}}</span>
+         </div>
+       <!-- Day 2 schedule -->
+         <div role="tabpanel" class="tab-pane fade speaker-panel" id="speaker-detail">
+           <!-- Speaker Image -->
+           <div class="col-sm-6 col-sm-offset-0 col-xs-8">
+             <div class="speaker-social-links text-center">
+               <a href="{{speaker.twitter}}"><i class="fa fa-twitter"></i></a>
+               <a href="{{speaker.github}}"><i class="fa fa-github"></i></a>
+             </div>
+             <img src="{{speaker.image ? baseUrl+'/api/speakerImage/'+speaker.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker.fullName}}" class="bio-image">
+           </div>
+           <!-- Speaker Bio -->
+           <div class="">
+             <!-- Speaker name -->
+             <h2>{{speaker.fullName | substring:20}}</h2>
+             <!-- Speaker position -->
+             <h4>{{speaker.employer | substring:25}}</h4>
+             <!-- Speaker description -->
+             <p>{{speaker.bio}}</p>
+           </div>
+         </div>
+         <!-- Day 2 schedule -->
+         <div *ngIf="speaker2.id != null" role="tabpanel" class="tab-pane fade speaker-panel" id="speaker-detail-2">
+           <!-- Speaker Image -->
+           <div class="col-sm-6 col-sm-offset-0 col-xs-8">
+             <div class="speaker-social-links text-center">
+               <a href="{{speaker2.twitter}}"><i class="fa fa-twitter"></i></a>
+               <a href="{{speaker2.github}}"><i class="fa fa-github"></i></a>
+             </div>
+             <img src="{{speaker2.image ? baseUrl+'/api/speakerImage/'+speaker2.image.id : 'http://placehold.it/500x500'}}" alt="MidwestJS speaker {{speaker2.fullName}}" class="bio-image">
+           </div>
+           <!-- Speaker Bio -->
+           <div class="">
+             <!-- Speaker name -->
+             <h2>{{speaker2.fullName | substring:20}}</h2>
+             <!-- Speaker position -->
+             <h4>{{speaker2.employer | substring:25}}</h4>
+             <!-- Speaker description -->
+             <p>{{speaker2.bio}}</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </modal-content>
+   <modal-footer>
+     <button class="btn btn-primary" (click)="detailModal.close()">Close</button>
+   </modal-footer>
+  -</modal> 

@@ -22,6 +22,7 @@
 
 #main-content .speaker-bio{
     white-space: normal;
+    overflow: scroll;
 }
 
 #main-content .speaker-bio h2{

@@ -77,8 +77,8 @@ export class CfpComponent implements OnInit {
     this.cfpForm = this.fb.group({
       'fullName': ["", Validators.compose([Validators.required, Validators.minLength(2)])],
       'email': ["", Validators.compose([Validators.required, Validators.pattern("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")])],
-      'twitter': ["", Validators.pattern("^http(?:s)?:\/\/(?:www\.)?twitter\.com\/([a-zA-Z0-9_]+)")],
-      'github': ["", Validators.pattern("^http(?:s)?:\/\/(?:www\.)?github\.com\/([a-zA-Z0-9_]+)")],
+      'twitter': ["", Validators.pattern("^http(?:s)?:\/\/(?:www\.)?twitter\.com\/([a-zA-Z0-9_-]+)")],
+      'github': ["", Validators.pattern("^http(?:s)?:\/\/(?:www\.)?github\.com\/([a-zA-Z0-9_-]+)")],
       'employer': ["", null],
       'position': ["", null],
       'bio': ["", Validators.maxLength(255)],
