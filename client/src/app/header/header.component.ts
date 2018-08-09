@@ -9,13 +9,11 @@ import {Route, Router} from '@angular/router';
 })
 
 export class HeaderComponent implements OnInit {
-
   controllers: Array<any>;
   daysUntil: number = 0;
   hoursUntil = 0;
   minutesUntil = 0;
   secondsUntil = 0;
-
 
   constructor(private navService: NavService, private router: Router) { }
 
@@ -23,7 +21,6 @@ export class HeaderComponent implements OnInit {
     var dateOfConference: Date = new Date('2018-08-08T08:00:00');
     //setInterval(function(){ this.updateCountdown(dateOfConference) }, 1000);
     setInterval(() => this.updateCountdown(dateOfConference), 1000);
-
 
     this.navService.getNavData().subscribe(applicationData => {
       this.controllers = applicationData.controllers.sort((a: any, b: any) => {
@@ -48,6 +45,8 @@ export class HeaderComponent implements OnInit {
 
   getTimeRemaining(endTime: any): any {
     var t = endTime.valueOf() - new Date().valueOf();
+    t = Math.max(0, t);
+
     var seconds = Math.floor( (t/1000) % 60 );
     var minutes = Math.floor( (t/1000/60) % 60 );
     var hours = Math.floor( (t/(1000*60*60)) % 24 );
@@ -60,7 +59,6 @@ export class HeaderComponent implements OnInit {
       'seconds': seconds
     };
   }
-
 
   hasRoute(controllerName: string): boolean {
     return this.router.config.some((route: Route) => {
